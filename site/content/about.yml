@@ -1,0 +1,6 @@
+title: About Me
+intro: This is about me
+team:
+  - name: John
+    position: Developer
+    photo: /img/duck.png
