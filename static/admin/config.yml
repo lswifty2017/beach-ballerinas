@@ -24,7 +24,7 @@ collections:
   - label: "Homepage"
     name: "home"
     folder: "content/home"
-    create: true
+    create: false
     slug: "index"
     media_folder: "static/img"
     public_folder: "/img"
@@ -42,7 +42,7 @@ collections:
     files:
       - label: "About Page"
         name: "about"
-        file: "site/content/about.yml"
+        file: "content/about.md"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: markdown }
