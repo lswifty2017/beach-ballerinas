@@ -1,3 +1,0 @@
----
-introduction-title: "Hello World"
----
