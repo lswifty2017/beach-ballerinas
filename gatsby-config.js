@@ -13,8 +13,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `assets`,
+        path: `${__dirname}/src/assets`,
       },
     },
     {
@@ -49,10 +49,23 @@ module.exports = {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Montaga`, `Montserrat\:300,400,500,600,700`],
+        display: "swap",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        data: `@import "${__dirname}/src/styles/variables";`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-sass`,
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
