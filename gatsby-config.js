@@ -25,12 +25,22 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/static/img`,
+        name: "uploads",
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           `gatsby-plugin-netlify-cms-paths`,
           {
             resolve: "gatsby-remark-relative-images",
+            options: {
+              name: "uploads",
+            },
           },
           {
             resolve: `gatsby-remark-images`,
