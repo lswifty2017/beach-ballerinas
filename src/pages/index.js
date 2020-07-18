@@ -29,9 +29,22 @@ export const query = graphql`
 `
 
 const IndexPage = ({ data }) => {
+  const {
+    introduction_title,
+    introduction_description,
+    banner,
+    location_img,
+    location_title,
+    location_description,
+    values,
+  } = data.allMarkdownRemark.edges[0].node.frontmatter
+
   return (
     <Layout>
       <SEO title="Home" />
+      <section id="home-banner">
+        <img src={`${banner}`}></img>
+      </section>
     </Layout>
   )
 }
