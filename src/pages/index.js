@@ -17,8 +17,6 @@ export const query = graphql`
             introduction_title
             intro
             introduction_description
-            banner
-            location_img
             location_title
             location_description
           }
@@ -42,9 +40,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <section id="home-banner">
-        <img src={`${banner}`}></img>
-      </section>
+      <section id="home-banner">{/* <img src={`${banner}`}></img> */}</section>
     </Layout>
   )
 }
