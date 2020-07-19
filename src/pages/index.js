@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
 import Header from "../components/header/header"
+import Img from "gatsby-image"
 
 export const query = graphql`
   query MyQuery {
@@ -40,7 +41,9 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <section id="home-banner">{/* <img src={`${banner}`}></img> */}</section>
+      <section id="home-banner">
+        {/* <img src={`${banner.absolutePath}`}></img> */}
+      </section>
     </Layout>
   )
 }
