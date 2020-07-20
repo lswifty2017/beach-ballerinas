@@ -32,7 +32,7 @@ main {
 
 h1,
 h2 {
-  padding-bottom: 20px;
+  padding-bottom: 28px;
 }
 
 p {
@@ -42,6 +42,9 @@ p {
 section {
   padding-top: 36px;
   padding-bottom: 36px;
+}
+
+.section__wrapper {
   max-width: $max-width-mobile;
   margin: auto;
 }
@@ -54,4 +57,9 @@ section {
 
 .align-center {
   text-align: center;
+}
+
+.bgBlue {
+  background-color: $primary-blue;
+  color: $primary-font-color-inverse;
 }

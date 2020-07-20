@@ -59,8 +59,10 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <Banner img={banner.childImageSharp.original.src} />
       <section id="home-intro">
-        <h1>{introduction_title}</h1>
-        <p>{introduction_description}</p>
+        <div class="section__wrapper">
+          <h1>{introduction_title}</h1>
+          <p>{introduction_description}</p>
+        </div>
       </section>
       <ImageContent
         img={location_img.childImageSharp.original.src}
@@ -76,6 +78,17 @@ const IndexPage = ({ data }) => {
           text="See our studios"
         />
       </ImageContent>
+      <section id="book-cta" class="bgBlue">
+        <div class="section__wrapper">
+          <h2>Classes Starting Term 3!</h2>
+          <Button
+            type="button"
+            path="/signup/"
+            bgColor="sand"
+            text="BOOK NOW!"
+          />
+        </div>
+      </section>
     </Layout>
   )
 }
