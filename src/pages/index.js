@@ -6,6 +6,8 @@ import SEO from "../components/seo/seo"
 import Banner from "../components/banner/banner"
 import ImageContent from "../components/image-content/image-content"
 import Button from "../components/button/button"
+import ClassCard from "../components/class-card/class-card"
+import kebabCase from "../utils/kebab-case"
 import "typeface-montserrat"
 
 export const query = graphql`
@@ -36,6 +38,26 @@ export const query = graphql`
             introduction_description
             location_title
             location_description
+            classes {
+              class_description
+              class_name
+              class_img {
+                childImageSharp {
+                  original {
+                    src
+                  }
+                }
+              }
+            }
+            testimonials {
+              testimonial_name
+              testimonial_occupation
+              testimonial_text
+            }
+            instagram_name
+            instagram_links {
+              embed_link
+            }
           }
         }
       }
@@ -52,6 +74,10 @@ const IndexPage = ({ data }) => {
     location_title,
     location_description,
     values,
+    classes,
+    testimonials,
+    instagram_name,
+    instagram_links,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
 
   return (
@@ -78,7 +104,7 @@ const IndexPage = ({ data }) => {
           text="See our studios"
         />
       </ImageContent>
-      <section id="book-cta" class="bgBlue">
+      <section id="book-cta" className="bgBlue">
         <div class="section__wrapper">
           <h2>Classes Starting Term 3!</h2>
           <Button
@@ -87,6 +113,22 @@ const IndexPage = ({ data }) => {
             bgColor="sand"
             text="BOOK NOW!"
           />
+        </div>
+      </section>
+      <section id="classes">
+        <div className="section__wrapper">
+          <h2>Dance Classes</h2>
+          {classes.map(danceClass => {
+            return (
+              <ClassCard
+                img={danceClass.class_img.childImageSharp.original.src}
+                alt="class-photo"
+                title={danceClass.class_name}
+                subtitle={danceClass.class_description}
+                path={`/classes#${kebabCase(danceClass.class_name)}`}
+              />
+            )
+          })}
         </div>
       </section>
     </Layout>

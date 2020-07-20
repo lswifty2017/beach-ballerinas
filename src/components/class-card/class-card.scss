@@ -1,0 +1,45 @@
+.class-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 36px;
+  padding-top: 12px;
+
+  img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+  }
+
+  &__image {
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    border: 1px solid $primary-blue;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    padding-bottom: 20px;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 35%;
+      height: 1px;
+      background-color: $primary-font-color;
+      bottom: 12px;
+      left: 32%;
+    }
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    padding-bottom: 32px;
+  }
+}
