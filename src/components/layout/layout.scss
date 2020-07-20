@@ -15,3 +15,43 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: $primary-font-color;
 }
+
+main {
+  &#home {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      text-align: center;
+    }
+  }
+}
+
+h1,
+h2 {
+  padding-bottom: 20px;
+}
+
+p {
+  padding-bottom: 16px;
+}
+
+section {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  max-width: $max-width-mobile;
+  margin: auto;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.align-center {
+  text-align: center;
+}

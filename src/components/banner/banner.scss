@@ -1,0 +1,11 @@
+.banner {
+  overflow: hidden;
+
+  img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+  }
+}

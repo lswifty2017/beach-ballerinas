@@ -2,11 +2,11 @@ import React from "react"
 import Header from "../header/header"
 import "./layout.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, id }) => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main id={id}>{children}</main>
     </>
   )
 }

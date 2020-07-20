@@ -1,0 +1,24 @@
+.image-content {
+  &__image {
+    img {
+      display: block;
+      object-fit: cover;
+      height: 300px;
+      width: 100%;
+      background-position: center;
+    }
+  }
+
+  &__content {
+    &--pink {
+      background-color: $primary-pink;
+    }
+
+    &__wrapper {
+      padding-top: 32px;
+      padding-bottom: 16px;
+      max-width: $max-width-mobile;
+      margin: auto;
+    }
+  }
+}
