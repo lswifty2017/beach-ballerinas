@@ -39,6 +39,34 @@ collections:
           name: location-description,
           widget: string,
         }
+      - label: Classes
+        name: classes
+        widget: list
+        fields:
+          - { label: Class Name, name: class-name, widget: string }
+          - {
+              label: Class Description,
+              name: class-description,
+              widget: string,
+            }
+          - { label: Class Image, name: class-img, widget: image }
+      - { label: Instagram Name, name: instagram-name, widget: string }
+      - label: Instagram Embed Links
+        name: instagram-links
+        widget: list
+        fields:
+          - { label: Embed Link, name: embed-link, widget: string }
+      - label: Testimonials
+        name: testimonials
+        widget: list
+        fields:
+          - { label: Testimonial Text, name: testimonial-text, widget: string }
+          - { label: Testimonial Name, name: testimonial-name, widget: string }
+          - {
+              label: Testimonial Occupation,
+              name: testimonial-occupation,
+              widget: string,
+            }
   - label: "Pages"
     name: "pages"
     files:
