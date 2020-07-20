@@ -85,7 +85,7 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <Banner img={banner.childImageSharp.original.src} />
       <section id="home-intro">
-        <div class="section__wrapper">
+        <div className="section__wrapper">
           <h1>{introduction_title}</h1>
           <p>{introduction_description}</p>
         </div>
@@ -104,8 +104,8 @@ const IndexPage = ({ data }) => {
           text="See our studios"
         />
       </ImageContent>
-      <section id="book-cta" className="bgBlue">
-        <div class="section__wrapper">
+      <section id="home-book" className="bgBlue">
+        <div className="section__wrapper">
           <h2>Classes Starting Term 3!</h2>
           <Button
             type="button"
@@ -115,12 +115,13 @@ const IndexPage = ({ data }) => {
           />
         </div>
       </section>
-      <section id="classes">
+      <section id="home-classes">
         <div className="section__wrapper">
           <h2>Dance Classes</h2>
           {classes.map(danceClass => {
             return (
               <ClassCard
+                key={danceClass.class_name}
                 img={danceClass.class_img.childImageSharp.original.src}
                 alt="class-photo"
                 title={danceClass.class_name}
@@ -130,6 +131,25 @@ const IndexPage = ({ data }) => {
             )
           })}
         </div>
+      </section>
+      <section id="home-timetable" className="bgBlue">
+        <Button
+          type="button"
+          path="/timetable/"
+          bgColor="sand"
+          text="View Timetable"
+        />
+      </section>
+      <section id="home-instagram">
+        <h2>{instagram_name}</h2>
+        {instagram_links.map(link => {
+          return (
+            <div
+              key={link.embed_link}
+              dangerouslySetInnerHTML={{ __html: link.embed_link }}
+            />
+          )
+        })}
       </section>
     </Layout>
   )
