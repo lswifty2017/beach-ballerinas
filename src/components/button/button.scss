@@ -1,2 +1,38 @@
 .button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+
+  a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: $primary-font-color;
+    font-weight: 700;
+  }
+
+  &--sand {
+    a {
+      background-color: $primary-sand;
+
+      &:hover {
+        background-color: $primary-font-color;
+        color: $primary-sand;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  &--blue {
+    a {
+      background-color: $primary-blue;
+      color: $primary-font-color-inverse;
+
+      &:hover {
+        background-color: $primary-font-color-inverse;
+        color: $primary-blue;
+        transition: 0.3s;
+      }
+    }
+  }
 }

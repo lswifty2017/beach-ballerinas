@@ -2,9 +2,9 @@ import React from "react"
 import "./image-content.scss"
 
 const ImageContent = ({ img, imgType = "square", bgColor, children }) => (
-  <div class="image-content">
+  <div className="image-content">
     <div
-      class={
+      className={
         imgType === "square"
           ? "image-content__image"
           : "image-content__image image-content__image--circle"
@@ -13,13 +13,13 @@ const ImageContent = ({ img, imgType = "square", bgColor, children }) => (
       <img src={img} />
     </div>
     <div
-      class={
+      className={
         bgColor
           ? `image-content__content image-content__content--${bgColor}`
           : "image-content__content"
       }
     >
-      <div class="image-content__content__wrapper">{children}</div>
+      <div className="image-content__content__wrapper">{children}</div>
     </div>
   </div>
 )

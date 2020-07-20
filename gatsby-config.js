@@ -70,13 +70,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`Montaga`, `Montserrat\:300,400,500,600,700`],
-        display: "swap",
-      },
-    },
-    {
       resolve: "gatsby-plugin-sass",
       options: {
         data: `@import "${__dirname}/src/styles/variables";`,

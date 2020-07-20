@@ -6,6 +6,7 @@ import SEO from "../components/seo/seo"
 import Banner from "../components/banner/banner"
 import ImageContent from "../components/image-content/image-content"
 import Button from "../components/button/button"
+import "typeface-montserrat"
 
 export const query = graphql`
   query MyQuery {
@@ -57,7 +58,7 @@ const IndexPage = ({ data }) => {
     <Layout id="home">
       <SEO title="Home" />
       <Banner img={banner.childImageSharp.original.src} />
-      <section id="home-intro" class="flex-center">
+      <section id="home-intro">
         <h1>{introduction_title}</h1>
         <p>{introduction_description}</p>
       </section>
@@ -70,8 +71,8 @@ const IndexPage = ({ data }) => {
         <p>{location_description}</p>
         <Button
           type="button"
-          path="/404/"
-          bgColor="sand"
+          path="/about#studios/"
+          bgColor="blue"
           text="See our studios"
         />
       </ImageContent>

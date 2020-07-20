@@ -11,7 +11,11 @@ const Button = ({
 }) => {
   if (type === "button") {
     return (
-      <div class={bgColor ? `button button--${bgColor}` : `button`}>
+      <div
+        className={
+          bgColor ? `button button--${bgColor}` : `button button--blue`
+        }
+      >
         <Link to={path}>{text}</Link>
       </div>
     )
