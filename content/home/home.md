@@ -234,7 +234,8 @@ instagram-links:
       PDT</time></p></div></blockquote> <script async
       src="//www.instagram.com/embed.js"></script>'
 testimonials:
-  - testimonial-text: This is the best school in the eastern suburbs. We drop the
+  - testimonial-text:
+      This is the best school in the eastern suburbs. We drop the
       kids off and get to hit the tubes at South Bondi when the surf gets
       radical!
     testimonial-name: Mert

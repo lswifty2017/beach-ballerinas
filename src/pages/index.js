@@ -141,15 +141,18 @@ const IndexPage = ({ data }) => {
         />
       </section>
       <section id="home-instagram">
-        <h2>{instagram_name}</h2>
-        {instagram_links.map(link => {
-          return (
-            <div
-              key={link.embed_link}
-              dangerouslySetInnerHTML={{ __html: link.embed_link }}
-            />
-          )
-        })}
+        <div className="section__wrapper">
+          <h2>@{instagram_name}</h2>
+          {instagram_links.map(link => {
+            return (
+              <div
+                // className="instagram-post"
+                key={link.embed_link}
+                dangerouslySetInnerHTML={{ __html: link.embed_link }}
+              />
+            )
+          })}
+        </div>
       </section>
     </Layout>
   )
