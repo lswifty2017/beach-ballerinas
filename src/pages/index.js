@@ -8,6 +8,7 @@ import ImageContent from "../components/image-content/image-content"
 import Button from "../components/button/button"
 import ClassCard from "../components/class-card/class-card"
 import kebabCase from "../utils/kebab-case"
+import TestimonialCarousel from "../components/testimonial-carousel/testimonial-carousel"
 import "typeface-montserrat"
 
 export const query = graphql`
@@ -146,13 +147,17 @@ const IndexPage = ({ data }) => {
           {instagram_links.map(link => {
             return (
               <div
-                // className="instagram-post"
+                className="instagram-post"
                 key={link.embed_link}
                 dangerouslySetInnerHTML={{ __html: link.embed_link }}
               />
             )
           })}
         </div>
+      </section>
+      <section id="home-testimonial" class="bgSand">
+        <h2>Testimonials</h2>
+        <TestimonialCarousel testimonials={testimonials} />
       </section>
     </Layout>
   )
