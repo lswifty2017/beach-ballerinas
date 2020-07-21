@@ -240,4 +240,10 @@ testimonials:
       radical!
     testimonial-name: Mert
     testimonial-occupation: Bondi Legend
+  - testimonial-text: I love that the studio is in Bondi. I get my coffee and salty bread and I'm a happy dude.
+    testimonial-name: Jim
+    testimonial-occupation: Coffee Snob
+  - testimonial-text: This is the best school in the eastern suburbs. I love salty bread too.
+    testimonial-name: James
+    testimonial-occupation: Brah Boi
 ---

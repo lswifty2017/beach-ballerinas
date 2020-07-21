@@ -156,8 +156,9 @@ const IndexPage = ({ data }) => {
         </div>
       </section>
       <section id="home-testimonial" class="bgSand">
-        <h2>Testimonials</h2>
-        <TestimonialCarousel testimonials={testimonials} />
+        <div className="section__wrapper">
+          <TestimonialCarousel testimonials={testimonials} />
+        </div>
       </section>
     </Layout>
   )
