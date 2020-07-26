@@ -17,13 +17,34 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
+            banner {
+              childImageSharp {
+                fluid(maxHeight: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             location_title
             location_description
+            location_img {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             introduction_title
             introduction_description
             classes {
               class_description
               class_name
+              class_img {
+                childImageSharp {
+                  fixed(width: 180, height: 180) {
+                    ...GatsbyImageSharpFixed
+                  }
+                }
+              }
             }
             testimonials {
               testimonial_name
@@ -59,7 +80,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout id="home">
       <SEO title="Home" />
-      {/* <Banner img={banner.childImageSharp.original.src} /> */}
+      <Banner fluid={banner.childImageSharp.fluid} />
       <section id="home-intro">
         <div className="section__wrapper">
           <h1>{introduction_title}</h1>
@@ -67,7 +88,7 @@ const IndexPage = ({ data }) => {
         </div>
       </section>
       <ImageContent
-        // img={location_img.childImageSharp.original.src}
+        fluid={location_img.childImageSharp.fluid}
         imgType="square"
         bgColor="pink"
       >
@@ -98,7 +119,7 @@ const IndexPage = ({ data }) => {
             return (
               <ClassCard
                 key={danceClass.class_name}
-                // img={danceClass.class_img}
+                fixed={danceClass.class_img.childImageSharp.fixed}
                 alt="class-photo"
                 title={danceClass.class_name}
                 subtitle={danceClass.class_description}
@@ -130,7 +151,7 @@ const IndexPage = ({ data }) => {
           })}
         </div>
       </section>
-      <section id="home-testimonial" class="bgSand">
+      <section id="home-testimonial" className="bgSand">
         <div className="section__wrapper">
           <TestimonialCarousel testimonials={testimonials} />
         </div>

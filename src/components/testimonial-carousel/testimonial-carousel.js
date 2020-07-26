@@ -22,9 +22,9 @@ const TestimonialCarousel = ({ testimonials = [] }) => {
   return (
     <div className="testimonial-carousel">
       <Slider {...settings}>
-        {testimonials.map(testimonial => {
+        {testimonials.map((testimonial, i) => {
           return (
-            <div className="testimonial-carousel__slide">
+            <div className="testimonial-carousel__slide" key={i}>
               <div className="testimonial-carousel__left-quote">
                 <QuoteLeftIcon />
               </div>

@@ -1,7 +1,8 @@
 import React from "react"
+import Img from "gatsby-image"
 import "./image-content.scss"
 
-const ImageContent = ({ img, imgType = "square", bgColor, children }) => (
+const ImageContent = ({ fluid, imgType = "square", bgColor, children }) => (
   <div className="image-content">
     <div
       className={
@@ -10,7 +11,7 @@ const ImageContent = ({ img, imgType = "square", bgColor, children }) => (
           : "image-content__image image-content__image--circle"
       }
     >
-      <img src={img} />
+      <Img fluid={fluid} />
     </div>
     <div
       className={
