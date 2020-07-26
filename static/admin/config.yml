@@ -9,8 +9,7 @@ collections:
   - label: "Home"
     name: "home"
     folder: "content/home"
-    media_folder: static/assets
-    public_folder: /assets
+    media_folder: /assets
     create: false
     slug: "home"
     path: "{{title}}/home"
@@ -71,6 +70,7 @@ collections:
             }
   - label: "About"
     name: "about"
+    media_folder: /assets
     files:
       - label: "Staff"
         name: "staff"
