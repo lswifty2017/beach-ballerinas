@@ -2,19 +2,19 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: static/assets
+media_folder: /cms-assets
 public_folder: /assets
 
 collections:
   - label: "Home"
     name: "home"
     folder: "content/home"
-    media_folder: /assets
+    media_folder: /cms-assets
     create: false
     slug: "home"
     path: "{{title}}/home"
     editor:
-      preview: true
+      preview: false
     fields:
       - { label: Banner Image, name: banner, widget: image }
       - {
@@ -70,7 +70,9 @@ collections:
             }
   - label: "About"
     name: "about"
-    media_folder: /assets
+    media_folder: /cms-assets
+    editor:
+      preview: false
     files:
       - label: "Staff"
         name: "staff"

@@ -16,8 +16,6 @@ export const query = graphql`
     allMarkdownRemark(filter: { fields: { slug: { eq: "/home/home/" } } }) {
       edges {
         node {
-          rawMarkdownBody
-          html
           frontmatter {
             location_title
             location_description

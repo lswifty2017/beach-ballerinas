@@ -1,22 +1,22 @@
 ---
-banner: /assets/tamar-jump.jpg
+banner: /cms-assets/tamar-jump.jpg
 introduction-title: Welcome to Beach Ballerinas
 introduction-description: We offer ballet classes at Bondi Beach. Our quality
   ballet program allows for young children to reach their potential
-location-img: /assets/bondi-beach.jpg
+location-img: /cms-assets/bondi-beach.jpg
 location-title: Located at the Beautiful Bondi Beach
 location-description: Just a few minutes walk from Bondi Beach is our amazing
   dance studio. You can talk more about the area or about the studio.
 classes:
   - class-name: Dolpherinas
     class-description: Under 3s ballet
-    class-img: /assets/dolphin.png
+    class-img: /cms-assets/dolphin.png
   - class-name: Pengurinas
     class-description: Under 4s Ballet
-    class-img: /assets/penguin.png
+    class-img: /cms-assets/penguin.png
   - class-name: Jazzy Ducklings
     class-description: Kindegarten Jazz
-    class-img: /assets/duck.png
+    class-img: /cms-assets/duck.png
 instagram-name: beach_ballerinas
 instagram-links:
   - embed-link: '<blockquote class="instagram-media"
@@ -234,12 +234,14 @@ instagram-links:
       PDT</time></p></div></blockquote> <script async
       src="//www.instagram.com/embed.js"></script>'
 testimonials:
-  - testimonial-text: This is the best school in the eastern suburbs. We drop the
+  - testimonial-text:
+      This is the best school in the eastern suburbs. We drop the
       kids off and get to hit the tubes at South Bondi when the surf gets
       radical!
     testimonial-name: Mert
     testimonial-occupation: Bondi Legend
-  - testimonial-text: I love that the studio is in Bondi. I get my coffee and salty
+  - testimonial-text:
+      I love that the studio is in Bondi. I get my coffee and salty
       bread and I'm a happy dude.
     testimonial-name: Jim
     testimonial-occupation: Coffee Snob
