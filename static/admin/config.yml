@@ -112,23 +112,23 @@ collections:
               - { label: Address, name: address, widget: string }
               - { label: Description, name: description, widget: markdown }
               - { label: Photo, name: photo, widget: image }
-  - label: "Classes"
-    name: "classes"
-    folder: "content/classes"
-    create: false
-    slug: "classes"
-    path: "{{title}}/classes"
-    editor:
-      preview: false
-    fields:
-      - label: Classes
-        name: classes
-        widget: list
-        fields:
-          - { label: Class Name, name: class-name, widget: string }
-          - { label: Class Age Group, name: class-age-group, widget: string }
-          - {
-              label: Class Description,
-              name: class-description,
-              widget: markdown,
-            }
+  # - label: "Classes"
+  #   name: "classes"
+  #   folder: "content/classes"
+  #   create: false
+  #   slug: "classes"
+  #   path: "{{title}}/classes"
+  #   editor:
+  #     preview: false
+  #   fields:
+  #     - label: Classes
+  #       name: classes
+  #       widget: list
+  #       fields:
+  #         - { label: Class Name, name: class-name, widget: string }
+  #         - { label: Class Age Group, name: class-age-group, widget: string }
+  #         - {
+  #             label: Class Description,
+  #             name: class-description,
+  #             widget: markdown,
+  #           }
