@@ -98,7 +98,7 @@ const IndexPage = ({ data }) => {
             return (
               <ClassCard
                 key={danceClass.class_name}
-                // img={danceClass.class_img.childImageSharp.original.src}
+                // img={danceClass.class_img}
                 alt="class-photo"
                 title={danceClass.class_name}
                 subtitle={danceClass.class_description}

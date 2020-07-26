@@ -2,14 +2,13 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: /cms-assets
+media_folder: static/cms-assets
 public_folder: /assets
 
 collections:
   - label: "Home"
     name: "home"
     folder: "content/home"
-    media_folder: /cms-assets
     create: false
     slug: "home"
     path: "{{title}}/home"
@@ -70,7 +69,6 @@ collections:
             }
   - label: "About"
     name: "about"
-    media_folder: /cms-assets
     editor:
       preview: false
     files:
