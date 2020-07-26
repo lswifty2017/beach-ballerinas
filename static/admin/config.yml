@@ -132,3 +132,4 @@ collections:
               name: class-description,
               widget: markdown,
             }
+          - { label: Class Image, name: class-img, widget: image }
