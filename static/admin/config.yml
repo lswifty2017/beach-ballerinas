@@ -39,17 +39,7 @@ collections:
           name: location-description,
           widget: string,
         }
-      - label: Classes
-        name: classes
-        widget: list
-        fields:
-          - { label: Class Name, name: class-name, widget: string }
-          - {
-              label: Class Description,
-              name: class-description,
-              widget: string,
-            }
-          - { label: Class Image, name: class-img, widget: image }
+      - { label: Booking Title, name: booking-title, widget: string }
       - { label: Instagram Name, name: instagram-name, widget: string }
       - label: Instagram Embed Links
         name: instagram-links
@@ -67,51 +57,49 @@ collections:
               name: testimonial-occupation,
               widget: string,
             }
-  # - label: "About"
-  #   name: "about"
-  #   folder: "content/about"
-  #   create: false
-  #   slug: "about"
-  #   path: "{{title}}/about"
-  #   editor:
-  #     preview: false
-  #   files:
-  #     - label: "Staff"
-  #       name: "staff"
-  #       file: "content/about/staff.md"
-  #       fields:
-  #         - { label: Title, name: title, widget: string }
-  #         - label: Team
-  #           name: team
-  #           widget: list
-  #           fields:
-  #             - { label: Name, name: name, widget: string }
-  #             - { label: Description, name: description, widget: string }
-  #             - { label: Photo, name: photo, widget: image }
-  #     - label: "Attitude & Ettiquette"
-  #       name: "attitude-ettiquette"
-  #       file: "content/about/attitude-ettiquette.md"
-  #       fields:
-  #         - { label: Title, name: title, widget: string }
-  #         - { label: Description, name: description, widget: string }
-  #         - label: Values
-  #           name: values
-  #           widget: list
-  #           fields:
-  #             - { label: Value, name: value, widget: string }
-  #     - label: "Studios"
-  #       name: "studios"
-  #       file: "content/about/studios.md"
-  #       fields:
-  #         - { label: Title, name: title, widget: string }
-  #         - label: Studio
-  #           name: studio
-  #           widget: list
-  #           fields:
-  #             - { label: Title, name: title, widget: string }
-  #             - { label: Address, name: address, widget: string }
-  #             - { label: Description, name: description, widget: markdown }
-  #             - { label: Photo, name: photo, widget: image }
+  - label: "About"
+    name: "about"
+    create: false
+    slug: "about"
+    editor:
+      preview: false
+    files:
+      - label: "Staff"
+        name: "staff"
+        file: "content/about/staff.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Description, name: description, widget: string }
+              - { label: Photo, name: photo, widget: image }
+      - label: "Attitude & Ettiquette"
+        name: "attitude-ettiquette"
+        file: "content/about/attitude-ettiquette.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: string }
+          - label: Values
+            name: values
+            widget: list
+            fields:
+              - { label: Value, name: value, widget: string }
+      - label: "Studios"
+        name: "studios"
+        file: "content/about/studios.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - label: Studio
+            name: studio
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Address, name: address, widget: string }
+              - { label: Description, name: description, widget: markdown }
+              - { label: Photo, name: photo, widget: image }
   - label: "Classes"
     name: "classes"
     folder: "content/classes"

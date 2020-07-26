@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
@@ -33,19 +33,9 @@ export const query = graphql`
                 }
               }
             }
+            booking_title
             introduction_title
             introduction_description
-            classes {
-              class_description
-              class_name
-              class_img {
-                childImageSharp {
-                  fixed(width: 180, height: 180) {
-                    ...GatsbyImageSharpFixed
-                  }
-                }
-              }
-            }
             testimonials {
               testimonial_name
               testimonial_occupation
@@ -54,6 +44,22 @@ export const query = graphql`
             instagram_name
             instagram_links {
               embed_link
+            }
+          }
+        }
+      }
+    }
+    markdownRemark(fields: { slug: { eq: "/classes/classes/" } }) {
+      frontmatter {
+        classes {
+          class_age_group
+          class_name
+          class_description
+          class_img {
+            childImageSharp {
+              fixed(width: 180, height: 180) {
+                ...GatsbyImageSharpFixed
+              }
             }
           }
         }
@@ -70,12 +76,14 @@ const IndexPage = ({ data }) => {
     location_img,
     location_title,
     location_description,
-    values,
-    classes,
-    testimonials,
+    booking_title,
+    values = [],
+    testimonials = [],
     instagram_name,
-    instagram_links,
+    instagram_links = [],
   } = data.allMarkdownRemark.edges[0].node.frontmatter
+
+  const { classes } = data.markdownRemark.frontmatter
 
   return (
     <Layout id="home">
@@ -103,7 +111,7 @@ const IndexPage = ({ data }) => {
       </ImageContent>
       <section id="home-book" className="bgBlue">
         <div className="section__wrapper">
-          <h2>Classes Starting Term 3!</h2>
+          <h2>{booking_title}</h2>
           <Button
             type="button"
             path="/signup/"
@@ -122,7 +130,7 @@ const IndexPage = ({ data }) => {
                 fixed={danceClass.class_img.childImageSharp.fixed}
                 alt="class-photo"
                 title={danceClass.class_name}
-                subtitle={danceClass.class_description}
+                subtitle={danceClass.class_age_group}
                 path={`/classes#${kebabCase(danceClass.class_name)}`}
               />
             )
