@@ -61,7 +61,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout id="home">
       <SEO title="Home" />
-      <Banner img={banner.childImageSharp.original.src} />
+      {/* <Banner img={banner.childImageSharp.original.src} /> */}
       <section id="home-intro">
         <div className="section__wrapper">
           <h1>{introduction_title}</h1>
@@ -69,7 +69,7 @@ const IndexPage = ({ data }) => {
         </div>
       </section>
       <ImageContent
-        img={location_img.childImageSharp.original.src}
+        // img={location_img.childImageSharp.original.src}
         imgType="square"
         bgColor="pink"
       >
@@ -100,7 +100,7 @@ const IndexPage = ({ data }) => {
             return (
               <ClassCard
                 key={danceClass.class_name}
-                img={danceClass.class_img.childImageSharp.original.src}
+                // img={danceClass.class_img.childImageSharp.original.src}
                 alt="class-photo"
                 title={danceClass.class_name}
                 subtitle={danceClass.class_description}
