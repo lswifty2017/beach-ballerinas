@@ -1,0 +1,4 @@
+* Render correct images, compression, caching etc
+* Image alt tags
+* Navbar 
+* Footer

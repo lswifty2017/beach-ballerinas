@@ -19,36 +19,13 @@ export const query = graphql`
           rawMarkdownBody
           html
           frontmatter {
-            banner {
-              childImageSharp {
-                original {
-                  src
-                }
-              }
-            }
-            location_img {
-              childImageSharp {
-                original {
-                  src
-                }
-              }
-            }
-            title
-            introduction_title
-            intro
-            introduction_description
             location_title
             location_description
+            introduction_title
+            introduction_description
             classes {
               class_description
               class_name
-              class_img {
-                childImageSharp {
-                  original {
-                    src
-                  }
-                }
-              }
             }
             testimonials {
               testimonial_name

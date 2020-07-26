@@ -6,9 +6,10 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
-  - label: "Homepage"
+  - label: "Home"
     name: "home"
     folder: "content/home"
+    media_folder: /assets
     create: false
     slug: "home"
     path: "{{title}}/home"
@@ -67,31 +68,42 @@ collections:
               name: testimonial-occupation,
               widget: string,
             }
-  - label: "Pages"
-    name: "pages"
+  - label: "About"
+    name: "about"
     files:
-      - label: "About Page"
-        name: "about"
-        file: "content/about.md"
+      - label: "Staff"
+        name: "staff"
+        file: "content/about/staff.md"
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: markdown }
           - label: Team
             name: team
             widget: list
             fields:
               - { label: Name, name: name, widget: string }
-              - { label: Position, name: position, widget: string }
+              - { label: Description, name: description, widget: string }
               - { label: Photo, name: photo, widget: image }
-      - label: "Locations Page"
-        name: "locations"
-        file: "site/content/locations.yml"
+      - label: "Attitude & Ettiquette"
+        name: "attitude-ettiquette"
+        file: "content/about/attitude-ettiquette.md"
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: markdown }
-          - label: Locations
-            name: locations
+          - { label: Description, name: description, widget: string }
+          - label: Values
+            name: values
             widget: list
             fields:
-              - { label: Name, name: name, widget: string }
+              - { label: Value, name: value, widget: string }
+      - label: "Studios"
+        name: "studios"
+        file: "content/about/studios.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - label: Studio
+            name: studio
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
               - { label: Address, name: address, widget: string }
+              - { label: Description, name: description, widget: markdown }
+              - { label: Photo, name: photo, widget: image }

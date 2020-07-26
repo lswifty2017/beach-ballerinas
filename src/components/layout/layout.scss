@@ -44,6 +44,26 @@ section {
   padding-bottom: 20px;
 }
 
+button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+svg {
+  display: block;
+}
+
+.transition {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 .section__wrapper {
   max-width: $max-width-mobile;
   margin: auto;
