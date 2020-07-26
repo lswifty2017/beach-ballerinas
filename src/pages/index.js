@@ -7,7 +7,7 @@ import Banner from "../components/banner/banner"
 import ImageContent from "../components/image-content/image-content"
 import Button from "../components/button/button"
 import ClassCard from "../components/class-card/class-card"
-import kebabCase from "../utils/kebab-case"
+import kebabCaseFn from "../utils/kebab-case"
 import TestimonialCarousel from "../components/testimonial-carousel/testimonial-carousel"
 import "typeface-montserrat"
 
@@ -131,7 +131,7 @@ const IndexPage = ({ data }) => {
                 alt="class-photo"
                 title={danceClass.class_name}
                 subtitle={danceClass.class_age_group}
-                path={`/classes#${kebabCase(danceClass.class_name)}`}
+                path={`/classes#${kebabCaseFn(danceClass.class_name)}`}
               />
             )
           })}

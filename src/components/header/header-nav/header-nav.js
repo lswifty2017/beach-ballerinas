@@ -1,15 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
+import kebabCaseFn from "../../../utils/kebab-case"
 import "./header-nav.scss"
 
-const HeaderNav = ({ pagePaths = [] }) => {
+const HeaderNav = ({ navLinks = {} }) => {
   return (
-    <nav className="header-nav transition">
+    <nav className="header-nav">
       <ul className="header-nav__links">
-        {pagePaths.map(path => {
+        {navLinks.about.map(link => {
           return (
             <li className="header-nav__link">
-              <Link to={`/${path}/`}>{path}</Link>
+              <Link to={`about#${kebabCaseFn(link)}/`}>{link}</Link>
             </li>
           )
         })}

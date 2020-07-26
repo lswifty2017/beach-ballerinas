@@ -1,29 +1,43 @@
 import React, { useState } from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import HeaderNavigation from "./header-nav/header-nav"
 import CloseIcon from "../../assets/close-icon.svg"
 import FacebookIcon from "../../assets/facebook.svg"
 import HamburgerMenuIcon from "../../assets/hamburger-menu.svg"
 import InstagramIcon from "../../assets/instagram.svg"
 import BalletIcon from "../../assets/ballet.svg"
-import { Transition } from "react-transition-group"
 import "./header.scss"
 
-const Header = ({ logo, pagePaths }) => {
+const Header = ({ logo }) => {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
-  const duration = 300
+  const pageData = useStaticQuery(graphql`
+    query AboutQuery {
+      about: allMarkdownRemark(
+        filter: { fields: { slug: { regex: "/about/" } } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              title
+            }
+          }
+        }
+      }
+    }
+  `)
 
-  const defaultStyle = {
-    transition: `opacity ${duration}ms ease-in-out`,
-    opacity: 0,
+  const navLinks = {
+    about: [],
   }
 
-  const transitionStyles = {
-    entering: { opacity: 1 },
-    entered: { opacity: 1 },
-    exiting: { opacity: 0 },
-    exited: { opacity: 0 },
-  }
+  const allPages = Object.keys(navLinks)
+
+  allPages.forEach(page => {
+    pageData[page].edges.forEach(edge => {
+      navLinks[page].push(edge.node.frontmatter.title)
+    })
+  })
 
   return (
     <header className="header">
@@ -37,10 +51,7 @@ const Header = ({ logo, pagePaths }) => {
       >
         {navbarOpen ? <CloseIcon /> : <HamburgerMenuIcon />}
       </button>
-      {navbarOpen ? <HeaderNavigation pagePaths={pagePaths} /> : null}
-      {/* <Transition in={navbarOpen} timeout={500}>
-        {state => <HeaderNavigation className={state} pagePaths={pagePaths} />}
-      </Transition> */}
+      {navbarOpen ? <HeaderNavigation navLinks={navLinks} /> : null}
     </header>
   )
 }
