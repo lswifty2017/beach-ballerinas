@@ -1,22 +1,22 @@
 ---
-banner: /cms-assets/tamar-jump.jpg
+banner: tamar-jump.jpg
 introduction-title: Welcome to Beach Ballerinas
 introduction-description: We offer ballet classes at Bondi Beach. Our quality
   ballet program allows for young children to reach their potential
-location-img: /cms-assets/bondi-beach.jpg
+location-img: bondi-beach.jpg
 location-title: Located at the Beautiful Bondi Beach
 location-description: Just a few minutes walk from Bondi Beach is our amazing
   dance studio. You can talk more about the area or about the studio.
 classes:
   - class-name: Dolpherinas
     class-description: Under 3s ballet
-    class-img: /cms-assets/dolphin.png
+    class-img: dolphin.png
   - class-name: Pengurinas
     class-description: Under 4s Ballet
-    class-img: /cms-assets/penguin.png
+    class-img: penguin.png
   - class-name: Jazzy Ducklings
     class-description: Kindegarten Jazz
-    class-img: /cms-assets/duck.png
+    class-img: duck.png
 instagram-name: beach_ballerinas
 instagram-links:
   - embed-link: '<blockquote class="instagram-media"
