@@ -10,7 +10,7 @@ const HeaderNav = ({ navLinks = {} }) => {
         {navLinks.about.map(link => {
           return (
             <li className="header-nav__link">
-              <Link to={`about#${kebabCaseFn(link)}/`}>{link}</Link>
+              <Link to={`/about#${kebabCaseFn(link)}/`}>{link}</Link>
             </li>
           )
         })}

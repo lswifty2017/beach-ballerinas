@@ -10,10 +10,7 @@ collections:
     name: "home"
     folder: "content/home"
     create: false
-    slug: "home"
-    path: "{{title}}/home"
-    editor:
-      preview: false
+    slug: "index"
     fields:
       - { label: Banner Image, name: banner, widget: image }
       - {
@@ -103,21 +100,10 @@ collections:
   - label: "Classes"
     name: "classes"
     folder: "content/classes"
-    create: false
-    slug: "classes"
-    path: "{{title}}/classes"
-    editor:
-      preview: false
+    create: true
+    identifier_field: class-name
     fields:
-      - label: Classes
-        name: classes
-        widget: list
-        fields:
-          - { label: Class Name, name: class-name, widget: string }
-          - { label: Class Age Group, name: class-age-group, widget: string }
-          - {
-              label: Class Description,
-              name: class-description,
-              widget: markdown,
-            }
-          - { label: Class Image, name: class-img, widget: image }
+      - { label: Class Name, name: class-name, widget: string }
+      - { label: Class Age Group, name: class-age-group, widget: string }
+      - { label: Class Description, name: class-description, widget: markdown }
+      - { label: Class Image, name: class-img, widget: image }

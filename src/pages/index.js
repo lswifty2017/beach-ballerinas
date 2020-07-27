@@ -13,7 +13,7 @@ import "typeface-montserrat"
 
 export const query = graphql`
   query MyQuery {
-    allMarkdownRemark(filter: { fields: { slug: { eq: "/home/home/" } } }) {
+    allMarkdownRemark(filter: { fields: { slug: { regex: "/home/" } } }) {
       edges {
         node {
           frontmatter {
@@ -49,7 +49,7 @@ export const query = graphql`
         }
       }
     }
-    markdownRemark(fields: { slug: { eq: "/classes/classes/" } }) {
+    classesData: markdownRemark(fields: { slug: { eq: "/classes/classes/" } }) {
       frontmatter {
         classes {
           class_age_group
@@ -83,7 +83,9 @@ const IndexPage = ({ data }) => {
     instagram_links = [],
   } = data.allMarkdownRemark.edges[0].node.frontmatter
 
-  const { classes } = data.markdownRemark.frontmatter
+  const classes = data.classesData
+    ? data.markdownRemark.frontmatter.classes
+    : []
 
   return (
     <Layout id="home">

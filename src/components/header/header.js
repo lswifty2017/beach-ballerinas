@@ -29,14 +29,17 @@ const Header = ({ logo }) => {
 
   const navLinks = {
     about: [],
+    classes: [],
   }
 
   const allPages = Object.keys(navLinks)
 
   allPages.forEach(page => {
-    pageData[page].edges.forEach(edge => {
-      navLinks[page].push(edge.node.frontmatter.title)
-    })
+    if (page in pageData) {
+      pageData[page].edges.forEach(edge => {
+        navLinks[page].push(edge.node.frontmatter.title)
+      })
+    }
   })
 
   return (
