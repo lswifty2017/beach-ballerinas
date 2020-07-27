@@ -19,26 +19,19 @@ exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
 
   createTypes(`
-    type HomeSchema implements Node {
-      banner: File
-      location_title: String
-      location_description: String
-      location_img: File
-      booking_title: String
-      introduction_title: String
-      introduction_description:String
-      instagram_name: String
-    }
-
     type MarkdownRemarkFrontmatter implements Node {
       classes: [ClassSchema]
     }
 
+    type MarkdownRemark implements Node {
+      frontmatter: MarkdownRemarkFrontmatter
+    }
+
     type ClassSchema implements Node {
-      class_age_group: String
-      class_name: String
-      class_description: String
-      class_img: File
+      subtitle: String
+      title: String
+      description: String
+      image: File
     }
   `)
 }

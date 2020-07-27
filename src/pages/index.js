@@ -49,13 +49,15 @@ export const query = graphql`
         }
       }
     }
-    classesData: markdownRemark(fields: { slug: { eq: "/classes/classes/" } }) {
-      frontmatter {
-        classes {
-          class_age_group
-          class_name
-          class_description
-          class_img {
+    classesData: allMarkdownRemark(
+      filter: { fields: { slug: { regex: "/classes/" } } }
+    ) {
+      nodes {
+        frontmatter {
+          title
+          subtitle
+          description
+          image {
             childImageSharp {
               fixed(width: 180, height: 180) {
                 ...GatsbyImageSharpFixed
@@ -83,9 +85,7 @@ const IndexPage = ({ data }) => {
     instagram_links = [],
   } = data.allMarkdownRemark.edges[0].node.frontmatter
 
-  const classes = data.classesData
-    ? data.markdownRemark.frontmatter.classes
-    : []
+  const classes = data.classesData ? data.classesData.nodes : []
 
   return (
     <Layout id="home">
@@ -128,12 +128,12 @@ const IndexPage = ({ data }) => {
           {classes.map(danceClass => {
             return (
               <ClassCard
-                key={danceClass.class_name}
-                fixed={danceClass.class_img.childImageSharp.fixed}
+                key={danceClass.frontmatter.title}
+                fixed={danceClass.frontmatter.image.childImageSharp.fixed}
                 alt="class-photo"
-                title={danceClass.class_name}
-                subtitle={danceClass.class_age_group}
-                path={`/classes#${kebabCaseFn(danceClass.class_name)}`}
+                title={danceClass.frontmatter.title}
+                subtitle={danceClass.frontmatter.subtitle}
+                path={`/classes#${kebabCaseFn(danceClass.frontmatter.title)}`}
               />
             )
           })}

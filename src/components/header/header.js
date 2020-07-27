@@ -2,10 +2,9 @@ import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import HeaderNavigation from "./header-nav/header-nav"
 import CloseIcon from "../../assets/close-icon.svg"
-import FacebookIcon from "../../assets/facebook.svg"
 import HamburgerMenuIcon from "../../assets/hamburger-menu.svg"
-import InstagramIcon from "../../assets/instagram.svg"
 import BalletIcon from "../../assets/ballet.svg"
+import { Link } from "gatsby"
 import "./header.scss"
 
 const Header = ({ logo }) => {
@@ -34,6 +33,8 @@ const Header = ({ logo }) => {
 
   const allPages = Object.keys(navLinks)
 
+  // Get title from each subquery and push into navlinks array
+
   allPages.forEach(page => {
     if (page in pageData) {
       pageData[page].edges.forEach(edge => {
@@ -44,10 +45,10 @@ const Header = ({ logo }) => {
 
   return (
     <header className="header">
-      <div className="header__logo">
+      <Link to="/" className="header__logo">
         <BalletIcon />
         Beach Ballerinas
-      </div>
+      </Link>
       <button
         className="header__mobile-toggle"
         onClick={() => setNavbarOpen(!navbarOpen)}

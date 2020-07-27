@@ -1,8 +1,43 @@
 .header-nav {
   position: absolute;
   top: $header-nav-height;
-  height: 100px;
   width: 100%;
   background-color: $primary-pink;
   z-index: 99;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  li {
+    list-style: none;
+    padding: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__links {
+    font-size: 16px;
+    padding-bottom: 24px;
+  }
+
+  &__links-secondary {
+    display: none;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+
+    svg {
+      height: 30px;
+      width: 30px;
+    }
+
+    a {
+      padding: 8px;
+    }
+  }
 }

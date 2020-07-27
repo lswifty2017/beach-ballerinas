@@ -101,9 +101,8 @@ collections:
     name: "classes"
     folder: "content/classes"
     create: true
-    identifier_field: class-name
     fields:
-      - { label: Class Name, name: class-name, widget: string }
-      - { label: Class Age Group, name: class-age-group, widget: string }
-      - { label: Class Description, name: class-description, widget: markdown }
-      - { label: Class Image, name: class-img, widget: image }
+      - { label: Class Name, name: title, widget: string }
+      - { label: Class Age Group, name: subtitle, widget: string }
+      - { label: Class Description, name: description, widget: markdown }
+      - { label: Class Image, name: image, widget: image }
