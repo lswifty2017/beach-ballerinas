@@ -49,13 +49,13 @@ const Header = ({ logo }) => {
         <BalletIcon />
         Beach Ballerinas
       </Link>
+      {navbarOpen ? <HeaderNavigation navLinks={navLinks} /> : null}
       <button
         className="header__mobile-toggle"
         onClick={() => setNavbarOpen(!navbarOpen)}
       >
         {navbarOpen ? <CloseIcon /> : <HamburgerMenuIcon />}
       </button>
-      {navbarOpen ? <HeaderNavigation navLinks={navLinks} /> : null}
     </header>
   )
 }

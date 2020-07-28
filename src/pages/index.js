@@ -1,6 +1,5 @@
 import React from "react"
-import { graphql, StaticQuery } from "gatsby"
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
 import Banner from "../components/banner/banner"

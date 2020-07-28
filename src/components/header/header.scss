@@ -32,3 +32,11 @@
     }
   }
 }
+
+@media only screen and (min-width: $desktop) {
+  .header {
+    &__mobile-toggle {
+      display: none;
+    }
+  }
+}
