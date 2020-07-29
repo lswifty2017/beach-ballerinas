@@ -1,4 +1,4 @@
 * Render correct images, compression, caching etc
 * Image alt tags
-* Navbar 
-* Footer
+* Fix :after issue on secondary nav
+* Figure out css transition group
