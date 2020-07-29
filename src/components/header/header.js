@@ -1,14 +1,23 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 import HeaderNavigation from "./header-nav/header-nav"
 import CloseIcon from "../../assets/close-icon.svg"
 import HamburgerMenuIcon from "../../assets/hamburger-menu.svg"
 import BalletIcon from "../../assets/ballet.svg"
-import { Link } from "gatsby"
+import useWindowDimensions from "../../utils/window-dimensions"
 import "./header.scss"
 
 const Header = ({ logo }) => {
+  const { width } = useWindowDimensions()
   const [navbarOpen, setNavbarOpen] = useState(false)
+  const tabletWidth = 1172
+
+  useEffect(() => {
+    if (width > tabletWidth) {
+      setNavbarOpen(true)
+    }
+  })
 
   const pageData = useStaticQuery(graphql`
     query AboutQuery {
@@ -19,6 +28,26 @@ const Header = ({ logo }) => {
           node {
             frontmatter {
               title
+            }
+          }
+        }
+      }
+      classes: allMarkdownRemark(
+        filter: { fields: { slug: { regex: "/classes/" } } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              title
+              subtitle
+              description
+              image {
+                childImageSharp {
+                  fixed(width: 180, height: 180) {
+                    ...GatsbyImageSharpFixed
+                  }
+                }
+              }
             }
           }
         }
@@ -54,7 +83,13 @@ const Header = ({ logo }) => {
         className="header__mobile-toggle"
         onClick={() => setNavbarOpen(!navbarOpen)}
       >
-        {navbarOpen ? <CloseIcon /> : <HamburgerMenuIcon />}
+        {width <= tabletWidth ? (
+          navbarOpen ? (
+            <CloseIcon />
+          ) : (
+            <HamburgerMenuIcon />
+          )
+        ) : null}
       </button>
     </header>
   )

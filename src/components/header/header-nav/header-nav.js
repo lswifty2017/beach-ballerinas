@@ -23,6 +23,15 @@ const HeaderNav = ({ navLinks = {} }) => {
         </li>
         <li className="header-nav__link">
           <Link to={`/classes/`}>Classes</Link>
+          <ul className="header-nav__links-secondary">
+            {navLinks.classes.map(link => {
+              return (
+                <li className="header-nav__link-secondary">
+                  <Link to={`/classes#${kebabCaseFn(link)}`}>{link}</Link>
+                </li>
+              )
+            })}
+          </ul>
         </li>
         <li className="header-nav__link">
           <Link to={`/timetable/`}>Timetable</Link>
