@@ -2,3 +2,5 @@
 * Image alt tags
 * Fix :after issue on secondary nav
 * Figure out css transition group
+* Add tests to header-nav
+* Add tests and linter to pipeline
