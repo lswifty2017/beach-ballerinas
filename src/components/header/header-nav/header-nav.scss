@@ -74,7 +74,8 @@
       position: relative;
       cursor: pointer;
       &:hover,
-      :focus {
+      &:focus,
+      &:active {
         color: $secondary-font-color;
         transition: $hover-transition;
 
@@ -110,7 +111,8 @@
 
     &__link-secondary {
       &:hover,
-      :focus {
+      &:focus,
+      &:active {
         color: $secondary-font-color;
       }
     }
