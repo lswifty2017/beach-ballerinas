@@ -1,23 +1,65 @@
 import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
+import { noCase, paramCase } from "change-case"
 import HeaderNavigation from "./header-nav/header-nav"
 import CloseIcon from "../../assets/close-icon.svg"
 import HamburgerMenuIcon from "../../assets/hamburger-menu.svg"
 import BalletIcon from "../../assets/ballet.svg"
 import useWindowDimensions from "../../utils/window-dimensions"
+import FacebookIcon from "../../assets/facebook.svg"
+import InstagramIcon from "../../assets/instagram.svg"
+
 import "./header.scss"
 
-const Header = ({ logo }) => {
+const Header = () => {
   const { width } = useWindowDimensions()
-  const [navbarOpen, setNavbarOpen] = useState(false)
+  const [navbarState, setNavbarState] = useState(false)
   const tabletWidth = 1172
 
   useEffect(() => {
     if (width > tabletWidth) {
-      setNavbarOpen(true)
+      setNavbarState(true)
     }
-  })
+  }, [width])
+
+  const toggleNav = () => {
+    setNavbarState(!navbarState)
+
+    if (!navbarState) {
+      document.body.classList.add("noscroll")
+    } else {
+      document.body.classList.remove("noscroll")
+    }
+  }
+
+  const navLinks = [
+    { primaryTitle: "about", primaryPath: "/about", secondaryLinks: [] },
+    { primaryTitle: "classes", primaryPath: "/classes", secondaryLinks: [] },
+    {
+      primaryTitle: "timetable",
+      primaryPath: "/timetable",
+      secondaryLinks: [],
+    },
+    {
+      primaryTitle: "information",
+      primaryPath: "/information",
+      secondaryLinks: [],
+    },
+    { primaryTitle: "contact", primaryPath: "/contact", secondaryLinks: [] },
+    { primaryTitle: "sign_up", primaryPath: "/sign-up", secondaryLinks: [] },
+  ]
+
+  const socialLinks = [
+    {
+      link: "https://www.instagram.com/beach_ballerinas",
+      icon: <InstagramIcon />,
+    },
+    {
+      link: "https://www.facebook.com/Beach-Ballerinas-113132270490904/",
+      icon: <FacebookIcon />,
+    },
+  ]
 
   const pageData = useStaticQuery(graphql`
     query AboutQuery {
@@ -55,40 +97,33 @@ const Header = ({ logo }) => {
     }
   `)
 
-  const navLinks = {
-    about: [],
-    classes: [],
-  }
-
-  const allPages = Object.keys(navLinks)
-
-  // Get title from each subquery and push into navlinks array
-
-  allPages.forEach(page => {
-    if (page in pageData) {
-      pageData[page].edges.forEach(edge => {
-        navLinks[page].push(edge.node.frontmatter.title)
+  navLinks.forEach(({ primaryTitle, primaryPath, secondaryLinks }) => {
+    if (pageData[primaryTitle]) {
+      pageData[primaryTitle].edges.forEach(({ node }) => {
+        secondaryLinks.push({
+          secondaryTitle: noCase(node.frontmatter.title),
+          secondaryPath: `${primaryPath}#${paramCase(node.frontmatter.title)}`,
+        })
       })
     }
   })
 
+  navLinks.map(link => {
+    return (link.primaryTitle = noCase(link.primaryTitle))
+  })
+
   return (
-    <header
-      className={`header ${
-        navbarOpen && width < tabletWidth ? "fixed-position" : null
-      }`}
-    >
+    <header className="header">
       <Link to="/" className="header__logo">
         <BalletIcon />
         Beach Ballerinas
       </Link>
-      {navbarOpen ? <HeaderNavigation navLinks={navLinks} /> : null}
-      <button
-        className="header__mobile-toggle"
-        onClick={() => setNavbarOpen(!navbarOpen)}
-      >
+      {navbarState ? (
+        <HeaderNavigation navLinks={navLinks} socialLinks={socialLinks} />
+      ) : null}
+      <button className="header__mobile-toggle" onClick={() => toggleNav()}>
         {width <= tabletWidth ? (
-          navbarOpen ? (
+          navbarState ? (
             <CloseIcon />
           ) : (
             <HamburgerMenuIcon />

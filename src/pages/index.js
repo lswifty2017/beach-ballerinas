@@ -6,7 +6,7 @@ import Banner from "../components/banner/banner"
 import ImageContent from "../components/image-content/image-content"
 import Button from "../components/button/button"
 import ClassCard from "../components/class-card/class-card"
-import kebabCaseFn from "../utils/kebab-case"
+import { paramCase } from "change-case"
 import TestimonialCarousel from "../components/testimonial-carousel/testimonial-carousel"
 import "typeface-montserrat"
 
@@ -132,7 +132,7 @@ const IndexPage = ({ data }) => {
                 alt="class-photo"
                 title={danceClass.frontmatter.title}
                 subtitle={danceClass.frontmatter.subtitle}
-                path={`/classes#${kebabCaseFn(danceClass.frontmatter.title)}`}
+                path={`/classes#${paramCase(danceClass.frontmatter.title)}`}
               />
             )
           })}
