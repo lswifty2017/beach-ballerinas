@@ -73,7 +73,11 @@ const Header = ({ logo }) => {
   })
 
   return (
-    <header className="header">
+    <header
+      className={`header ${
+        navbarOpen && width < tabletWidth ? "fixed-position" : null
+      }`}
+    >
       <Link to="/" className="header__logo">
         <BalletIcon />
         Beach Ballerinas
