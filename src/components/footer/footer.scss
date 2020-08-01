@@ -1,0 +1,19 @@
+.footer {
+  background-color: $primary-blue;
+  padding-top: 24px;
+
+  &__social {
+    display: flex;
+    justify-content: center;
+
+    svg {
+      height: 30px;
+      width: 30px;
+      fill: $primary-font-color-inverse;
+    }
+
+    a {
+      padding: 8px;
+    }
+  }
+}

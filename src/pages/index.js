@@ -105,7 +105,7 @@ const IndexPage = ({ data }) => {
         <p>{location_description}</p>
         <Button
           type="button"
-          path="/about#studios/"
+          path="/about#studios"
           bgColor="blue"
           text="See our studios"
         />
@@ -115,7 +115,7 @@ const IndexPage = ({ data }) => {
           <h2>{booking_title}</h2>
           <Button
             type="button"
-            path="/signup/"
+            path="/sign-up"
             bgColor="sand"
             text="BOOK NOW!"
           />
@@ -141,7 +141,7 @@ const IndexPage = ({ data }) => {
       <section id="home-timetable" className="bgBlue">
         <Button
           type="button"
-          path="/timetable/"
+          path="/timetable"
           bgColor="sand"
           text="View Timetable"
         />
