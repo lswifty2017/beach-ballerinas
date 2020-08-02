@@ -11,7 +11,7 @@ const ImageContent = ({ fluid, imgType = "square", bgColor, children }) => (
           : "image-content__image image-content__image--circle"
       }
     >
-      <Img fluid={fluid} />
+      <Img fluid={fluid} objectFit="contain" style={{ maxHeight: "100%" }} />
     </div>
     <div
       className={

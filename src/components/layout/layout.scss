@@ -99,3 +99,9 @@ svg {
 .noscroll {
   overflow: hidden;
 }
+
+@media only screen and (min-width: $tablet) {
+  .section__wrapper {
+    max-width: $max-width-tablet;
+  }
+}

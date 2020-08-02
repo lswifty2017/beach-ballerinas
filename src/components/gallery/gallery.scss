@@ -1,0 +1,24 @@
+.gallery {
+  &__item {
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .gallery {
+    display: flex;
+
+    &__item {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop) {
+  .gallery {
+    justify-content: center;
+
+    &__item {
+      width: 33%;
+    }
+  }
+}

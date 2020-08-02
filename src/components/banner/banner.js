@@ -1,5 +1,4 @@
 import React from "react"
-import Header from "../header/header"
 import Img from "gatsby-image"
 import "./banner.scss"
 

@@ -1,12 +1,6 @@
 .image-content {
   &__image {
-    img {
-      display: block;
-      object-fit: cover;
-      height: 300px;
-      width: 100%;
-      background-position: center;
-    }
+    height: 375px;
   }
 
   &__content {
@@ -19,6 +13,21 @@
       padding-bottom: 16px;
       max-width: $max-width-mobile;
       margin: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .image-content {
+    display: flex;
+
+    &__image {
+      max-height: 700px;
+      width: 50%;
+    }
+
+    &__content {
+      width: 50%;
     }
   }
 }

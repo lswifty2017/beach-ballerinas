@@ -1,13 +1,14 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { paramCase } from "change-case"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
 import Banner from "../components/banner/banner"
 import ImageContent from "../components/image-content/image-content"
 import Button from "../components/button/button"
 import ClassCard from "../components/class-card/class-card"
-import { paramCase } from "change-case"
 import TestimonialCarousel from "../components/testimonial-carousel/testimonial-carousel"
+import Gallery from "../components/gallery/gallery"
 import "typeface-montserrat"
 
 export const query = graphql`
@@ -18,7 +19,7 @@ export const query = graphql`
           frontmatter {
             banner {
               childImageSharp {
-                fluid(maxHeight: 800) {
+                fluid {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -124,18 +125,20 @@ const IndexPage = ({ data }) => {
       <section id="home-classes">
         <div className="section__wrapper">
           <h2>Dance Classes</h2>
-          {classes.map(danceClass => {
-            return (
-              <ClassCard
-                key={danceClass.frontmatter.title}
-                fixed={danceClass.frontmatter.image.childImageSharp.fixed}
-                alt="class-photo"
-                title={danceClass.frontmatter.title}
-                subtitle={danceClass.frontmatter.subtitle}
-                path={`/classes#${paramCase(danceClass.frontmatter.title)}`}
-              />
-            )
-          })}
+          <Gallery>
+            {classes.map(danceClass => {
+              return (
+                <ClassCard
+                  key={danceClass.frontmatter.title}
+                  fixed={danceClass.frontmatter.image.childImageSharp.fixed}
+                  alt="class-photo"
+                  title={danceClass.frontmatter.title}
+                  subtitle={danceClass.frontmatter.subtitle}
+                  path={`/classes#${paramCase(danceClass.frontmatter.title)}`}
+                />
+              )
+            })}
+          </Gallery>
         </div>
       </section>
       <section id="home-timetable" className="bgBlue">
