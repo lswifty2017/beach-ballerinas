@@ -7,7 +7,15 @@ const HeaderNav = ({ navLinks = [], socialLinks = [] }) => {
     ({ primaryTitle, primaryPath, secondaryLinks }) => {
       return (
         <li key={primaryTitle} className="header-nav__link">
-          <Link to={primaryPath}>{primaryTitle}</Link>
+          <Link
+            to={primaryPath}
+            onClick={() => {
+              // Prevent no scroll being added to body on redirect
+              document.body.classList.remove("noscroll")
+            }}
+          >
+            {primaryTitle}
+          </Link>
           {secondaryLinks.length ? (
             <ul className="header-nav__links-secondary">
               {secondaryLinks.map(({ secondaryTitle, secondaryPath }) => {
