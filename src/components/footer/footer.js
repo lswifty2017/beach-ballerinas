@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import "./footer.scss"
 
 const Footer = ({ socialLinks, footerLinks }) => {
@@ -12,6 +13,42 @@ const Footer = ({ socialLinks, footerLinks }) => {
             </a>
           )
         })}
+      </div>
+      <div className="footer__links">
+        {footerLinks.map(({ primaryTitle, primaryPath, secondaryLinks }) => {
+          return (
+            <li key={primaryTitle} className="footer__link">
+              <Link to={primaryPath}>{primaryTitle}</Link>
+              {secondaryLinks.length ? (
+                <ul className="footer__links-secondary">
+                  {secondaryLinks.map(({ secondaryTitle, secondaryPath }) => {
+                    return (
+                      <li
+                        key={secondaryTitle}
+                        className="footer__links-secondary"
+                      >
+                        <Link to={secondaryPath}>{secondaryTitle}</Link>
+                      </li>
+                    )
+                  })}
+                </ul>
+              ) : null}
+            </li>
+          )
+        })}
+      </div>
+      <div className="footer__legal">
+        &copy; {new Date().getFullYear()} Beach Ballerinas | Website designed
+        and created by{" "}
+        <span>
+          <a
+            href="mailto:l.swift94@gmail.com?subject=Web development enquiry "
+            target="_blank"
+            rel="noreferrer"
+          >
+            Liam Swift
+          </a>
+        </span>
       </div>
     </div>
   )

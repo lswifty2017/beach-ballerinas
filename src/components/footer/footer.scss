@@ -1,10 +1,12 @@
 .footer {
   background-color: $primary-blue;
-  padding-top: 24px;
+  padding-top: 28px;
+  color: $primary-font-color-inverse;
 
   &__social {
     display: flex;
     justify-content: center;
+    padding-bottom: 16px;
 
     svg {
       height: 30px;
@@ -14,6 +16,46 @@
 
     a {
       padding: 8px;
+    }
+  }
+
+  &__links {
+    font-size: 20px;
+    padding-bottom: 24px;
+    text-align: center;
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      padding: 12px;
+      display: block;
+      text-transform: capitalize;
+    }
+  }
+
+  &__links-secondary {
+    display: none;
+  }
+
+  &__legal {
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 12px;
+    max-width: $max-width-mobile;
+    margin: auto;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+        transition: 0.3s;
+      }
     }
   }
 }
