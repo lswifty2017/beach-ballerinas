@@ -90,6 +90,7 @@ svg {
 
 .instagram-post {
   padding-bottom: 12px;
+  width: 100%;
 }
 
 .fixed-position {
@@ -103,5 +104,22 @@ svg {
 @media only screen and (min-width: $tablet) {
   .section__wrapper {
     max-width: $max-width-tablet;
+  }
+}
+
+@media only screen and (min-width: $desktop) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+  .section__wrapper {
+    max-width: $max-width-desktop;
+
+    &--content {
+      max-width: $section-content-max-width;
+    }
   }
 }

@@ -45,3 +45,13 @@
     padding-bottom: 32px;
   }
 }
+
+@media only screen and (min-width: $tablet) {
+  .class-card {
+    &__image {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+    }
+  }
+}

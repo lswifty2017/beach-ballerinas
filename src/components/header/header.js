@@ -14,9 +14,7 @@ const Header = ({ socialLinks, navLinks }) => {
   const tabletWidth = 1172
 
   useEffect(() => {
-    if (width > tabletWidth) {
-      setNavbarState(true)
-    }
+    width > tabletWidth ? setNavbarState(true) : setNavbarState(false)
   }, [width])
 
   const toggleNav = () => {

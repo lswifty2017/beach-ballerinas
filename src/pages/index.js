@@ -59,8 +59,8 @@ export const query = graphql`
           description
           image {
             childImageSharp {
-              fixed(width: 180, height: 180) {
-                ...GatsbyImageSharpFixed
+              fluid {
+                ...GatsbyImageSharpFluid
               }
             }
           }
@@ -92,7 +92,7 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <Banner fluid={banner.childImageSharp.fluid} />
       <section id="home-intro">
-        <div className="section__wrapper">
+        <div className="section__wrapper section__wrapper--content">
           <h1>{introduction_title}</h1>
           <p>{introduction_description}</p>
         </div>
@@ -130,7 +130,7 @@ const IndexPage = ({ data }) => {
               return (
                 <ClassCard
                   key={danceClass.frontmatter.title}
-                  fixed={danceClass.frontmatter.image.childImageSharp.fixed}
+                  fluid={danceClass.frontmatter.image.childImageSharp.fluid}
                   alt="class-photo"
                   title={danceClass.frontmatter.title}
                   subtitle={danceClass.frontmatter.subtitle}
@@ -152,15 +152,17 @@ const IndexPage = ({ data }) => {
       <section id="home-instagram">
         <div className="section__wrapper">
           <h2>@{instagram_name}</h2>
-          {instagram_links.map(link => {
-            return (
-              <div
-                className="instagram-post"
-                key={link.embed_link}
-                dangerouslySetInnerHTML={{ __html: link.embed_link }}
-              />
-            )
-          })}
+          <Gallery>
+            {instagram_links.map(link => {
+              return (
+                <div
+                  className="instagram-post"
+                  key={link.embed_link}
+                  dangerouslySetInnerHTML={{ __html: link.embed_link }}
+                />
+              )
+            })}
+          </Gallery>
         </div>
       </section>
       <section id="home-testimonial" className="bgSand">

@@ -2,7 +2,7 @@
 banner: tamar-jump.jpg
 introduction-title: Welcome to Beach Ballerinas
 introduction-description: We offer ballet classes at Bondi Beach. Our quality
-  ballet program allows for young children to reach their potential
+  ballet program allows for young children to reach their potential. We have qualified Royal Academy of Dance teachers to provide ballet and jazz classes at the highest standard.
 location-img: bondi-beach.jpg
 location-title: Located at the Beautiful Bondi Beach
 location-description: Just a few minutes walk from Bondi Beach is our amazing
