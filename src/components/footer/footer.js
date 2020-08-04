@@ -18,14 +18,16 @@ const Footer = ({ socialLinks, footerLinks }) => {
         {footerLinks.map(({ primaryTitle, primaryPath, secondaryLinks }) => {
           return (
             <li key={primaryTitle} className="footer__link">
-              <Link to={primaryPath}>{primaryTitle}</Link>
+              <Link className="footer__link-primary" to={primaryPath}>
+                {primaryTitle}
+              </Link>
               {secondaryLinks.length ? (
                 <ul className="footer__links-secondary">
                   {secondaryLinks.map(({ secondaryTitle, secondaryPath }) => {
                     return (
                       <li
                         key={secondaryTitle}
-                        className="footer__links-secondary"
+                        className="footer__link-secondary"
                       >
                         <Link to={secondaryPath}>{secondaryTitle}</Link>
                       </li>

@@ -3,6 +3,16 @@
   padding-top: 28px;
   color: $primary-font-color-inverse;
 
+  a:hover {
+    svg {
+      fill: $primary-font-color;
+      transition: 0.3s;
+    }
+
+    color: $primary-font-color;
+    transition: 0.3s;
+  }
+
   &__social {
     display: flex;
     justify-content: center;
@@ -31,10 +41,13 @@
     a {
       text-decoration: none;
       color: inherit;
-      padding: 12px;
       display: block;
       text-transform: capitalize;
     }
+  }
+
+  &__link {
+    padding: 24px;
   }
 
   &__links-secondary {
@@ -56,6 +69,43 @@
         text-decoration: underline;
         transition: 0.3s;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .footer {
+    &__legal {
+      max-width: $max-width-tablet;
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop) {
+  .footer {
+    &__links {
+      display: flex;
+      text-align: left;
+      justify-content: center;
+    }
+
+    &__link {
+      text-align: left;
+      padding-bottom: 24px;
+    }
+
+    &__link-primary {
+      padding-bottom: 16px;
+    }
+
+    &__links-secondary {
+      display: block;
+      font-size: 12px;
+      text-align: left;
+    }
+
+    &__link-secondary {
+      padding-bottom: 12px;
     }
   }
 }
