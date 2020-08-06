@@ -102,9 +102,25 @@ collections:
   - label: "Classes"
     name: "classes"
     folder: "content/classes"
+    editor:
+      preview: false
     create: true
     fields:
       - { label: Class Name, name: title, widget: string }
       - { label: Class Age Group, name: subtitle, widget: string }
       - { label: Class Description, name: description, widget: markdown }
       - { label: Class Image, name: image, widget: image }
+  - label: "Banner Images"
+    name: "banner-images"
+    slug: "index"
+    folder: "content/banner-images"
+    editor:
+      preview: false
+    create: false
+    fields:
+      - { label: About, name: about-banner-img, widget: image }
+      - { label: Classes, name: classes-banner-img, widget: image }
+      - { label: Timetable, name: timetable-banner-img, widget: image }
+      - { label: Information, name: information-banner-img, widget: image }
+      - { label: Contact, name: contact-banner-img, widget: image }
+      - { label: Sign Up, name: signup-banner-img, widget: image }
