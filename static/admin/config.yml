@@ -116,7 +116,7 @@ collections:
     folder: "content/banner-images"
     editor:
       preview: false
-    create: false
+    create: true
     fields:
       - { label: About, name: about-banner-img, widget: image }
       - { label: Classes, name: classes-banner-img, widget: image }
