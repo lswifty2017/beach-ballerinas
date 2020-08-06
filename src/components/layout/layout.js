@@ -9,7 +9,7 @@ import "./layout.scss"
 
 const Layout = ({ children, id }) => {
   const pageData = useStaticQuery(graphql`
-    query AboutQuery {
+    query NavLinksQuery {
       about: allMarkdownRemark(
         filter: { fields: { slug: { regex: "/about/" } } }
       ) {

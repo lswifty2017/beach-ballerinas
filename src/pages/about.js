@@ -2,48 +2,47 @@ import React from "react"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
 import Banner from "../components/banner/banner"
-import { useStaticQuery, graphql } from "gatsby"
-import GatsbyImage from "gatsby-image"
+import { graphql } from "gatsby"
 
-const AboutPage = () => {
-  const data = useStaticQuery(graphql`
-    query AboutPage {
-      staff: markdownRemark(fields: { slug: { regex: "/staff/" } }) {
-        frontmatter {
-          team {
-            description
-            name
-            photo {
-              childImageSharp {
-                fluid {
-                  srcSet
-                }
-              }
-            }
-          }
-        }
-      }
-      banner_img: markdownRemark {
-        frontmatter {
-          about_banner_img {
+export const data = graphql`
+  query AboutPage {
+    staff: markdownRemark(fields: { slug: { regex: "/staff/" } }) {
+      frontmatter {
+        team {
+          description
+          name
+          photo {
             childImageSharp {
               fluid {
-                ...GatsbyImageSharpFluid
+                srcSet
               }
             }
           }
         }
       }
     }
-  `)
+    banner: markdownRemark(fields: { slug: { regex: "/banner/" } }) {
+      frontmatter {
+        about_banner_img {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
-  const { banner_img, staff } = data
+const AboutPage = ({ data }) => {
+  const { banner, staff } = data
 
   return (
     <Layout id="about">
       <SEO title="About" />
       <Banner
-        fluid={banner_img.frontmatter.about_banner_img.childImageSharp.fluid}
+        fluid={banner.frontmatter.about_banner_img.childImageSharp.fluid}
         title="About"
       />
       <section id="studios">
