@@ -90,7 +90,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout id="home">
       <SEO title="Home" />
-      <Banner fluid={banner.childImageSharp.fluid} />
+      <Banner fluid={banner.childImageSharp.fluid} gradient={false} />
       <section id="home-intro">
         <div className="section__wrapper section__wrapper--content">
           <h1>{introduction_title}</h1>

@@ -5,33 +5,49 @@ import Banner from "../components/banner/banner"
 import { useStaticQuery, graphql } from "gatsby"
 import GatsbyImage from "gatsby-image"
 
-// export const query = useStaticQuery(graphql`
-//   query MyQuery {
-//     staff: markdownRemark(fields: { slug: { regex: "/staff/" } }) {
-//       frontmatter {
-//         team {
-//           description
-//           name
-//           photo {
-//             childImageSharp {
-//               fluid {
-//                 srcSet
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `)
+const AboutPage = () => {
+  const data = useStaticQuery(graphql`
+    query AboutPage {
+      staff: markdownRemark(fields: { slug: { regex: "/staff/" } }) {
+        frontmatter {
+          team {
+            description
+            name
+            photo {
+              childImageSharp {
+                fluid {
+                  srcSet
+                }
+              }
+            }
+          }
+        }
+      }
+      banner_img: markdownRemark {
+        frontmatter {
+          about_banner_img {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
 
-const AboutPage = ({ data }) => {
+  const { banner_img, staff } = data
+
   return (
-    <Layout id="home">
-      <SEO title="Home" />
-      <Banner />
+    <Layout id="about">
+      <SEO title="About" />
+      <Banner
+        fluid={banner_img.frontmatter.about_banner_img.childImageSharp.fluid}
+        title="About"
+      />
       <section id="studios">
-        <h1>Studios</h1>
+        <h2>Studios</h2>
       </section>
     </Layout>
   )
