@@ -57,9 +57,11 @@ collections:
   - label: "About"
     name: "about"
     create: false
-    slug: "about"
+    slug: "index"
     editor:
       preview: false
+    fields:
+      - { label: Banner Image, name: banner, widget: image }
     files:
       - label: "Staff"
         name: "staff"
