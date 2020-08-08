@@ -3,16 +3,16 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
 import Banner from "../components/banner/banner"
 
-const SignUpPage = ({ data }) => {
+const Classes = ({ data }) => {
   return (
-    <Layout id="home">
-      <SEO title="Home" />
-      <Banner />
+    <Layout>
+      <SEO title="Classes" />
+      {/* <Banner /> */}
       <section>
-        <h1>Sign Up</h1>
+        <h2>Classes</h2>
       </section>
     </Layout>
   )
 }
 
-export default SignUpPage
+export default Classes
