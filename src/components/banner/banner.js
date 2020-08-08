@@ -11,9 +11,11 @@ const Banner = ({ fluid, gradient = true, title }) => {
           gradient ? "banner__image" : "banner__image banner__image--plain"
         }
         fluid={fluid}
-        objectFit="cover"
-        objectPosition="50% 50%"
-        style={{ maxHeight: "100%", maxWidth: "100%" }}
+        imgStyle={{
+          objectFit: "cover",
+          maxHeight: "100%",
+          maxWidth: "100%",
+        }}
       ></Img>
     </div>
   )
