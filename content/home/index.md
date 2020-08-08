@@ -5,7 +5,7 @@ introduction-description: We offer ballet classes at Bondi Beach. Our quality
   ballet program allows for young children to reach their potential. We have
   qualified Royal Academy of Dance teachers to provide ballet and jazz classes
   at the highest standard.
-location-img: bondi-beach.jpg
+location-img: /assets/bondi-beach.jpg
 location-title: Located at the Beautiful Bondi Beach
 location-description: Just a few minutes walk from Bondi Beach is our amazing
   dance studio. You can talk more about the area or about the studio.
@@ -334,12 +334,14 @@ instagram-links:
       PDT</time></p></div></blockquote> <script async
       src="//www.instagram.com/embed.js"></script>'
 testimonials:
-  - testimonial-text: This is the best school in the eastern suburbs. We drop the
+  - testimonial-text:
+      This is the best school in the eastern suburbs. We drop the
       kids off and get to hit the tubes at South Bondi when the surf gets
       radical!
     testimonial-name: Mert
     testimonial-occupation: Bondi Legend
-  - testimonial-text: I love that the studio is in Bondi. I get my coffee and salty
+  - testimonial-text:
+      I love that the studio is in Bondi. I get my coffee and salty
       bread and I'm a happy dude.
     testimonial-name: Jim
     testimonial-occupation: Coffee Snob

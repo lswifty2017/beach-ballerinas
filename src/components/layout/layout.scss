@@ -17,20 +17,39 @@ body {
 }
 
 main {
-  // h1,
-  // h2,
-  // h3,
-  // h4,
-  // h5,
-  // h6,
-  // p {
-  //   text-align: center;
-  // }
+  text-align: center;
+
+  ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-left: 12px;
+  }
+  ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+  }
+  ul ul,
+  ol ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 15px;
+  }
+  ol ol,
+  ul ol {
+    list-style-type: lower-latin;
+    list-style-position: inside;
+    margin-left: 15px;
+  }
+
+  li {
+    padding-bottom: 4px;
+  }
 }
 
 h1,
 h2 {
   padding-bottom: 36px;
+  text-align: center;
 }
 
 h3,
@@ -40,15 +59,17 @@ h5 {
 }
 
 h3 {
+  display: inline-block;
   position: relative;
 
   &:after {
     content: "";
     position: absolute;
-    width: 50px;
+    width: 60px;
     height: 1px;
     bottom: 15px;
-    left: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: $primary-font-color;
   }
 }
@@ -60,7 +81,6 @@ p {
 section {
   padding-top: 36px;
   padding-bottom: 20px;
-  text-align: center;
 }
 
 button {
@@ -111,6 +131,10 @@ svg {
   background-color: $primary-sand;
 }
 
+.bgPink {
+  background-color: $primary-pink;
+}
+
 .instagram-post {
   padding-bottom: 12px;
   width: 100%;
@@ -131,6 +155,14 @@ svg {
 }
 
 @media only screen and (min-width: $desktop) {
+  main {
+    text-align: left;
+
+    &#home {
+      text-align: center;
+    }
+  }
+
   h1 {
     font-size: 36px;
   }
@@ -138,6 +170,12 @@ svg {
   h2 {
     font-size: 28px;
   }
+
+  h3:after {
+    left: 0;
+    transform: translate(0, 0);
+  }
+
   .section__wrapper {
     max-width: $max-width-desktop;
 

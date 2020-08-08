@@ -24,7 +24,7 @@
     }
 
     &__wrapper {
-      padding-top: 32px;
+      padding-top: 16px;
       padding-bottom: 16px;
       max-width: $max-width-mobile;
       margin: auto;
@@ -56,14 +56,15 @@
   .image-content {
     &__image {
       &--circle {
-        width: 330px;
-        height: 330px;
+        width: 300px;
+        height: 300px;
       }
     }
 
     &__content {
+      display: flex;
       &__wrapper {
-        max-width: 500px;
+        max-width: 550px;
       }
     }
   }
