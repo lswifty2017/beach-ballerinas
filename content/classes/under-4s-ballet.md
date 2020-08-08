@@ -1,6 +1,6 @@
 ---
-title: Girls Ballet
-subtitle: Under 4s
+title: Under 4s Ballet
+subtitle: Bondi Beach
 description: MDA's Pre-School classical ballet programme is a beautiful
   introduction to the wonderful world of ballet and dance. Each class is a
   gorgeous and fun way for little ballerinas to explore ballet with the right

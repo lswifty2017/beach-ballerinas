@@ -5,7 +5,7 @@ import "./banner.scss"
 const Banner = ({ fluid, gradient = true, title }) => {
   return (
     <div className="banner">
-      <h1 class="banner__title">{title}</h1>
+      <h1 className="banner__title">{title}</h1>
       <Img
         className={
           gradient ? "banner__image" : "banner__image banner__image--plain"

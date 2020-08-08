@@ -102,8 +102,10 @@ const IndexPage = ({ data }) => {
         imgType="square"
         bgColor="pink"
       >
-        <h2>{location_title}</h2>
-        <p>{location_description}</p>
+        <div className="text-align-center">
+          <h2>{location_title}</h2>
+          <p>{location_description}</p>
+        </div>
         <Button
           type="button"
           path="/about#studios"

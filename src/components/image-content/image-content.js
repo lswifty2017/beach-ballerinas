@@ -2,16 +2,21 @@ import React from "react"
 import Img from "gatsby-image"
 import "./image-content.scss"
 
-const ImageContent = ({ fluid, imgType = "square", bgColor, children }) => (
+const ImageContent = ({ fluid, imgType = "", bgColor, children }) => (
   <div className="image-content">
     <div
       className={
-        imgType === "square"
-          ? "image-content__image"
-          : "image-content__image image-content__image--circle"
+        imgType === "circle"
+          ? "image-content__image image-content__image--circle"
+          : "image-content__image"
       }
     >
-      <Img fluid={fluid} objectFit="contain" style={{ maxHeight: "100%" }} />
+      <Img
+        fluid={fluid}
+        objectFit="cover"
+        objectPosition="50% 50%"
+        style={{ maxHeight: "100%", maxWidth: "100%" }}
+      />
     </div>
     <div
       className={

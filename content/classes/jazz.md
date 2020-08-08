@@ -1,6 +1,6 @@
 ---
-title: Jazz
-subtitle: Under 4s
+title: Kindegarten Jazz
+subtitle: Bondi Beach
 description: >-
   For the second scenario, you want to create multiple sizes of thumbnails for
   devices with widths stretching from smartphone to wide desktop monitors.

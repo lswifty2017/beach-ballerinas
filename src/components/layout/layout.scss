@@ -17,22 +17,40 @@ body {
 }
 
 main {
-  &#home {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p {
-      text-align: center;
-    }
-  }
+  // h1,
+  // h2,
+  // h3,
+  // h4,
+  // h5,
+  // h6,
+  // p {
+  //   text-align: center;
+  // }
 }
 
 h1,
 h2 {
+  padding-bottom: 36px;
+}
+
+h3,
+h4,
+h5 {
   padding-bottom: 28px;
+}
+
+h3 {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    bottom: 15px;
+    left: 0;
+    background-color: $primary-font-color;
+  }
 }
 
 p {
@@ -42,6 +60,7 @@ p {
 section {
   padding-top: 36px;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 button {
@@ -75,8 +94,12 @@ svg {
   flex-direction: column;
 }
 
-.align-center {
+.text-align-center {
   text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
 }
 
 .bgBlue {

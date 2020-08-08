@@ -1,6 +1,6 @@
 ---
-title: Barre
-subtitle: Adult Classes
+title: Adult Barre
+subtitle: Bondi Beach
 description: >-
   For the second scenario, you want to create multiple sizes of thumbnails for
   devices with widths stretching from smartphone to wide desktop monitors.
