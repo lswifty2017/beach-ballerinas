@@ -1,18 +1,12 @@
 ---
-title: Kindegarten Jazz
+title: Kindergarten Jazz
 subtitle: Bondi Beach
 description: >-
-  A very fun, higher energy and moving class for kindygarten kids. We learn a
-  progression from the 3 & 4 year olds class but also start to technically
-  dance!
+  Beach Ballerinas jazz class dancers learn funky age appropriate routines with
+  a technical focus. Jazz is a great free movement class for dancers after a
+  ballet class and builds dancer presence, awareness and confidence. 
 
 
-  Kids learn basic Jazz dancing techniques and exercises to assist with co-ordiantion and develop motor skills
-
-
-  Passive stretching
-
-
-  choreography to fun and up beated songs suitable for this age group
+  A very fun, higher energy and moving class for kindergarten kids. Students will also learn a progression from the 3 & 4 year olds program, and also start to technically dance. Strength and stretching exercises are formally introduced in this level which assists with childrens posture and dance technique.
 image: /assets/ballet-tutu.jpg
 ---
