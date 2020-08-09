@@ -7,12 +7,12 @@ description: >-
   dance!
 
 
-  Kids learn basic Jazz dancing techniques and exercises to assost with co-ordiantion and develop motor skills
+  Kids learn basic Jazz dancing techniques and exercises to assist with co-ordiantion and develop motor skills
 
 
   Passive stretching
 
 
-  choreograpghy to fun and upbeated songs suitable for this age group
+  choreography to fun and up beated songs suitable for this age group
 image: /assets/ballet-tutu.jpg
 ---
