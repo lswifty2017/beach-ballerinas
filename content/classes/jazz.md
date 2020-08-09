@@ -2,10 +2,17 @@
 title: Kindegarten Jazz
 subtitle: Bondi Beach
 description: >-
-  For the second scenario, you want to create multiple sizes of thumbnails for
-  devices with widths stretching from smartphone to wide desktop monitors.
+  A very fun, higher energy and moving class for kindygarten kids. We learn a
+  progression from the 3 & 4 year olds class but also start to technically
+  dance!
 
 
-  To decide between the two, ask yourself: “do I know the exact size this image will be?” If yes, it’s the first type. If no and its width and/or height need to vary depending on the size of the screen, then it’s the second type.
+  Kids learn basic Jazz dancing techniques and exercises to assost with co-ordiantion and develop motor skills
+
+
+  Passive stretching
+
+
+  choreograpghy to fun and upbeated songs suitable for this age group
 image: /assets/ballet-tutu.jpg
 ---
