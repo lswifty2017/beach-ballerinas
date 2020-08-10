@@ -98,7 +98,7 @@ const IndexPage = ({ data }) => {
         </div>
       </section>
       <ImageContent fluid={location_img.childImageSharp.fluid} bgColor="pink">
-        <div className="text-align-center">
+        <div className="home-location-content">
           <h2>{location_title}</h2>
           <p>{location_description}</p>
         </div>

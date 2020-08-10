@@ -5,7 +5,8 @@ To Do:
 * Figure out css transition group
 * Add tests to header-nav
 * Add tests and linter to pipeline
-
+* Add navbar state for active page
+* Add schemas to graphql for null values
 
 Bugs:
 

@@ -1,9 +1,10 @@
 import React from "react"
+import { graphql } from "gatsby"
+import { paramCase } from "change-case"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
 import Banner from "../components/banner/banner"
 import ImageContent from "../components/image-content/image-content"
-import { paramCase } from "change-case"
 import ReactMarkdown from "react-markdown"
 import Button from "../components/button/button"
 

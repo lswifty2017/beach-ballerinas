@@ -32,7 +32,6 @@
       padding-top: 16px;
       padding-bottom: 16px;
       max-width: $max-width-mobile;
-      margin: auto;
     }
   }
 }
@@ -58,6 +57,9 @@
 
     &__content {
       width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     &--padded-bottom {
