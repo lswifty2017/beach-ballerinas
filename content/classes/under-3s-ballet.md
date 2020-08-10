@@ -20,4 +20,8 @@ description: >-
 
   * Working towards our FUN open day and Performance for parents at the end of each Term
 image: /assets/photo-4-7-20-7-39-16-pm.jpg
+class-times:
+  - day: Monday
+    start-time: 4.30pm
+    end-time: 5.30pm
 ---
