@@ -16,11 +16,42 @@ export const data = graphql`
         }
       }
     }
+    classes: allMarkdownRemark(
+      filter: { fields: { slug: { regex: "/classes/" } } }
+    ) {
+      nodes {
+        frontmatter {
+          class_times {
+            day
+            start_time
+            end_time
+          }
+        }
+      }
+    }
   }
 `
 
 const Timetable = ({ data }) => {
-  const { banner } = data
+  const { banner, classes } = data
+  const classTimes = [
+    { day: "Monday" },
+    { day: "Tuesday" },
+    { day: "Wednesday" },
+    { day: "Thursday" },
+    { day: "Friday" },
+    { day: "Saturday" },
+    { day: "Sunday" },
+  ]
+
+  classes.nodes.forEach(({ frontmatter }) => {
+    const { class_times } = frontmatter
+
+    if (class_times) {
+      class_times.forEach(classTime => {})
+    }
+  })
+
   return (
     <Layout>
       <SEO title="Timetable" />
