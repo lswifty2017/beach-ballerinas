@@ -16,6 +16,20 @@
         border-radius: 50%;
       }
     }
+
+    &--square {
+      width: 220px;
+      height: 220px;
+
+      // img {
+      //   display: block;
+      //   object-fit: cover;
+      //   width: 100%;
+      //   height: 100%;
+      //   background-position: center;
+      //   border-radius: 50%;
+      // }
+    }
   }
 
   &__content {
@@ -40,7 +54,8 @@
       max-height: 700px;
       width: 50%;
 
-      &--circle {
+      &--circle,
+      &--square {
         width: 260px;
         height: 260px;
       }
@@ -55,7 +70,8 @@
 @media only screen and (min-width: $desktop) {
   .image-content {
     &__image {
-      &--circle {
+      &--circle,
+      &--square {
         width: 300px;
         height: 300px;
       }

@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
 import Banner from "../components/banner/banner"
+import ImageContent from "../components/image-content/image-content"
 
 export const data = graphql`
   query ClassesPage {
@@ -16,25 +17,15 @@ export const data = graphql`
         }
       }
     }
-    values: markdownRemark(
-      fields: { slug: { regex: "/attitude-ettiquette/" } }
+    classes: allMarkdownRemark(
+      filter: { fields: { slug: { regex: "/classes/" } } }
     ) {
-      frontmatter {
-        title
-        description
-        values {
-          value
-        }
-      }
-    }
-    studios: markdownRemark(fields: { slug: { regex: "/studios/" } }) {
-      frontmatter {
-        title
-        studio {
+      nodes {
+        frontmatter {
           title
-          address
+          subtitle
           description
-          photo {
+          image {
             childImageSharp {
               fluid {
                 ...GatsbyImageSharpFluid
@@ -48,7 +39,7 @@ export const data = graphql`
 `
 
 const Classes = ({ data }) => {
-  const { banner } = data
+  const { banner, classes } = data
 
   return (
     <Layout>
@@ -57,8 +48,19 @@ const Classes = ({ data }) => {
         fluid={banner.frontmatter.classes_banner_img.childImageSharp.fluid}
         title="Classes"
       />
-      <section>
-        <h2>Classes</h2>
+      <section id="classes">
+        <div className="section__wrapper section__wrapper--content">
+          {classes.nodes.map(({ frontmatter }) => {
+            return (
+              <ImageContent
+                fluid={frontmatter.image.childImageSharp.fluid}
+                imgType="square"
+              >
+                <h3>{frontmatter.title}</h3>
+              </ImageContent>
+            )
+          })}
+        </div>
       </section>
     </Layout>
   )
