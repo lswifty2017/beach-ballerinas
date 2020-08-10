@@ -2,7 +2,7 @@ import React from "react"
 import Img from "gatsby-image"
 import "./image-content.scss"
 
-const ImageContent = ({ fluid, imgType = "", bgColor, children }) => {
+const ImageContent = ({ fluid, imgType = "", bgColor, children, id }) => {
   let imageClassName = "image-content__image"
 
   if (imgType === "circle") {
@@ -14,7 +14,12 @@ const ImageContent = ({ fluid, imgType = "", bgColor, children }) => {
   }
 
   return (
-    <div className="image-content">
+    <div
+      id={id}
+      className={
+        imgType ? "image-content image-content--padded-bottom" : "image-content"
+      }
+    >
       <div className={imageClassName}>
         <Img
           fluid={fluid}

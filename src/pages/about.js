@@ -106,7 +106,7 @@ const AboutPage = ({ data }) => {
         </div>
       </section>
       <section id={paramCase(studios.frontmatter.title)} className="bgPink">
-        <div className="section__wrapper section__wrapper--content">
+        <div className="section__wrapper">
           <h2>{studios.frontmatter.title}</h2>
           {studios.frontmatter.studio.map(
             ({ title, address, description, photo }) => {

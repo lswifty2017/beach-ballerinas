@@ -1,7 +1,7 @@
 .button {
   display: flex;
   justify-content: center;
-  padding-bottom: 16px;
+  padding: 0 8px 16px;
 
   a {
     text-decoration: none;
@@ -9,6 +9,7 @@
     border-radius: 20px;
     color: $primary-font-color;
     font-weight: 700;
+    font-size: 13px;
   }
 
   &--sand {
@@ -33,6 +34,14 @@
         color: $primary-blue;
         transition: 0.3s;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop) {
+  .button {
+    a {
+      font-size: 14px;
     }
   }
 }

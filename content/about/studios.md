@@ -11,7 +11,6 @@ studio:
       * New floorboards
       * Smart lights
       * Mirrors and barre
-
-        * Change room
+      * Change room
     photo: /assets/bondi-beach.jpg
 ---
