@@ -59,6 +59,7 @@ const Classes = ({ data }) => {
                 id={paramCase(frontmatter.title)}
                 fluid={frontmatter.image.childImageSharp.fluid}
                 imgType="square"
+                key={frontmatter.title}
               >
                 <h3>{frontmatter.title}</h3>
                 <h4>{frontmatter.subtitle}</h4>

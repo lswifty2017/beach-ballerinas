@@ -110,6 +110,7 @@ collections:
       - { label: Class Location, name: subtitle, widget: string }
       - { label: Class Description, name: description, widget: markdown }
       - { label: Class Image, name: image, widget: image }
+      - { label: Class Times, name: class-times, widget: list, fields: - { label: 'Day', name: day, widget: select, options: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']}}
   - label: "Banner Images"
     name: "banner-images"
     slug: "index"
