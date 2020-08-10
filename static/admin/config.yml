@@ -129,6 +129,18 @@ collections:
                   "Sunday",
                 ],
             }
+          - {
+              label: Start Time,
+              name: start-time,
+              widget: string,
+              hint: "e.g. 9.30am",
+            }
+          - {
+              label: End Time,
+              name: end-time,
+              widget: string,
+              hint: "e.g. 1.30pm",
+            }
   - label: "Banner Images"
     name: "banner-images"
     slug: "index"
