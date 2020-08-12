@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import HeaderNavigation from "./header-nav/header-nav"
-import CloseIcon from "../../assets/close-icon.svg"
-import HamburgerMenuIcon from "../../assets/hamburger-menu.svg"
-import BalletIcon from "../../assets/ballet.svg"
+import CloseIcon from "../../assets/svgs/close-icon.svg"
+import HamburgerMenuIcon from "../../assets/svgs/hamburger-menu.svg"
 import useWindowDimensions from "../../utils/window-dimensions"
+import bbLogo from "../../assets/bb-logo-black.png"
 
 import "./header.scss"
 
@@ -30,8 +30,7 @@ const Header = ({ socialLinks, navLinks }) => {
   return (
     <header className="header">
       <Link to="/" className="header__logo">
-        <BalletIcon />
-        Beach Ballerinas
+        <img src={bbLogo} alt="Beach Ballerinas Logo" />
       </Link>
       {navbarState ? (
         <HeaderNavigation navLinks={navLinks} socialLinks={socialLinks} />

@@ -104,6 +104,10 @@ svg {
 
 .flex-container {
   display: flex;
+
+  &--desktop-only {
+    display: block;
+  }
 }
 
 .text-align-center {
@@ -145,6 +149,30 @@ svg {
   overflow: hidden;
 }
 
+.timetable {
+  &__class-title {
+    padding-bottom: 8px;
+  }
+
+  &__day {
+    padding-bottom: 12px;
+  }
+}
+
+.term-dates {
+  background-color: $primary-pink;
+  padding: 16px;
+  border-radius: 16px;
+  width: 80%;
+  margin: 0 auto;
+
+  &__term-title {
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 8px;
+  }
+}
+
 @media only screen and (min-width: $tablet) {
   .section__wrapper {
     max-width: $max-width-tablet;
@@ -184,5 +212,31 @@ svg {
     &--content {
       max-width: $section-content-max-width;
     }
+  }
+
+  .flex-container {
+    &--desktop-only {
+      display: flex;
+    }
+  }
+
+  .timetable {
+    width: 75%;
+
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__day {
+      padding: 16px;
+    }
+  }
+
+  .term-dates {
+    text-align: center;
+    width: 25%;
+    max-height: 350px;
   }
 }

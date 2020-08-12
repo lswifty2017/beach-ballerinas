@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import { paramCase } from "change-case"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
@@ -37,7 +38,7 @@ export const data = graphql`
 const Timetable = ({ data }) => {
   const { banner, classes } = data
 
-  const classTabletable = [
+  const classTimetable = [
     { day: "Monday", classes: [] },
     { day: "Tuesday", classes: [] },
     { day: "Wednesday", classes: [] },
@@ -46,6 +47,13 @@ const Timetable = ({ data }) => {
     { day: "Saturday", classes: [] },
     { day: "Sunday", classes: [] },
   ]
+
+  const termDates = {
+    termOne: "Friday Jan 31 - Thur April 9",
+    termTwo: "Friday Jan 31 - Thur April 9",
+    termThree: "Friday Jan 31 - Thur April 9",
+    termFour: "Friday Jan 31 - Thur April 9",
+  }
 
   classes.nodes.forEach(({ frontmatter }) => {
     const { class_times, title } = frontmatter
@@ -60,25 +68,27 @@ const Timetable = ({ data }) => {
 
         switch (day) {
           case "Monday":
-            classTabletable[0].classes.push(classTimeData)
+            classTimetable[0].classes.push(classTimeData)
             break
           case "Tuesday":
-            classTabletable[1].classes.push(classTimeData)
+            classTimetable[1].classes.push(classTimeData)
             break
           case "Wednesday":
-            classTabletable[2].classes.push(classTimeData)
+            classTimetable[2].classes.push(classTimeData)
             break
           case "Thursday":
-            classTabletable[3].classes.push(classTimeData)
+            classTimetable[3].classes.push(classTimeData)
             break
           case "Friday":
-            classTabletable[4].classes.push(classTimeData)
+            classTimetable[4].classes.push(classTimeData)
             break
           case "Saturday":
-            classTabletable[5].classes.push(classTimeData)
+            classTimetable[5].classes.push(classTimeData)
             break
           case "Sunday":
-            classTabletable[6].classes.push(classTimeData)
+            classTimetable[6].classes.push(classTimeData)
+            break
+          default:
             break
         }
       })
@@ -92,7 +102,45 @@ const Timetable = ({ data }) => {
         fluid={banner.frontmatter.timetable_banner_img.childImageSharp.fluid}
         title="Timetable"
       />
-      <section id="timetable"></section>
+      <section id="timetable">
+        <div className="section__wrapper flex-container flex-container--desktop-only">
+          <div className="timetable">
+            <h2>Class Times</h2>
+            <div className="timetable__wrapper">
+              {classTimetable.map(({ day, classes }) => {
+                if (classes.length) {
+                  return (
+                    <div key={day} className="timetable__day">
+                      <h3>{day}</h3>
+                      {classes.map(({ title, startTime, endTime }) => {
+                        return (
+                          <div className="timetable__class-time">
+                            <h4 class="timetable__class-title">{title}</h4>
+                            <p>
+                              {startTime} - {endTime}
+                            </p>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  )
+                }
+              })}
+            </div>
+          </div>
+          <div className="term-dates">
+            <h3>Term Dates {new Date().getFullYear()}</h3>
+            <div className="term-dates__term-title">Term One</div>
+            <p>{termDates.termOne}</p>
+            <div className="term-dates__term-title">Term Two</div>
+            <p>{termDates.termTwo}</p>
+            <div className="term-dates__term-title">Term Three</div>
+            <p>{termDates.termThree}</p>
+            <div className="term-dates__term-title">Term Four</div>
+            <p>{termDates.termFour}</p>
+          </div>
+        </div>
+      </section>
     </Layout>
   )
 }

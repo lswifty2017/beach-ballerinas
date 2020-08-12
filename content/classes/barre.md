@@ -1,5 +1,5 @@
 ---
-title: Adult Beginner Ballet Class
+title: Adult Beginner Ballet
 subtitle: Bondi Beach
 description: For all the Mummies or Daddies or ladies who want to learn the
   basics of ballet in a casual manner. A fun class, learning basic technique
