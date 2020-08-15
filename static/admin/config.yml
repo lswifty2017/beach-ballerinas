@@ -106,6 +106,12 @@ collections:
       preview: false
     create: true
     fields:
+      - {
+          label: "Order",
+          name: "order",
+          widget: "select",
+          options: [1, 2, 3, 4, 5, 6, 7, 8],
+        }
       - { label: Class Name, name: title, widget: string }
       - { label: Class Location, name: subtitle, widget: string }
       - { label: Class Description, name: description, widget: markdown }
