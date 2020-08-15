@@ -33,11 +33,31 @@ export const data = graphql`
         }
       }
     }
+    termDates: markdownRemark(fields: { slug: { regex: "/term-dates/" } }) {
+      frontmatter {
+        term_one {
+          end_date
+          start_date
+        }
+        term_three {
+          end_date
+          start_date
+        }
+        term_four {
+          start_date
+          end_date
+        }
+        term_two {
+          end_date
+          start_date
+        }
+      }
+    }
   }
 `
 
 const Timetable = ({ data }) => {
-  const { banner, classes } = data
+  const { banner, classes, termDates } = data
 
   const classTimetable = [
     { day: "Monday", classes: [] },
@@ -49,12 +69,10 @@ const Timetable = ({ data }) => {
     { day: "Sunday", classes: [] },
   ]
 
-  const termDates = {
-    termOne: "Friday Jan 31 - Thur April 9",
-    termTwo: "Friday Jan 31 - Thur April 9",
-    termThree: "Friday Jan 31 - Thur April 9",
-    termFour: "Friday Jan 31 - Thur April 9",
-  }
+  const termOne = termDates.frontmatter.term_one[0]
+  const termTwo = termDates.frontmatter.term_two[0]
+  const termThree = termDates.frontmatter.term_three[0]
+  const termFour = termDates.frontmatter.term_four[0]
 
   classes.nodes.forEach(({ frontmatter }) => {
     const { class_times, title } = frontmatter
@@ -160,13 +178,21 @@ const Timetable = ({ data }) => {
           <div className="term-dates">
             <h3>Term Dates {new Date().getFullYear()}</h3>
             <div className="term-dates__term-title">Term One</div>
-            <p>{termDates.termOne}</p>
+            <p>
+              {termOne.start_date} - {termOne.end_date}
+            </p>
             <div className="term-dates__term-title">Term Two</div>
-            <p>{termDates.termTwo}</p>
+            <p>
+              {termTwo.start_date} - {termTwo.end_date}
+            </p>
             <div className="term-dates__term-title">Term Three</div>
-            <p>{termDates.termThree}</p>
+            <p>
+              {termThree.start_date} - {termThree.end_date}
+            </p>
             <div className="term-dates__term-title">Term Four</div>
-            <p>{termDates.termFour}</p>
+            <p>
+              {termFour.start_date} - {termFour.end_date}
+            </p>
           </div>
         </div>
       </section>

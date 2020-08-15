@@ -160,13 +160,8 @@ collections:
     editor:
       preview: false
     create: false
+    summary: "Enter Term Dates"
     fields:
-      - {
-          label: Configure Term Dates,
-          name: "title",
-          widget: "hidden",
-          default: "Configure Term Dates",
-        }
       - label: Term 1
         name: term-one
         widget: list

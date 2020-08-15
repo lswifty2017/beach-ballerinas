@@ -98,7 +98,7 @@ const IndexPage = ({ data }) => {
       <section id="home-intro">
         <div className="section__wrapper section__wrapper--content">
           <img id="home-logo" src={bbLogo} alt="beach ballterinas logo" />
-          <h1>{introduction_title}</h1>
+          {/* <h1>{introduction_title}</h1> */}
           <p>{introduction_description}</p>
           <div className="flex-container flex-container--justify-content-center">
             <img id="home-rad" src={radLogo} alt="RAD Ballet Certificate" />
