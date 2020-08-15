@@ -139,6 +139,8 @@ collections:
               label: Start Time,
               name: start-time,
               widget: datetime,
+              default: "",
+              format: "hh:mm A",
               dateFormat: false,
               timeFormat: "hh:mm A",
             }
@@ -146,6 +148,8 @@ collections:
               label: End Time,
               name: end-time,
               widget: datetime,
+              default: "",
+              format: "hh:mm A",
               dateFormat: false,
               timeFormat: "hh:mm A",
             }

@@ -1,4 +1,5 @@
 ---
+order: "3"
 title: Kindergarten Jazz
 subtitle: Bondi Beach
 description: >-

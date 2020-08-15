@@ -22,6 +22,7 @@ const Layout = ({ children, id }) => {
         }
       }
       classes: allMarkdownRemark(
+        sort: { fields: frontmatter___order, order: ASC }
         filter: { fields: { slug: { regex: "/classes/" } } }
       ) {
         edges {

@@ -53,6 +53,7 @@ export const query = graphql`
       }
     }
     classesData: allMarkdownRemark(
+      sort: { fields: frontmatter___order, order: ASC }
       filter: { fields: { slug: { regex: "/classes/" } } }
     ) {
       nodes {
