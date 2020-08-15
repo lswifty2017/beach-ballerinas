@@ -9,4 +9,14 @@ description: >2-
 
   * Enjoy passive stretching, learning body parts, introducing rhythm through clapping and beating to music and using musical instruments
 image: /assets/photo-4-7-20-7-39-13-pm-2-.jpg
+class-times:
+  - day: Friday
+    start-time: 09:30 AM
+    end-time: 10:30 AM
+  - day: Thursday
+    start-time: 09:30 AM
+    end-time: 10:30 AM
+  - day: Wednesday
+    start-time: 09:30 AM
+    end-time: 10:30 AM
 ---

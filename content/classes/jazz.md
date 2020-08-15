@@ -12,12 +12,12 @@ description: >-
 image: /assets/ballet-tutu.jpg
 class-times:
   - day: Monday
-    start-time: 12.30pm
-    end-time: 1.30pm
+    start-time: 12:30 PM
+    end-time: 1:30 PM
   - day: Tuesday
-    start-time: 10.30am
-    end-time: 11.30am
+    start-time: 10:30 AM
+    end-time: 11:30 AM
   - day: Friday
-    start-time: 3.30pm
-    end-time: 4.30pm
+    start-time: 03:30 PM
+    end-time: 04:30 PM
 ---

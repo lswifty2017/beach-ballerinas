@@ -70,24 +70,52 @@ const Timetable = ({ data }) => {
         switch (day) {
           case "Monday":
             classTimetable[0].classes.push(classTimeData)
+            classTimetable[0].classes.sort(
+              (a, b) =>
+                moment(a.startTime, "HH:mm a") - moment(b.startTime, "HH:mm a")
+            )
             break
           case "Tuesday":
             classTimetable[1].classes.push(classTimeData)
+            classTimetable[1].classes.sort(
+              (a, b) =>
+                moment(a.startTime, "HH:mm a") - moment(b.startTime, "HH:mm a")
+            )
             break
           case "Wednesday":
             classTimetable[2].classes.push(classTimeData)
+            classTimetable[2].classes.sort(
+              (a, b) =>
+                moment(a.startTime, "HH:mm a") - moment(b.startTime, "HH:mm a")
+            )
             break
           case "Thursday":
             classTimetable[3].classes.push(classTimeData)
+            classTimetable[3].classes.sort(
+              (a, b) =>
+                moment(a.startTime, "HH:mm a") - moment(b.startTime, "HH:mm a")
+            )
             break
           case "Friday":
             classTimetable[4].classes.push(classTimeData)
+            classTimetable[4].classes.sort(
+              (a, b) =>
+                moment(a.startTime, "HH:mm a") - moment(b.startTime, "HH:mm a")
+            )
             break
           case "Saturday":
             classTimetable[5].classes.push(classTimeData)
+            classTimetable[5].classes.sort(
+              (a, b) =>
+                moment(a.startTime, "HH:mm a") - moment(b.startTime, "HH:mm a")
+            )
             break
           case "Sunday":
             classTimetable[6].classes.push(classTimeData)
+            classTimetable[6].classes.sort(
+              (a, b) =>
+                moment(a.startTime, "HH:mm a") - moment(b.startTime, "HH:mm a")
+            )
             break
           default:
             break
@@ -115,8 +143,8 @@ const Timetable = ({ data }) => {
                       <h3>{day}</h3>
                       {classes.map(({ title, startTime, endTime }) => {
                         return (
-                          <div className="timetable__class-time">
-                            <h4 class="timetable__class-title">{title}</h4>
+                          <div key={title} className="timetable__class-time">
+                            <h4 className="timetable__class-title">{title}</h4>
                             <p>
                               {startTime} - {endTime}
                             </p>

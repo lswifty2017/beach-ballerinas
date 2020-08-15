@@ -15,6 +15,6 @@ description: >-
 image: /assets/photo-4-7-20-7-39-16-pm.jpg
 class-times:
   - day: Monday
-    start-time: 4.30pm
-    end-time: 5.30pm
+    start-time: 04:30 PM
+    end-time: 05:30 PM
 ---
