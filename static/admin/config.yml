@@ -161,7 +161,14 @@ collections:
       preview: false
     create: false
     fields:
-      - { label: Term 1, name: term-one, widget: list, fields: - { label: Start Date, name: start-date, widget: datetime, format: "DD.MM.YYYY", dateFormat: "DD.MM.YYYY", timeFormat: false, } }
+      - label: Term 1
+        name: term-one
+        widget: list
+        fields: ["1"]
+      - label: Term 2
+        name: term-one
+        widget: list
+        fields: ["1", "1"]
   - label: "Banner Images"
     name: "banner-images"
     slug: "index"
