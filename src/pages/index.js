@@ -9,6 +9,9 @@ import Button from "../components/button/button"
 import ClassCard from "../components/class-card/class-card"
 import TestimonialCarousel from "../components/testimonial-carousel/testimonial-carousel"
 import Gallery from "../components/gallery/gallery"
+import bbLogo from "../assets/bb-logo-black.png"
+import radLogo from "../assets/rad-logo-black.jpg"
+import ozTotsLogo from "../assets/oz-tots-logo.png"
 import "typeface-montserrat"
 
 export const query = graphql`
@@ -93,8 +96,13 @@ const IndexPage = ({ data }) => {
       <Banner fluid={banner.childImageSharp.fluid} gradient={false} />
       <section id="home-intro">
         <div className="section__wrapper section__wrapper--content">
+          <img id="home-logo" src={bbLogo} alt="beach ballterinas logo" />
           <h1>{introduction_title}</h1>
           <p>{introduction_description}</p>
+          <div className="flex-container flex-container--justify-content-center">
+            <img id="home-rad" src={radLogo} alt="RAD Ballet Certificate" />
+            <img id="home-oz-tots" src={ozTotsLogo} alt="Oz Tots" />
+          </div>
         </div>
       </section>
       <ImageContent fluid={location_img.childImageSharp.fluid} bgColor="pink">

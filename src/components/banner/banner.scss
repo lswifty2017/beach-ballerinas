@@ -1,7 +1,7 @@
 .banner {
   overflow: hidden;
   background: linear-gradient(180deg, #ffe9f3 0%, rgba(255, 255, 255, 0) 100%);
-  max-height: 500px;
+  max-height: 600px;
   position: relative;
 
   &__title {
@@ -14,17 +14,16 @@
   }
 
   &__image {
-    &--plain {
-      background: white;
-    }
-
     background: linear-gradient(
       180deg,
       #ffe9f3 0%,
       rgba(255, 255, 255, 0) 100%
     );
-
     z-index: -1;
+
+    &--plain {
+      background: white;
+    }
   }
 }
 

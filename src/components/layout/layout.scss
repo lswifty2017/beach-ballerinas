@@ -104,9 +104,18 @@ svg {
 
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
 
   &--desktop-only {
     display: block;
+  }
+
+  &--align-items-center {
+    align-items: center;
+  }
+
+  &--justify-content-center {
+    justify-content: center;
   }
 }
 
@@ -171,6 +180,19 @@ svg {
     font-size: 18px;
     padding-bottom: 8px;
   }
+}
+
+#home-logo {
+  width: 300px;
+  height: 200px;
+  padding-bottom: 24px;
+}
+
+#home-rad,
+#home-oz-tots {
+  width: 172px;
+  height: 100px;
+  padding: 16px;
 }
 
 @media only screen and (min-width: $tablet) {
@@ -238,5 +260,10 @@ svg {
     text-align: center;
     width: 25%;
     max-height: 350px;
+  }
+
+  #home-logo {
+    width: 450px;
+    height: 300px;
   }
 }
