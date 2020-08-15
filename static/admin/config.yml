@@ -169,16 +169,16 @@ collections:
               label: Start Date,
               name: start-date,
               widget: datetime,
-              format: "D MMM",
-              dateFormat: "D MMM",
+              format: "D MMMM",
+              dateFormat: "D MMMM",
               timeFormat: false,
             }
           - {
               label: End Date,
               name: end-date,
               widget: datetime,
-              format: "D MMM",
-              dateFormat: "D MMM",
+              format: "D MMMM",
+              dateFormat: "D MMMM",
               timeFormat: false,
             }
       - label: Term 2
@@ -189,16 +189,16 @@ collections:
               label: Start Date,
               name: start-date,
               widget: datetime,
-              format: "D MMM",
-              dateFormat: "D MMM",
+              format: "D MMMM",
+              dateFormat: "D MMMM",
               timeFormat: false,
             }
           - {
               label: End Date,
               name: end-date,
               widget: datetime,
-              format: "D MMM",
-              dateFormat: "D MMM",
+              format: "D MMMM",
+              dateFormat: "D MMMM",
               timeFormat: false,
             }
       - label: Term 3
@@ -209,16 +209,16 @@ collections:
               label: Start Date,
               name: start-date,
               widget: datetime,
-              format: "D MMM",
-              dateFormat: "D MMM",
+              format: "D MMMM",
+              dateFormat: "D MMMM",
               timeFormat: false,
             }
           - {
               label: End Date,
               name: end-date,
               widget: datetime,
-              format: "D MMM",
-              dateFormat: "D MMM",
+              format: "D MMMM",
+              dateFormat: "D MMMM",
               timeFormat: false,
             }
       - label: Term 4
@@ -229,16 +229,16 @@ collections:
               label: Start Date,
               name: start-date,
               widget: datetime,
-              format: "D MMM",
-              dateFormat: "D MMM",
+              format: "D MMMM",
+              dateFormat: "D MMMM",
               timeFormat: false,
             }
           - {
               label: End Date,
               name: end-date,
               widget: datetime,
-              format: "D MMM",
-              dateFormat: "D MMM",
+              format: "D MMMM",
+              dateFormat: "D MMMM",
               timeFormat: false,
             }
   - label: "Banner Images"
