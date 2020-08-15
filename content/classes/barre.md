@@ -8,9 +8,9 @@ description: For all the Mummies or Daddies or ladies who want to learn the
 image: /assets/tamar-jump.jpg
 class-times:
   - day: Monday
-    start-time: 2020-08-15T00:35:00.000Z
-    end-time: 2020-08-01T02:00:00.000Z
+    start-time: 10:30 AM
+    end-time: 12:10 PM
   - day: Friday
-    start-time: 2020-08-01T03:00:00.000Z
-    end-time: 2020-08-01T04:00:00.000Z
+    start-time: 01:10 PM
+    end-time: 02:10 PM
 ---
