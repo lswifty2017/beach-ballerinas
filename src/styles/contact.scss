@@ -1,0 +1,32 @@
+.contact {
+  padding: 0;
+
+  &__form {
+    background-color: $primary-blue;
+    padding: 20px;
+    color: $primary-font-color-inverse;
+  }
+
+  &__details {
+    background-color: $primary-sand;
+    padding: 20px;
+
+    p {
+      padding-bottom: 4px;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .contact {
+    display: flex;
+
+    &__form {
+      width: 70%;
+    }
+
+    &__details {
+      width: 30%;
+    }
+  }
+}

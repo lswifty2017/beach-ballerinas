@@ -29,7 +29,14 @@ const Header = ({ socialLinks, navLinks }) => {
 
   return (
     <header className="header">
-      <Link to="/" className="header__logo">
+      <Link
+        to="/"
+        className="header__logo"
+        onClick={() => {
+          document.body.classList.remove("noscroll")
+          setNavbarState(false)
+        }}
+      >
         <img src={bbLogo} alt="Beach Ballerinas Logo" />
       </Link>
       {navbarState ? (
