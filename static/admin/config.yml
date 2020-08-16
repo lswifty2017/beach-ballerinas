@@ -248,6 +248,7 @@ collections:
             }
   - label: "Banner Images"
     name: "banner-images"
+    summary: "Select Banner Images"
     slug: "index"
     folder: "content/banner-images"
     editor:
