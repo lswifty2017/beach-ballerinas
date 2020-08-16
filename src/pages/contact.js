@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
 import Banner from "../components/banner/banner"
+import Form from "../components/form/form"
 
 export const data = graphql`
   query ContactPage {
@@ -23,6 +24,10 @@ export const data = graphql`
 const ContactPage = ({ data }) => {
   const { banner } = data
 
+  const formFields = [
+    { type: "text", label: "Name", required: true, width: "half" },
+  ]
+
   return (
     <Layout>
       <SEO title="Contact" />
@@ -33,6 +38,7 @@ const ContactPage = ({ data }) => {
       <section className="contact">
         <div className="contact__form">
           <h2>Get in Touch</h2>
+          <Form formFields={formFields} />
         </div>
         <div className="contact__details">
           <h4>Bondi Studio</h4>
