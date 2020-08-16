@@ -6,13 +6,13 @@ const HeaderNav = ({ navLinks = [], socialLinks = [] }) => {
   const navigationLinksJSX = navLinks.map(
     ({ primaryTitle, primaryPath, secondaryLinks }) => {
       return (
-        <li key={primaryTitle} className="header-nav__link">
+        <li key={primaryTitle} className={"header-nav__link"}>
           <Link
             to={primaryPath}
             onClick={() => {
-              // Prevent no scroll being added to body on redirect
               document.body.classList.remove("noscroll")
             }}
+            activeClassName="active"
           >
             {primaryTitle}
           </Link>

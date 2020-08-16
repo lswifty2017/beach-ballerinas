@@ -7,7 +7,6 @@ const SignUpPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Sign Up" />
-      {/* <Banner /> */}
       <section>
         <h1>Sign Up</h1>
       </section>
