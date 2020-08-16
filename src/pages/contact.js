@@ -44,10 +44,12 @@ const ContactPage = ({ data }) => {
           <Form formFields={formFields} />
         </div>
         <div className="contact__details">
-          <h4>Bondi Studio</h4>
-          <p>126 Ramsgate Avenue</p>
-          <p>North Bondi</p>
-          <p>NSW 2026</p>
+          <div className="contact__address">
+            <h3>Bondi Studio</h3>
+            <p>126 Ramsgate Avenue</p>
+            <p>North Bondi</p>
+            <p>NSW 2026</p>
+          </div>
         </div>
       </section>
     </Layout>

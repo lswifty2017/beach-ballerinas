@@ -10,7 +10,9 @@
   &__details {
     background-color: $primary-sand;
     padding: 20px;
+  }
 
+  &__address {
     p {
       padding-bottom: 4px;
     }
@@ -27,6 +29,19 @@
 
     &__details {
       width: 30%;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .contact {
+    &__form {
+      width: 80%;
+    }
+
+    &__details {
+      padding: 28px;
+      width: 20%;
     }
   }
 }
