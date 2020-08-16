@@ -51,10 +51,12 @@ const Form = ({ formFields = [] }) => {
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
-      {formFieldsJSX.map(field => field)}
-      <input type="hidden" name="bot-field" />
-      <input type="hidden" name="form-name" value="contact" />
-      <Button text="Submit" formSubmit={true} bgColor="sand" />
+      <div className="form__wrapper">
+        {formFieldsJSX.map(field => field)}
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
+        <Button text="Submit" formSubmit={true} bgColor="sand" />
+      </div>
     </form>
   )
 }
