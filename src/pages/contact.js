@@ -25,7 +25,10 @@ const ContactPage = ({ data }) => {
   const { banner } = data
 
   const formFields = [
-    { type: "text", label: "Name", required: true, width: "half" },
+    { type: "text", label: "Name", required: true },
+    { type: "text", label: "Email", required: true },
+    { type: "text", label: "Phone Number", required: true },
+    { type: "textarea", label: "Message", required: true },
   ]
 
   return (

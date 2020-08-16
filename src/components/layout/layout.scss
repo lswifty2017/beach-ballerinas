@@ -71,12 +71,39 @@ section {
 }
 
 button {
+  cursor: pointer;
   border: none;
   outline: none;
   background-color: inherit;
   color: inherit;
   font-family: inherit;
   font-size: inherit;
+}
+
+input,
+textarea {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-family: inherit !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: white !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
 }
 
 svg {

@@ -1,2 +1,37 @@
 .form {
+  color: $primary-font-color-inverse;
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 28px;
+  }
+
+  &__label {
+    padding-bottom: 12px;
+    font-weight: 500;
+  }
+
+  &__input,
+  &__textarea {
+    border-bottom: 1px solid $primary-font-color-inverse;
+    font-size: 14px;
+    height: 20px;
+    width: 60%;
+    color: $primary-font-color-inverse;
+    text-align: center;
+    padding: 4px;
+
+    &:focus {
+      border-bottom: 1px solid $primary-font-color;
+      transition: 0.3s;
+    }
+  }
+
+  &__textarea {
+    resize: none;
+
+    height: auto;
+  }
 }

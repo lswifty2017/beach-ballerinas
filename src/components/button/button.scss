@@ -3,7 +3,8 @@
   justify-content: center;
   padding: 0 8px 16px;
 
-  a {
+  a,
+  button {
     text-decoration: none;
     padding: 10px 30px;
     border-radius: 20px;
@@ -13,7 +14,8 @@
   }
 
   &--sand {
-    a {
+    a,
+    button {
       background-color: $primary-sand;
 
       &:hover {
@@ -25,7 +27,8 @@
   }
 
   &--blue {
-    a {
+    a,
+    button {
       background-color: $primary-blue;
       color: $primary-font-color-inverse;
 
@@ -42,7 +45,8 @@
 
 @media only screen and (min-width: $desktop) {
   .button {
-    a {
+    a,
+    button {
       font-size: 14px;
     }
   }
