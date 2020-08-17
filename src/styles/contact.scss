@@ -10,11 +10,57 @@
   &__details {
     background-color: $primary-sand;
     padding: 20px;
-  }
-
-  &__address {
     p {
       padding-bottom: 4px;
+    }
+  }
+
+  &__address,
+  &__information {
+    padding-bottom: 32px;
+  }
+
+  &__information {
+    span {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    svg {
+      height: 20px;
+      width: 20px;
+      fill: $primary-font-color;
+      margin-right: 12px;
+    }
+
+    p {
+      padding-bottom: 8px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+
+    svg {
+      height: 30px;
+      width: 30px;
+      fill: $primary-font-color;
+    }
+
+    a {
+      &:hover,
+      :focus {
+        svg {
+          fill: $secondary-font-color;
+        }
+        transform: scale(1.1);
+        transition: 1s;
+      }
+
+      &:first-child {
+        padding-right: 8px;
+      }
     }
   }
 }
@@ -24,24 +70,34 @@
     display: flex;
 
     &__form {
-      width: 70%;
+      width: 65%;
     }
 
     &__details {
-      width: 30%;
+      width: 35%;
     }
   }
 }
 
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: $desktop) {
   .contact {
     &__form {
-      width: 80%;
+      width: 73%;
     }
 
     &__details {
       padding: 28px;
-      width: 20%;
+      width: 27%;
+    }
+
+    &__social {
+      justify-content: flex-start;
+    }
+
+    &__information {
+      svg {
+        float: left;
+      }
     }
   }
 }
