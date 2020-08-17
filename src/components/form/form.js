@@ -2,7 +2,7 @@ import React from "react"
 import Button from "../button/button"
 import "./form.scss"
 
-const Form = ({ formFields = [] }) => {
+const Form = ({ formFields = [], formName }) => {
   const formFieldsJSX = formFields.map(
     ({ type, label, required = false, width }) => {
       const formFieldClassName =
@@ -44,7 +44,7 @@ const Form = ({ formFields = [] }) => {
 
   return (
     <form
-      name="contact"
+      name={formName}
       className="form"
       method="post"
       action="/success/"
@@ -54,7 +54,7 @@ const Form = ({ formFields = [] }) => {
       <div className="form__wrapper">
         {formFieldsJSX.map(field => field)}
         <input type="hidden" name="bot-field" />
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="form-name" value={formName} />
         <Button text="Submit" formSubmit={true} bgColor="sand" />
       </div>
     </form>

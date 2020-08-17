@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
 import BBLogo from "../assets/bb-logo-black.png"
-import Banner from "../components/banner/banner"
 
 const SignUpPage = ({ data }) => {
   return (

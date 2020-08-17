@@ -60,8 +60,6 @@ collections:
     slug: "index"
     editor:
       preview: false
-    fields:
-      - { label: Banner Image, name: banner, widget: image }
     files:
       - label: "Staff"
         name: "staff"
@@ -261,3 +259,28 @@ collections:
       - { label: Information, name: information-banner-img, widget: image }
       - { label: Contact, name: contact-banner-img, widget: image }
       - { label: Sign Up, name: signup-banner-img, widget: image }
+  - label: "Information"
+    name: "information"
+    create: false
+    slug: "index"
+    editor:
+      preview: false
+    files:
+      - label: "Uniform"
+        name: "uniform"
+        file: "content/about/uniform.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - label: Uniform Card
+            name: uniform-card
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: markdown }
+              - { label: Photo, name: photo, widget: image }
+      - label: "Terms and Conditions"
+        name: "terms-and-conditions"
+        file: "content/about/terms-and-conditions.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Terms and Conditions, name: content, widget: markdown }

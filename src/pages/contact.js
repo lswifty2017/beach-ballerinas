@@ -53,7 +53,7 @@ const ContactPage = ({ data }) => {
       <section className="contact">
         <div className="contact__form">
           <h2>Get in Touch</h2>
-          <Form formFields={formFields} />
+          <Form formFields={formFields} formName="contact" />
         </div>
         <div className="contact__details">
           {studios.frontmatter.studio.map(({ title, address }) => {
@@ -66,7 +66,6 @@ const ContactPage = ({ data }) => {
           })}
           <div className="contact__information">
             <h3>Contact Details</h3>
-
             <p>
               <span>
                 <PhoneIcon />
