@@ -22,11 +22,19 @@ export const data = graphql`
         }
       }
     }
+    studios: markdownRemark(fields: { slug: { regex: "/studios/" } }) {
+      frontmatter {
+        studio {
+          title
+          address
+        }
+      }
+    }
   }
 `
 
 const ContactPage = ({ data }) => {
-  const { banner } = data
+  const { banner, studios } = data
 
   const formFields = [
     { type: "text", label: "Name", required: true },
@@ -48,12 +56,14 @@ const ContactPage = ({ data }) => {
           <Form formFields={formFields} />
         </div>
         <div className="contact__details">
-          <div className="contact__address">
-            <h3>Bondi Studio</h3>
-            <p>126 Ramsgate Avenue</p>
-            <p>North Bondi</p>
-            <p>NSW 2026</p>
-          </div>
+          {studios.frontmatter.studio.map(({ title, address }) => {
+            return (
+              <div className="contact__address" key={title}>
+                <h3>{title}</h3>
+                <p>{address}</p>
+              </div>
+            )
+          })}
           <div className="contact__information">
             <h3>Contact Details</h3>
 
