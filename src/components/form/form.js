@@ -47,7 +47,7 @@ const Form = ({ formFields = [] }) => {
       name="contact"
       className="form"
       method="post"
-      action="#"
+      action="/success/"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
