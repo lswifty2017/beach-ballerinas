@@ -29,15 +29,17 @@ const Layout = ({ children, id }) => {
           node {
             frontmatter {
               title
-              subtitle
-              description
-              image {
-                childImageSharp {
-                  fixed(width: 180, height: 180) {
-                    ...GatsbyImageSharpFixed
-                  }
-                }
-              }
+            }
+          }
+        }
+      }
+      information: allMarkdownRemark(
+        filter: { fields: { slug: { regex: "/information/" } } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              title
             }
           }
         }

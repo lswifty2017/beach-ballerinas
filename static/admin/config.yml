@@ -268,7 +268,7 @@ collections:
     files:
       - label: "Uniform"
         name: "uniform"
-        file: "content/about/uniform.md"
+        file: "content/information/uniform.md"
         fields:
           - { label: Title, name: title, widget: string }
           - label: Uniform Card
@@ -280,7 +280,7 @@ collections:
               - { label: Photo, name: photo, widget: image }
       - label: "Terms and Conditions"
         name: "terms-and-conditions"
-        file: "content/about/terms-and-conditions.md"
+        file: "content/information/terms-and-conditions.md"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Terms and Conditions, name: content, widget: markdown }
