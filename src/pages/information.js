@@ -4,6 +4,7 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
 import Banner from "../components/banner/banner"
 import ReactMarkdown from "react-markdown"
+import { paramCase } from "change-case"
 
 export const data = graphql`
   query InformationPage {
@@ -42,7 +43,10 @@ const InformationPage = ({ data }) => {
       <section id="uniform">
         <h2>Uniform</h2>
       </section>
-      <section id="terms-and-conditions" className="bgBlue">
+      <section
+        id={paramCase(termsAndConditions.frontmatter.title)}
+        className="bgBlue"
+      >
         <div className="section__wrapper section__wrapper--content">
           <h2>{termsAndConditions.frontmatter.title}</h2>
           <ReactMarkdown source={termsAndConditions.frontmatter.content} />
