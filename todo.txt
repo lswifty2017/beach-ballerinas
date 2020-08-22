@@ -7,6 +7,10 @@ To Do:
 * Add tests and linter to pipeline
 * Add navbar state for active page
 * Add schemas to graphql for null values
+* Add CMS option to add pages under About and Information and populate navbar
+* Sign Up form page
+* Ballet shooes bullet points for ettiquette
+* Header message option in CMS
 
 Bugs:
 
