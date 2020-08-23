@@ -1,0 +1,22 @@
+.notification-bar {
+  display: none;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 2;
+  background-color: $primary-blue;
+  justify-content: center;
+  align-items: center;
+  color: $primary-font-color-inverse;
+
+  &__close {
+    position: absolute;
+    right: 32px;
+  }
+
+  &.active {
+    display: flex;
+  }
+}

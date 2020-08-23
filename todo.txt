@@ -8,77 +8,9 @@ To Do:
 * Add navbar state for active page
 * Add schemas to graphql for null values
 * Add CMS option to add pages under About and Information and populate navbar
-* Sign Up form page
 * Ballet shooes bullet points for ettiquette
 * Header message option in CMS
 
 Bugs:
 
-*
-
-      - {
-        label: Term 2,
-        name: term-two,
-        widget: list,
-        fields:
-          - {
-              label: Start Date,
-              name: start-date,
-              widget: datetime,
-              format: "DD.MM.YYYY",
-              dateFormat: "DD.MM.YYYY",
-              timeFormat: false,
-            }
-          - {
-              label: End Date,
-              name: end-date,
-              widget: datetime,
-              format: "DD.MM.YYYY",
-              dateFormat: "DD.MM.YYYY",
-              timeFormat: false,
-            }
-        }
-      - {
-        label: Term 3,
-        name: term-three,
-        widget: list,
-        fields:
-          - {
-              label: Start Date,
-              name: start-date,
-              widget: datetime,
-              format: "DD.MM.YYYY",
-              dateFormat: "DD.MM.YYYY",
-              timeFormat: false,
-            }
-          - {
-              label: End Date,
-              name: end-date,
-              widget: datetime,
-              format: "DD.MM.YYYY",
-              dateFormat: "DD.MM.YYYY",
-              timeFormat: false,
-            }
-        }
-      - {
-        label: Term 4,
-        name: term-four,
-        widget: list,
-        fields:
-          - {
-            label: Start Date,
-            name: start-date,
-            widget: datetime,
-            format: "DD.MM.YYYY",
-            dateFormat: "DD.MM.YYYY",
-            timeFormat: false,
-          }
-          - {
-            label: End Date,
-            name: end-date,
-            widget: datetime,
-            format: "DD.MM.YYYY",
-            dateFormat: "DD.MM.YYYY",
-            timeFormat: false,
-          }
-        }
+* Mobile logo disappears after navigation on mobile

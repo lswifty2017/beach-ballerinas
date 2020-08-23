@@ -1,10 +1,11 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import { noCase, paramCase } from "change-case"
 import Header from "../header/header"
 import Footer from "../footer/footer"
-import { useStaticQuery, graphql } from "gatsby"
 import FacebookIcon from "../../assets/svgs/facebook.svg"
 import InstagramIcon from "../../assets/svgs/instagram.svg"
-import { noCase, paramCase } from "change-case"
+import NotificationBar from "../notification-bar/notification-bar"
 import "./layout.scss"
 
 const Layout = ({ children, id }) => {
@@ -46,6 +47,8 @@ const Layout = ({ children, id }) => {
       }
     }
   `)
+
+  const notificationBarContent = "See our latest news regarding Covid-19"
 
   const navLinks = [
     { primaryTitle: "about", primaryPath: "/about", secondaryLinks: [] },
@@ -93,6 +96,7 @@ const Layout = ({ children, id }) => {
   return (
     <>
       <Header socialLinks={socialLinks} navLinks={navLinks} />
+      <NotificationBar content={notificationBarContent} />
       <main id={id}>{children}</main>
       <Footer socialLinks={socialLinks} footerLinks={navLinks} />
     </>

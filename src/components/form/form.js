@@ -43,8 +43,9 @@ const Form = ({
             name={label}
             id={label}
             required={required}
+            defaultValue={""}
           >
-            <option value="" selected disabled hidden>
+            <option value="" disabled hidden>
               Select..
             </option>
             {options.map(option => {
@@ -93,16 +94,15 @@ const Form = ({
               required={true}
             />
             <label htmlFor="termsAndConditions">
-              By checking this box I am thereby agreeing to the terms and
-              conditions for the trial classes.
-              {<span class="form__required">*</span>}
+              By checking this box I agree to the terms and conditions for the
+              trial classes.
+              {<span className="form__required">*</span>}
             </label>
           </React.Fragment>
         ) : null}
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value={formName} />
       </div>
-
       <Button
         text="Submit"
         formSubmit={true}

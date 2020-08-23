@@ -5,7 +5,6 @@ import CloseIcon from "../../assets/svgs/close-icon.svg"
 import HamburgerMenuIcon from "../../assets/svgs/hamburger-menu.svg"
 import useWindowDimensions from "../../utils/window-dimensions"
 import bbLogo from "../../assets/bb-logo-black.png"
-
 import "./header.scss"
 
 const Header = ({ socialLinks, navLinks }) => {
@@ -28,23 +27,25 @@ const Header = ({ socialLinks, navLinks }) => {
   }
 
   return (
-    <header className="header">
-      <Link to="/" className="header__logo">
-        <img src={bbLogo} alt="Beach Ballerinas Logo" />
-      </Link>
-      {navbarState ? (
-        <HeaderNavigation navLinks={navLinks} socialLinks={socialLinks} />
-      ) : null}
-      <button className="header__mobile-toggle" onClick={() => toggleNav()}>
-        {width <= tabletWidth ? (
-          navbarState ? (
-            <CloseIcon />
-          ) : (
-            <HamburgerMenuIcon />
-          )
+    <React.Fragment>
+      <header className="header">
+        <Link to="/" className="header__logo">
+          <img src={bbLogo} alt="Beach Ballerinas Logo" />
+        </Link>
+        {navbarState ? (
+          <HeaderNavigation navLinks={navLinks} socialLinks={socialLinks} />
         ) : null}
-      </button>
-    </header>
+        <button className="header__mobile-toggle" onClick={() => toggleNav()}>
+          {width <= tabletWidth ? (
+            navbarState ? (
+              <CloseIcon />
+            ) : (
+              <HamburgerMenuIcon />
+            )
+          ) : null}
+        </button>
+      </header>
+    </React.Fragment>
   )
 }
 
