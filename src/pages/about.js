@@ -106,7 +106,7 @@ const AboutPage = ({ data }) => {
         </div>
       </section>
       <section id={paramCase(studios.frontmatter.title)} className="bgPink">
-        <div className="section__wrapper">
+        <div className="section__wrapper section__wrapper--content">
           <h2>{studios.frontmatter.title}</h2>
           {studios.frontmatter.studio.map(
             ({ title, address, description, photo }) => {
@@ -116,9 +116,11 @@ const AboutPage = ({ data }) => {
                   fluid={photo.childImageSharp.fluid}
                   imgType="square"
                 >
-                  <h3>{title}</h3>
-                  <h4>{address}</h4>
-                  <ReactMarkdown source={description} />
+                  <div className="content">
+                    <h3>{title}</h3>
+                    <h4>{address}</h4>
+                    <ReactMarkdown source={description} />
+                  </div>
                 </ImageContent>
               )
             }

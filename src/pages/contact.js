@@ -53,7 +53,11 @@ const ContactPage = ({ data }) => {
       <section className="contact">
         <div className="contact__form">
           <h2>Get in Touch</h2>
-          <Form formFields={formFields} formName="contact" />
+          <Form
+            formFields={formFields}
+            formName="contact"
+            textColor="inverse"
+          />
         </div>
         <div className="contact__details">
           {studios.frontmatter.studio.map(({ title, address }) => {
