@@ -13,4 +13,10 @@ uniform-card:
       * Ballet flats
       * Hair tied up
     photo: /assets/ballerina-kids.jpg
+  - title: Girls Toddlers
+    description: |-
+      * White/pink tutu
+      * Ballet flats
+      * Hair tied up
+    photo: /assets/ballerina-kids.jpg
 ---

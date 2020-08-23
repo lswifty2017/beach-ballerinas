@@ -1,0 +1,30 @@
+.uniform-card {
+  background-color: $primary-sand;
+  text-align: center;
+  margin-bottom: 20px;
+
+  &__wrapper {
+    padding: 20px;
+  }
+
+  &__image {
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: $desktop) {
+  .uniform-card {
+    margin: 12px;
+
+    h3:after {
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    ul,
+    ol {
+      list-style-position: inside;
+      margin-left: 0;
+    }
+  }
+}

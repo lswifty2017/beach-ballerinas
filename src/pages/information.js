@@ -5,6 +5,8 @@ import SEO from "../components/seo/seo"
 import Banner from "../components/banner/banner"
 import ReactMarkdown from "react-markdown"
 import { paramCase } from "change-case"
+import Gallery from "../components/gallery/gallery"
+import UniformCard from "../components/uniform-card/uniform-card"
 
 export const data = graphql`
   query InformationPage {
@@ -27,11 +29,27 @@ export const data = graphql`
         content
       }
     }
+    uniform: markdownRemark(fields: { slug: { regex: "/uniform/" } }) {
+      frontmatter {
+        title
+        uniform_card {
+          description
+          title
+          photo {
+            childImageSharp {
+              fluid(quality: 90, maxHeight: 500) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
   }
 `
 
 const InformationPage = ({ data }) => {
-  const { banner, termsAndConditions } = data
+  const { banner, termsAndConditions, uniform } = data
 
   return (
     <Layout>
@@ -41,7 +59,23 @@ const InformationPage = ({ data }) => {
         title="Information"
       />
       <section id="uniform">
-        <h2>Uniform</h2>
+        <div className="section__wrapper">
+          <h2>{uniform.frontmatter.title}</h2>
+          <Gallery>
+            {uniform.frontmatter.uniform_card.map(
+              ({ title, description, photo }) => {
+                return (
+                  <UniformCard
+                    key={title}
+                    title={title}
+                    description={description}
+                    imgFluid={photo.childImageSharp.fluid}
+                  />
+                )
+              }
+            )}
+          </Gallery>
+        </div>
       </section>
       <section
         id={paramCase(termsAndConditions.frontmatter.title)}
