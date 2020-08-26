@@ -96,7 +96,9 @@ const Layout = ({ children, id }) => {
   return (
     <>
       <Header socialLinks={socialLinks} navLinks={navLinks} />
-      <NotificationBar content={notificationBarContent} />
+      {id === "home" ? (
+        <NotificationBar content={notificationBarContent} />
+      ) : null}
       <main id={id}>{children}</main>
       <Footer socialLinks={socialLinks} footerLinks={navLinks} />
     </>

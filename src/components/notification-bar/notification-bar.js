@@ -14,7 +14,12 @@ const NotificationBar = ({ content }) => {
   return (
     <div className={`notification-bar ${notificationBarState}`}>
       {content}
-      <button className="notification-bar__close">
+      <button
+        className="notification-bar__close"
+        onClick={() => {
+          setNotificationBarState("")
+        }}
+      >
         <ExitIcon />
       </button>
     </div>
