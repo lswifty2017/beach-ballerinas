@@ -11,6 +11,10 @@
   align-items: center;
   color: $primary-font-color-inverse;
 
+  p {
+    padding-bottom: 0;
+  }
+
   &__close {
     svg {
       height: 20px;
@@ -18,6 +22,7 @@
 
       &:hover {
         fill: $primary-font-color;
+        transition: 0.3s;
       }
     }
 

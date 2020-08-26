@@ -8,7 +8,7 @@ import InstagramIcon from "../../assets/svgs/instagram.svg"
 import NotificationBar from "../notification-bar/notification-bar"
 import "./layout.scss"
 
-const Layout = ({ children, id }) => {
+const Layout = ({ children, id, notificationBarConfig }) => {
   const pageData = useStaticQuery(graphql`
     query NavLinksQuery {
       about: allMarkdownRemark(
@@ -47,8 +47,6 @@ const Layout = ({ children, id }) => {
       }
     }
   `)
-
-  const notificationBarContent = "See our latest news regarding Covid-19"
 
   const navLinks = [
     { primaryTitle: "about", primaryPath: "/about", secondaryLinks: [] },
@@ -96,8 +94,8 @@ const Layout = ({ children, id }) => {
   return (
     <>
       <Header socialLinks={socialLinks} navLinks={navLinks} />
-      {id === "home" ? (
-        <NotificationBar content={notificationBarContent} />
+      {notificationBarConfig.show ? (
+        <NotificationBar content={notificationBarConfig.content} />
       ) : null}
       <main id={id}>{children}</main>
       <Footer socialLinks={socialLinks} footerLinks={navLinks} />

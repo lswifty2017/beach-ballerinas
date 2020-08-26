@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import ReactMarkdown from "react-markdown"
 import "./notification-bar.scss"
 import ExitIcon from "../../assets/svgs/circle-exit.svg"
 
@@ -13,7 +14,7 @@ const NotificationBar = ({ content }) => {
 
   return (
     <div className={`notification-bar ${notificationBarState}`}>
-      {content}
+      <ReactMarkdown source={content} />
       <button
         className="notification-bar__close"
         onClick={() => {

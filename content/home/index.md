@@ -1,5 +1,7 @@
 ---
 banner: /assets/photo-4-7-20-7-39-12-pm-8-.jpg
+show-notification-bar: false
+notification-content: See our latest response to Covid-19
 introduction-title: Welcome to Beach Ballerinas
 introduction-description: We offer ballet classes at Bondi Beach. Our quality
   ballet program allows for young children to reach their potential. We have

@@ -27,6 +27,9 @@ export const query = graphql`
                 }
               }
             }
+            show_notification_bar
+            notification_content
+            introduction_title
             location_title
             location_description
             location_img {
@@ -76,6 +79,8 @@ export const query = graphql`
 
 const IndexPage = ({ data }) => {
   const {
+    show_notification_bar,
+    notification_content,
     introduction_title,
     introduction_description,
     banner,
@@ -83,7 +88,6 @@ const IndexPage = ({ data }) => {
     location_title,
     location_description,
     booking_title,
-    values = [],
     testimonials = [],
     instagram_name,
     instagram_links = [],
@@ -92,7 +96,13 @@ const IndexPage = ({ data }) => {
   const classes = data.classesData ? data.classesData.nodes : []
 
   return (
-    <Layout id="home">
+    <Layout
+      id="home"
+      notificationBarConfig={{
+        show: show_notification_bar,
+        content: notification_content,
+      }}
+    >
       <SEO title="Home" />
       <Banner fluid={banner.childImageSharp.fluid} gradient={false} />
       <section id="home-intro">
