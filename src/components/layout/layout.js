@@ -8,7 +8,11 @@ import InstagramIcon from "../../assets/svgs/instagram.svg"
 import NotificationBar from "../notification-bar/notification-bar"
 import "./layout.scss"
 
-const Layout = ({ children, id, notificationBarConfig }) => {
+const Layout = ({
+  children,
+  id,
+  notificationBarConfig = { show: false, content: "" },
+}) => {
   const pageData = useStaticQuery(graphql`
     query NavLinksQuery {
       about: allMarkdownRemark(
