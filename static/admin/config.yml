@@ -15,13 +15,13 @@ collections:
       - { label: Banner Image, name: banner, widget: image }
       - {
           label: "Show Notification Bar",
-          name: "show_notification_bar",
+          name: "show-notification-bar",
           widget: "boolean",
           default: false,
         }
       - {
           label: "Notification Bar Content",
-          name: "notification_content",
+          name: "notification-content",
           widget: "markdown",
           required: false,
         }
