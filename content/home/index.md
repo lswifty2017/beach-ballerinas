@@ -15,19 +15,20 @@ location-description: Just a few minutes walk from Bondi Beach is our amazing
 booking-title: Classes Starting Term 3!
 instagram-name: beach_ballerinas
 testimonials:
-  - testimonial-text: This is the best school in the eastern suburbs. We drop the
+  - testimonial-text:
+      This is the best school in the eastern suburbs. We drop the
       kids off and get to hit the tubes at South Bondi when the surf gets
       radical!
     testimonial-name: Mert
     testimonial-occupation: Bondi Legend
-  - testimonial-text: I love that the studio is in Bondi. I get my coffee and salty
+  - testimonial-text:
+      I love that the studio is in Bondi. I get my coffee and salty
       bread and I'm a happy dude.
     testimonial-name: Jim
     testimonial-occupation: Coffee Snob
   - testimonial-text: This is the best school in the eastern suburbs. I love salty bread too.
     testimonial-name: James
     testimonial-occupation: Brah Boi
-notification-content: See our latest response to Covid-19
 instagram-links:
   - embed-link: '<blockquote class="instagram-media"
       data-instgrm-permalink="https://www.instagram.com/p/CCigpyHDSu3/?utm_source=ig_embed&amp;utm_campaign=loading"
