@@ -1,9 +1,9 @@
 ---
 location-title: Located at the Beautiful Bondi Beach
-show-notification-bar: false
+show-notification-bar: true
 banner: /assets/photo-4-7-20-7-39-12-pm-8-.jpg
-notification-content: Sign up for a [free trial
-  week](https://beach-ballerinas-dev.netlify.app/sign-up)
+notification-content: Sign up for a [Free Trial
+  Week!](https://beach-ballerinas-dev.netlify.app/sign-up)
 introduction-title: Welcome to Beach Ballerinas
 introduction-description: We offer ballet classes at Bondi Beach. Our quality
   ballet program allows for young children to reach their potential. We have
