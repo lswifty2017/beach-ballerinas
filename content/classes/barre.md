@@ -1,5 +1,5 @@
 ---
-order: "4"
+order: "5"
 title: Adult Beginner Ballet
 subtitle: Bondi Beach
 description: For all the Mummies or Daddies or ladies who want to learn the
