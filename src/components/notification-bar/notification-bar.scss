@@ -15,6 +15,15 @@
     padding-bottom: 0;
   }
 
+  a {
+    color: inherit;
+
+    &:hover {
+      color: $primary-font-color;
+      transition: 0.3s;
+    }
+  }
+
   &__close {
     svg {
       height: 20px;
