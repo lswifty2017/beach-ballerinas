@@ -3,9 +3,8 @@ title: Attitude & Ettiquette
 description: At Beach Ballerinas we create a loving and nurturing atmosphere
   when sharing the love of dance to each child. This is present from the moment
   little dancers take a step into the studio, making sure all our classes and
-  fun and enjoyable for each individual. We want  everyone to have the
-  opportunity to dance and these etiquette can all help make the dance
-  atmosphere a safe and fun learning environment for everyone…
+  fun and enjoyable for each individual. These etiquettes can all help make the
+  dance studio a fun and safe learning environment for everyone…
 values:
   - value: Leave dangling or sharp jewellery at home or in your bag
   - value: Leave food and drinks (unless closed water bottle) out of the dance studio
@@ -14,7 +13,7 @@ values:
   - value: Always be well groomed; neat and tidy hair off the face and clean uniform
   - value: Parents please take children to the bathroom before class
   - value: Never wear dance shoes outside or wear street shoes inside the studio
-  - value: Be rBe respectful to others, allow them the same opportunity you have to
+  - value: Be respectful to others, allow them the same opportunity you have to
       learn and remember “be kind to others”
   - value: Respect the studio space by keeping it clean and neat. Place your things
       in a neat and appropriate space provided
