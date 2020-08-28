@@ -1,7 +1,6 @@
 ---
-location-title: Located at the Beautiful Bondi Beach
+banner: /assets/tamar-jump.jpg
 show-notification-bar: true
-banner: /assets/photo-4-7-20-7-39-12-pm-8-.jpg
 notification-content: Sign up for a [Free Trial
   Week!](https://beach-ballerinas-dev.netlify.app/sign-up)
 introduction-title: Welcome to Beach Ballerinas
@@ -10,25 +9,11 @@ introduction-description: We offer ballet classes at Bondi Beach. Our quality
   qualified Royal Academy of Dance teachers to provide ballet and jazz classes
   at the highest standard.
 location-img: /assets/bondi-beach.jpg
+location-title: Located at the Beautiful Bondi Beach
 location-description: Just a few minutes walk from Bondi Beach is our amazing
   dance studio. You can talk more about the area or about the studio.
 booking-title: Classes Starting Term 3!
 instagram-name: beach_ballerinas
-testimonials:
-  - testimonial-text:
-      This is the best school in the eastern suburbs. We drop the
-      kids off and get to hit the tubes at South Bondi when the surf gets
-      radical!
-    testimonial-name: Mert
-    testimonial-occupation: Bondi Legend
-  - testimonial-text:
-      I love that the studio is in Bondi. I get my coffee and salty
-      bread and I'm a happy dude.
-    testimonial-name: Jim
-    testimonial-occupation: Coffee Snob
-  - testimonial-text: This is the best school in the eastern suburbs. I love salty bread too.
-    testimonial-name: James
-    testimonial-occupation: Brah Boi
 instagram-links:
   - embed-link: '<blockquote class="instagram-media"
       data-instgrm-permalink="https://www.instagram.com/p/CCigpyHDSu3/?utm_source=ig_embed&amp;utm_campaign=loading"
@@ -351,4 +336,17 @@ instagram-links:
       datetime="2020-07-28T10:13:37+00:00">Jul 28, 2020 at 3:13am
       PDT</time></p></div></blockquote> <script async
       src="//www.instagram.com/embed.js"></script>'
+testimonials:
+  - testimonial-text: This is the best school in the eastern suburbs. We drop the
+      kids off and get to hit the tubes at South Bondi when the surf gets
+      radical!
+    testimonial-name: Mert
+    testimonial-occupation: Bondi Legend
+  - testimonial-text: I love that the studio is in Bondi. I get my coffee and salty
+      bread and I'm a happy dude.
+    testimonial-name: Jim
+    testimonial-occupation: Coffee Snob
+  - testimonial-text: This is the best school in the eastern suburbs. I love salty bread too.
+    testimonial-name: James
+    testimonial-occupation: Brah Boi
 ---
