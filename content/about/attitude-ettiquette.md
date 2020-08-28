@@ -1,9 +1,21 @@
 ---
 title: Attitude & Ettiquette
-description: |-
-  At Baby Ballet Academy Tracey creates mystique and atmosphere when sharing her love of ballet which is nurtured from the moment the ballerinas step into her studio using exquisite hand made props combined with classical and show stopping jazz music. The school also includes a truly memorable and treasured end of year dance recital.
+description: At Beach Ballerinas we create a loving and nurturing atmosphere
+  when sharing the love of dance to each child. This is present from the moment
+  little dancers take a step into the studio, making sure all our classes and
+  fun and enjoyable for each individual. We want  everyone to have the
+  opportunity to dance and these etiquette can all help make the dance
+  atmosphere a safe and fun learning environment for everyone…
 values:
-  - value: Giving it a go
-  - value: Being on time
-  - value: Well dressed
+  - value: Leave dangling or sharp jewellery at home or in your bag
+  - value: Leave food and drinks (unless closed water bottle) out of the dance studio
+  - value: Please use the dressing room provided to get changed into dance clothes
+  - value: Try be on time and ready to go at least 5 mins early for each lesson.
+  - value: Always be well groomed; neat and tidy hair off the face and clean uniform
+  - value: Parents please take children to the bathroom before class
+  - value: Never wear dance shoes outside or wear street shoes inside the studio
+  - value: Be rBe respectful to others, allow them the same opportunity you have to
+      learn and remember “be kind to others”
+  - value: Respect the studio space by keeping it clean and neat. Place your things
+      in a neat and appropriate space provided
 ---
