@@ -4,6 +4,7 @@ import "./image-content.scss"
 
 const ImageContent = ({ fluid, imgType = "", bgColor, children, id }) => {
   let imageClassName = "image-content__image"
+  let containerClassName = "image-content"
 
   if (imgType === "circle") {
     imageClassName += " image-content__image--circle"
@@ -13,13 +14,16 @@ const ImageContent = ({ fluid, imgType = "", bgColor, children, id }) => {
     imageClassName += " image-content__image--square"
   }
 
+  if (imgType) {
+    containerClassName += " image-content--padded-bottom"
+  }
+
+  if (bgColor === "pink") {
+    containerClassName += " image-content--pink"
+  }
+
   return (
-    <div
-      id={id}
-      className={
-        imgType ? "image-content image-content--padded-bottom" : "image-content"
-      }
-    >
+    <div id={id} className={containerClassName}>
       <div className={imageClassName}>
         <Img
           fluid={fluid}
@@ -28,13 +32,7 @@ const ImageContent = ({ fluid, imgType = "", bgColor, children, id }) => {
           style={{ maxHeight: "100%", maxWidth: "100%" }}
         />
       </div>
-      <div
-        className={
-          bgColor
-            ? `image-content__content image-content__content--${bgColor}`
-            : "image-content__content"
-        }
-      >
+      <div className="image-content__content">
         <div className="image-content__content__wrapper">{children}</div>
       </div>
     </div>

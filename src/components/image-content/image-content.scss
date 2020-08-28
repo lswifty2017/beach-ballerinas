@@ -24,10 +24,6 @@
   }
 
   &__content {
-    &--pink {
-      background-color: $primary-pink;
-    }
-
     &__wrapper {
       padding-top: 16px;
       padding-bottom: 16px;
@@ -35,11 +31,16 @@
       margin: 0 auto;
     }
   }
+
+  &--pink {
+    background-color: $primary-pink;
+  }
 }
 
 @media only screen and (min-width: $tablet) {
   .image-content {
     display: flex;
+    align-items: center;
 
     &__image {
       max-height: 700px;
@@ -59,8 +60,6 @@
     &__content {
       width: 50%;
       display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     &--padded-bottom {
