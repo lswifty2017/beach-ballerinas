@@ -2,7 +2,7 @@
 title: Our Studios
 studio:
   - title: Bondi Beach
-    address: 126 Ramsgate Avenue North Bondi, 2026
+    address: G13/ 180-186 Campbell Parade, Bondi Beach, 2026
     description: |-
       A beautiful studio located right in the heart of Bondi.
 
