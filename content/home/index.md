@@ -1,5 +1,5 @@
 ---
-banner: /assets/tamar-jump.jpg
+banner: /assets/ken08904.jpeg
 show-notification-bar: true
 notification-content: Sign up for a [FREE Trial
   Week!](https://beach-ballerinas-dev.netlify.app/sign-up)
