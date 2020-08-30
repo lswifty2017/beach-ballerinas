@@ -12,6 +12,8 @@ collections:
     name: "home"
     folder: "content/home"
     create: false
+    editor:
+      preview: false
     slug: "index"
     fields:
       - { label: Banner Image, name: banner, widget: image }
@@ -105,6 +107,17 @@ collections:
               - { label: Address, name: address, widget: string }
               - { label: Description, name: description, widget: markdown }
               - { label: Photo, name: photo, widget: image }
+      - label: "Create New Section"
+        name: "new-sections"
+        file: "content/about/new-sections.md"
+        fields:
+          - label: New Section
+            name: section
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Background Colour, name: bg-color, widget: string }
+              - { label: Content, name: content, widget: markdown }
   - label: "Classes"
     name: "classes"
     folder: "content/classes"
