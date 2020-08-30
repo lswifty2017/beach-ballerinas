@@ -8,8 +8,8 @@ To Do:
 * Add navbar state for active page
 * Add schemas to graphql for null values
 * Add CMS option to add pages under About and Information and populate navbar
-* Ballet shooes bullet points for ettiquette
-* Header message option in CMS
+* Ballet shoes bullet points for ettiquette
+* Compress images
 
 Bugs:
 

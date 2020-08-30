@@ -60,6 +60,12 @@ main {
   }
 }
 
+#home {
+  p {
+    line-height: 28px;
+  }
+}
+
 h1,
 h2 {
   padding-bottom: 36px;
@@ -299,6 +305,11 @@ svg {
 
     &#home {
       text-align: center;
+
+      p {
+        font-size: 18px;
+        line-height: 28px;
+      }
     }
   }
 
