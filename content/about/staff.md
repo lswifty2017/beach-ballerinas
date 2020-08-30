@@ -3,7 +3,7 @@ title: Meet the Teachers
 team:
   - name: Tamar Arzoumalian
     description: >-
-      “Miss Tamar” is a qualified Royal Academy of Dance Ballet Teacher. 
+      Miss Tamar is a qualified Royal Academy of Dance Ballet Teacher. 
 
       She trained at The Conlan College where she was a full time student.  She has been teaching 3 to 18 year olds for over 10 years and is in her 14th year teaching in the Eastern Suburbs.  
 
