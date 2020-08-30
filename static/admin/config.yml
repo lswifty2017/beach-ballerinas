@@ -116,7 +116,12 @@ collections:
             widget: list
             fields:
               - { label: Title, name: title, widget: string }
-              - { label: Background Colour, name: bg-color, widget: string }
+              - {
+                  label: Background Colour,
+                  name: bg-color,
+                  widget: select,
+                  options: [white, pink, blue, sand],
+                }
               - { label: Content, name: content, widget: markdown }
   - label: "Classes"
     name: "classes"
