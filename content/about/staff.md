@@ -13,5 +13,5 @@ team:
        Tamar is very passionate and truely loves teaching children the art of Dance and wants to give the children a fun and wonderful experience.
 
        Her expertise and especially her love, encouragement and empathy for our valuable children. She just wants to give children the opportunity to Dance and have FUN !!!
-    photo: /assets/photo-4-7-20-7-39-20-pm-3-.jpg
+    photo: /assets/photo-4-7-20-7-39-18-pm-4-.jpg
 ---
