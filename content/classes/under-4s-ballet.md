@@ -13,7 +13,7 @@ description: >-2
 
   * A little more structured and challenging than the 3 year olds which helps in their preparation for their future school days
 
-  * Working towards our FUN open day for parents at the end of Term
+  * Working towards our FUN open day for parents at the end of each Term
 image: /assets/photo-4-7-20-7-39-13-pm-2-.jpg
 class-times:
   - day: Friday
