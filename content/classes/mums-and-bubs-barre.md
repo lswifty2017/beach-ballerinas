@@ -1,12 +1,11 @@
 ---
 order: "6"
-title: Mums/Dads and Bubs
+title: Mums/ Dads and Bubs
 subtitle: Bondi Beach
 description: >-
   Mums and Dads want to dance too! Perfect class if you have a little one not
-  quite ready to dance yet solo. our dance school’s mums & bubs ballet class, is
-  a magical time of bonding that you can share with your little one creating
-  everlasting memories.
+  quite ready to dance yet solo. This  class, is a magical time of bonding that
+  you can share with your little one creating everlasting memories.
 
 
   You and your little one can learn dancing together, trying out new moves and testing your performance skills. Listen to the music and let little one express what they feel.
