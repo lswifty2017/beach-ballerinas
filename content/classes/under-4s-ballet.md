@@ -2,12 +2,18 @@
 order: "2"
 title: 4 Year Olds
 subtitle: Bondi Beach
-description: >2-
+description: >-2
    Each class is a gorgeous and fun way for little dancers to explore dance with the right balance between structure and creativity. Dancers will learn proper ballet steps and positions developing a quality foundation to move up to the Pre-Primary Royal Academy of Dance level.
 
-  * Introducing creative and educational group tasks for literacy and numeracy
+  * Fun activities include basic dance steps
 
-  * Enjoy passive stretching, learning body parts, introducing rhythm through clapping and beating to music and using musical instruments
+  * Patterning, directional and spatial awareness
+
+  *  Having fun with friends through partner and group exercises
+
+  * A little more structured and challenging than the 3 year olds which helps in their preparation for their future school days
+
+  * Working towards our FUN open day for parents at the end of Term
 image: /assets/photo-4-7-20-7-39-13-pm-2-.jpg
 class-times:
   - day: Friday
