@@ -16,7 +16,9 @@ introduction-description: We offer ballet and dance classes at the heart of
 location-img: /assets/bondi-beach.jpg
 location-title: Located at the Beautiful Bondi Beach
 location-description: Just a few minutes walk from Bondi Beach is our amazing
-  dance studio. You can talk more about the area or about the studio.
+  dance studio. New beautiful studio with stunning smart lighting, mirrors and
+  new floorboards all creating a magical touch from the moment you step in the
+  studio.
 booking-title: Classes Starting Term 3!
 instagram-name: beach_ballerinas
 instagram-links:
