@@ -16,13 +16,10 @@ description: >-2
   * Working towards our FUN open day for parents at the end of each Term
 image: /assets/photo-4-7-20-7-39-13-pm-2-.jpg
 class-times:
-  - day: Friday
-    start-time: 09:30 AM
-    end-time: 10:30 AM
-  - day: Thursday
-    start-time: 09:30 AM
-    end-time: 10:30 AM
+  - day: Monday
+    start-time: 10:25 AM
+    end-time: 11:10 AM
   - day: Wednesday
-    start-time: 09:30 AM
-    end-time: 10:30 AM
+    start-time: 10:30 AM
+    end-time: 11:15 AM
 ---
