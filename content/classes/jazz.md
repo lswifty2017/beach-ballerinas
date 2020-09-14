@@ -1,6 +1,6 @@
 ---
 order: "4"
-title: Kindergarten Jazz
+title: Kinder Jazz
 subtitle: Bondi Beach
 description: >-
   Beach Ballerinas jazz class dancers learn funky age appropriate routines with
