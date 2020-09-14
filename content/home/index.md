@@ -352,11 +352,19 @@ testimonials:
       ballerina with your guidance x
     testimonial-name: Mel
     testimonial-occupation: Maroubra Mum
-  - testimonial-text: I love that the studio is in Bondi. I get my coffee and salty
-      bread and I'm a happy dude.
-    testimonial-name: Jim
-    testimonial-occupation: Coffee Snob
-  - testimonial-text: This is the best school in the eastern suburbs. I love salty bread too.
-    testimonial-name: James
-    testimonial-occupation: Brah Boi
+  - testimonial-text: "My daughter was five when she started dancing with Tamar in
+      2012. She built my daughters confidence especially in the first few years,
+      and importantly, stoked her passion for dancing.  Tamar’s dedication,
+      enthusiasm, kind nature, passion and professionalism are to be commended.
+      The young dancers she teaches respond in a positive manner due to her
+      positive energy and her caring and nurturing manner. "
+    testimonial-name: Rachel Crompton
+    testimonial-occupation: Pilates Director, Elixir Health Clubs
+  - testimonial-text: "Ms Tamar has been excellent with Sophie and extremely
+      supportive. This has resulted in Sophie feeling confident at ballet during
+      a very difficult time in her life where she has struggled in other
+      arenas.    I wanted to let you know because it means the world to me and
+      to Sophie to have such an engaged and caring ballet teacher. "
+    testimonial-name: Jade
+    testimonial-occupation: Bondi Mum
 ---
