@@ -347,7 +347,9 @@ testimonials:
   - testimonial-text: Miss Tamar was my daughters first ever dance teacher. My
       daughter would sometimes get a little nervous and anxious before class,
       and Miss Tamar gently helped her through to the point that she never
-      wanted to come home!!
+      wanted to come home!! Very hard to find this type of teacher these days.
+      Thank you Miss Tamar my little girl has flourished into a gorgeous
+      ballerina with your guidance x
     testimonial-name: Mel
     testimonial-occupation: Maroubra Mum
   - testimonial-text: I love that the studio is in Bondi. I get my coffee and salty
