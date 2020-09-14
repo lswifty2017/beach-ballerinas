@@ -14,10 +14,10 @@ class-times:
   - day: Monday
     start-time: 12:30 PM
     end-time: 1:30 PM
-  - day: Tuesday
-    start-time: 10:30 AM
-    end-time: 11:30 AM
+  - day: Thursday
+    start-time: 04:45 PM
+    end-time: 05:30 PM
   - day: Friday
-    start-time: 03:30 PM
+    start-time: 03:45 PM
     end-time: 04:30 PM
 ---
