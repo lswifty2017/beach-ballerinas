@@ -12,13 +12,7 @@ uniform-card:
       * Bloch Desdemona Tutu Girls: L57120G - Baby Pink/ Baby Blue or White
       (your choice)
 
-      * Pink Ballet shoes
-
-      * Pink socks or stockings (for winter to keep warm)
-
       * Hair neatly tied up, off the face
-
-        All available at Bloch at Bondi Junction
     photo: /assets/ballerina-kids.jpg
   - title: Girls Kindy & Up
     description: |-
@@ -26,13 +20,9 @@ uniform-card:
 
       * Bloch Odetta Sleeveless Leotard in Light Pink Leotard- L0828G
       * Bloch Royal RAD skirt in Light Pink: A0735G 
-      * Pink Ballet shoes
-      * Pink socks or stockings (for winter to keep warm)
       * Hair neatly tied up in ballet bun, off the face
 
-        Jazz
-      * Black bike shorts over the top of leotard
 
-        All available from Bloch at Bondi Junction
+      * Jazz: Black bike shorts over the top of leotard
     photo: /assets/ballerina-kids.jpg
 ---
