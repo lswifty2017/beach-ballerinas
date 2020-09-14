@@ -344,11 +344,12 @@ instagram-links:
       PDT</time></p></div></blockquote> <script async
       src="//www.instagram.com/embed.js"></script>'
 testimonials:
-  - testimonial-text: This is the best school in the eastern suburbs. We drop the
-      kids off and get to hit the tubes at South Bondi when the surf gets
-      radical!
-    testimonial-name: Mert
-    testimonial-occupation: Bondi Legend
+  - testimonial-text: Miss Tamar was my daughters first ever dance teacher. My
+      daughter would sometimes get a little nervous and anxious before class,
+      and Miss Tamar gently helped her through to the point that she never
+      wanted to come home!!
+    testimonial-name: Mel
+    testimonial-occupation: Maroubra Mum
   - testimonial-text: I love that the studio is in Bondi. I get my coffee and salty
       bread and I'm a happy dude.
     testimonial-name: Jim
