@@ -9,7 +9,7 @@ description: >-
 
 
   A very fun, higher energy and moving class for kindergarten kids. Students will also learn a progression from the 3 & 4 year olds program, and also start to technically dance. Strength and stretching exercises are formally introduced in this level which assists with childrens posture and dance technique.
-image: /assets/kids-dancing-with-teacher.jpg
+image: /assets/photo-7-8-20-4-29-28-pm.jpg
 class-times:
   - day: Monday
     start-time: 12:30 PM
