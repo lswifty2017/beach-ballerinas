@@ -16,7 +16,7 @@ description: >-
   * The program encourages creativity by engaging students in planning exercises set to musical pieces and to express emotion through story telling. 
 
     Our classes are always kept fun and creative keeping your dancer in love with ballet.
-image: /assets/teacher-kids-ballet.jpg
+image: /assets/photo-4-7-20-7-39-15-pm-1-.jpg
 class-times:
   - start-time: 03:45 PM
     end-time: 04:30 PM
