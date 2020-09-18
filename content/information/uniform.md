@@ -8,7 +8,7 @@ uniform-card:
       * Bloch Desdemona Tutu Girls: L57120G - Baby Pink/ Baby Blue or White (your choice)
 
       * Hair neatly tied up, off the face
-    photo: /assets/ballerina-kids.jpg
+    photo: /assets/img_3665.jpg
   - title: Girls Kindy & Up
     description: |-
       Ballet
@@ -23,5 +23,5 @@ uniform-card:
       * White t-shirt
       * Black/ Navy/ Blue shorts
       * Runners or Black ballet shoes
-    photo: /assets/117647907_3224726070929607_736468483390233484_n.jpg
+    photo: /assets/photo-7-8-20-4-27-43-pm.jpg
 ---
