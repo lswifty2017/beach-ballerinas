@@ -7,6 +7,7 @@ import ReactMarkdown from "react-markdown"
 import { paramCase } from "change-case"
 import Gallery from "../components/gallery/gallery"
 import UniformCard from "../components/uniform-card/uniform-card"
+import BlochLogo from "../assets/bloch-logo.jpg"
 
 export const data = graphql`
   query InformationPage {
@@ -64,6 +65,7 @@ const InformationPage = ({ data }) => {
           <h2>{uniform.frontmatter.title}</h2>
           <div className="section__wrapper section__wrapper--content">
             <ReactMarkdown source={uniform.frontmatter.description} />
+            <img src={BlochLogo}></img>
           </div>
           <Gallery>
             {uniform.frontmatter.uniform_card.map(
