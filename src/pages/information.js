@@ -32,6 +32,7 @@ export const data = graphql`
     uniform: markdownRemark(fields: { slug: { regex: "/uniform/" } }) {
       frontmatter {
         title
+        description
         uniform_card {
           description
           title
@@ -61,6 +62,9 @@ const InformationPage = ({ data }) => {
       <section id="uniform">
         <div className="section__wrapper">
           <h2>{uniform.frontmatter.title}</h2>
+          <div className="section__wrapper section__wrapper--content">
+            <ReactMarkdown source={uniform.frontmatter.description} />
+          </div>
           <Gallery>
             {uniform.frontmatter.uniform_card.map(
               ({ title, description, photo }) => {

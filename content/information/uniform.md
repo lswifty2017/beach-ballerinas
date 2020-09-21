@@ -1,5 +1,6 @@
 ---
 title: Uniform
+description: With many years of working with this age group and trying out different options of attire, various outfits have caused many distractions. We have the most gorgeous uniforms in beautiful colours suited for our classes. We Beach Ballerinas is now part of the Bloch Loyalty Program. Please visit any Bloch store to pick up a Loyalty Card that gives you access to a special discount every time you shop at Bloch. Our closest store is the Bondi store located at Shop 2, 25-33 Bronte Road, Bondi Junction
 uniform-card:
   - title: Girls Toddlers
     description: |-
