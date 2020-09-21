@@ -1,6 +1,20 @@
 ---
 title: Uniform
-description: With many years of working with this age group and trying out different options of attire, various outfits have caused many distractions. We have the most gorgeous uniforms in beautiful colours suited for our classes. We Beach Ballerinas is now part of the Bloch Loyalty Program. Please visit any Bloch store to pick up a Loyalty Card that gives you access to a special discount every time you shop at Bloch. Our closest store is the Bondi store located at Shop 2, 25-33 Bronte Road, Bondi Junction
+description: >-
+  With many years of working with this age group and trying out different
+  options of attire, various outfits have caused many distractions. We have the
+  most gorgeous uniforms in beautiful colours suited for our classes.
+
+
+  Beach Ballerinas is now part of the Bloch Loyalty Program. Please visit any Bloch store to pick up a Loyalty Card that gives you access to a special discount every time you shop at Bloch. 
+
+
+  Our closest store is the Bondi store located at Shop 2, 25-33 Bronte Road, Bondi Junction.
+
+
+
+
+  ![bloch](/assets/bloch-logo.jpg "Bloch")
 uniform-card:
   - title: Girls Toddlers
     description: |-
@@ -9,7 +23,8 @@ uniform-card:
     photo: /assets/img_3665.jpg
   - title: Girls Kindy & Up
     description: >-
-      * [Bloch Sleeveless Leotard](https://www.bloch.com.au/products/l0828g-bloch-overture-odetta-sleeveless-pleat-girls-leotard-2?variant=23302314983505)
+      * [Bloch Sleeveless
+      Leotard](https://www.bloch.com.au/products/l0828g-bloch-overture-odetta-sleeveless-pleat-girls-leotard-2?variant=23302314983505)
 
       * Bloch Royal RAD skirt in Light Pink: A0735G 
 
