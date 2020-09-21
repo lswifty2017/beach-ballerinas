@@ -10,11 +10,6 @@ description: >-
 
 
   Our closest store is the Bondi store located at Shop 2, 25-33 Bronte Road, Bondi Junction.
-
-
-
-
-  ![bloch](/assets/bloch-logo.jpg "Bloch")
 uniform-card:
   - title: Girls Toddlers
     description: |-
