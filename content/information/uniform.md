@@ -2,20 +2,21 @@
 title: Uniform
 uniform-card:
   - title: Girls Toddlers
-    description: >-
-      
-
-      * Bloch Desdemona Tutu Girls: L57120G - Baby Pink/ Baby Blue or White (your choice)
-
+    description: |-
+      * Bloch Desdemona Tutu Girls: L57120G - Baby Pink/Blue or White
       * Hair neatly tied up, off the face
     photo: /assets/img_3665.jpg
   - title: Girls Kindy & Up
-    description: |-
+    description: >-
       Ballet
 
-      * Bloch Odetta Sleeveless Leotard in Light Pink Leotard- L0828G
+
+      * [Bloch Sleeveless Leotard](https://www.bloch.com.au/products/l0828g-bloch-overture-odetta-sleeveless-pleat-girls-leotard-10?variant=23302326845521)
+
       * Bloch Royal RAD skirt in Light Pink: A0735G 
+
       * Hair neatly tied up in ballet bun, off the face
+
       * Jazz: Black bike shorts over the top of leotard
     photo: /assets/ballerina-kids.jpg
   - title: "Boys "
