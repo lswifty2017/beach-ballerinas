@@ -63,9 +63,16 @@ const InformationPage = ({ data }) => {
       <section id="uniform">
         <div className="section__wrapper">
           <h2>{uniform.frontmatter.title}</h2>
-          <div className="section__wrapper section__wrapper--content">
+          <div className="section__wrapper section__wrapper--content text-align-center">
             <ReactMarkdown source={uniform.frontmatter.description} />
-            <img src={BlochLogo}></img>
+            <a
+              class="bloch-logo"
+              href="https://www.bloch.com.au/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={BlochLogo} alt="bloch-logo"></img>
+            </a>
           </div>
           <Gallery>
             {uniform.frontmatter.uniform_card.map(
