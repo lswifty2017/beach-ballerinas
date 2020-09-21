@@ -8,10 +8,7 @@ uniform-card:
     photo: /assets/img_3665.jpg
   - title: Girls Kindy & Up
     description: >-
-      Ballet
-
-
-      * [Bloch Sleeveless Leotard](https://www.bloch.com.au/products/l0828g-bloch-overture-odetta-sleeveless-pleat-girls-leotard-10?variant=23302326845521)
+      * [Bloch Sleeveless Leotard](https://www.bloch.com.au/products/l0828g-bloch-overture-odetta-sleeveless-pleat-girls-leotard-2?variant=23302314983505)
 
       * Bloch Royal RAD skirt in Light Pink: A0735G 
 
