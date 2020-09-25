@@ -14,7 +14,7 @@ description: >-
 
 
   There is no such thing as age, with fitness one can do miracles.
-image: /assets/tamar-jump.jpg
+image: /assets/bondi-beach.jpg
 class-times:
   - day: Wednesday
     start-time: 11:30 AM

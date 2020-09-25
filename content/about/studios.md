@@ -12,5 +12,5 @@ studio:
       * Smart lights
       * Mirrors and barre
       * Change room
-    photo: /assets/289a27ed-0f62-4630-9a64-e799314e30f2.jpg
+    photo: /assets/bondi-beach.jpg
 ---

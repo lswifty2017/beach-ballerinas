@@ -20,7 +20,7 @@ uniform-card:
       * Hair neatly tied up, off the face
 
       * Pink Ballet socks and Pink Ballet shoes
-    photo: /assets/img_3665.jpg
+    photo: /assets/bondi-beach.jpg
   - title: Girls Kindy & Up
     description: >-
       * [Bloch Sleeveless
@@ -34,11 +34,11 @@ uniform-card:
       * Hair neatly tied up in ballet bun, off the face
 
       * Jazz: Black bike shorts over the top of leotard
-    photo: /assets/ballerina-kids.jpg
+    photo: /assets/bondi-beach.jpg
   - title: "Boys "
     description: |-
       * White t-shirt
       * Black/ Navy/ Blue shorts
       * Runners or Black ballet shoes
-    photo: /assets/photo-7-8-20-4-27-43-pm.jpg
+    photo: /assets/bondi-beach.jpg
 ---

@@ -20,7 +20,7 @@ description: >-
   * So much fun in a loving and nurturing environment 
 
   * Working towards our FUN open day for parents at the end of each Term
-image: /assets/photo-4-7-20-7-39-16-pm.jpg
+image: /assets/bondi-beach.jpg
 class-times:
   - day: Monday
     start-time: 10:25 AM

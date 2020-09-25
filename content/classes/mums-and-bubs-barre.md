@@ -12,7 +12,7 @@ description: >-
 
 
   You don’t need to have any previous ballet or dance skills – you just need to be ready to have a fabulous time with your dancer. Be ready to dance, move, sing, play and have plenty of fun – just like your little person!
-image: /assets/teacher-with-student.jpg
+image: /assets/bondi-beach.jpg
 class-times:
   - start-time: 09:00 AM
     end-time: 09:45 AM
