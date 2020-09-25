@@ -1,5 +1,5 @@
 ---
-banner: /assets/ken08904.jpeg
+banner: /assets/coverpoppykissingfrankie-min.jpeg
 show-notification-bar: true
 notification-content: Sign up for a [FREE Trial
   Week!](https://beach-ballerinas-dev.netlify.app/sign-up)
