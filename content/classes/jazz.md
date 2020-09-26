@@ -9,7 +9,7 @@ description: >-
 
 
   A very fun, higher energy and moving class for kindergarten kids. Students will also learn a progression from the 3 & 4 year olds program, and also start to technically dance. Strength and stretching exercises are formally introduced in this level which assists with childrens posture and dance technique.
-image: /assets/boys-dance-jazz-min.jpg
+image: /assets/boys-stretched-arms-min.jpg
 class-times:
   - day: Monday
     start-time: 12:30 PM
