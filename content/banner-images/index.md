@@ -1,9 +1,9 @@
 ---
 title: Banner Images
 about-banner-img: /assets/teacherpoppy-hands-about-banner-min.jpg
-classes-banner-img: /assets/bondi-beach.jpg
-timetable-banner-img: /assets/bondi-beach.jpg
-information-banner-img: /assets/bondi-beach.jpg
-contact-banner-img: /assets/bondi-beach.jpg
-signup-banner-img: /assets/bondi-beach.jpg
+classes-banner-img: /assets/banner-poppy-frankie-min.jpeg
+timetable-banner-img: /assets/teacher-jumping-student-copying-min.jpeg
+information-banner-img: /assets/teacher-arms-out-min.jpeg
+contact-banner-img: /assets/3-boys-running-to-beach-min.jpeg
+signup-banner-img: /assets/aquasky-holding-2-min.jpeg
 ---
