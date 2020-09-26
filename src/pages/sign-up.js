@@ -60,6 +60,7 @@ const SignUpPage = ({ data }) => {
     {
       type: "text",
       label: "How did you hear about us?",
+      required: true,
     },
   ]
 
