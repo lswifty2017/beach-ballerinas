@@ -9,13 +9,14 @@ const NotificationBar = ({ content }) => {
   useEffect(() => {
     setTimeout(() => {
       setNotificationBarState("active")
-    }, 2000)
+    }, 3000)
   }, [])
 
   return (
     <div className={`notification-bar ${notificationBarState}`}>
       <ReactMarkdown source={content} />
       <button
+        aria-label="close notification"
         className="notification-bar__close"
         onClick={() => {
           setNotificationBarState("")

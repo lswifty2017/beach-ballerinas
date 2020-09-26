@@ -14,9 +14,13 @@ const Button = ({
       className={bgColor ? `button button--${bgColor}` : `button button--blue`}
     >
       {formSubmit ? (
-        <button type="submit">{text}</button>
+        <button type="submit" aria-label="submit form">
+          {text}
+        </button>
       ) : (
-        <Link to={path}>{text}</Link>
+        <Link to={path} aria-label={`link to ${path}`}>
+          {text}
+        </Link>
       )}
     </div>
   )

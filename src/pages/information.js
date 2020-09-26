@@ -66,6 +66,7 @@ const InformationPage = ({ data }) => {
           <div className="section__wrapper section__wrapper--content text-align-center">
             <ReactMarkdown source={uniform.frontmatter.description} />
             <a
+              aria-label="link to bloch page"
               class="bloch-logo"
               href="https://www.bloch.com.au/"
               target="_blank"

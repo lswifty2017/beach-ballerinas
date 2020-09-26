@@ -9,6 +9,7 @@ const HeaderNav = ({ navLinks = [], socialLinks = [] }) => {
         <li key={primaryTitle} className={"header-nav__link"}>
           <Link
             to={primaryPath}
+            aria-label={`link to ${primaryTitle}`}
             onClick={() => {
               document.body.classList.remove("noscroll")
             }}
@@ -24,7 +25,12 @@ const HeaderNav = ({ navLinks = [], socialLinks = [] }) => {
                     key={secondaryTitle}
                     className="header-nav__link-secondary"
                   >
-                    <Link to={secondaryPath}>{secondaryTitle}</Link>
+                    <Link
+                      to={secondaryPath}
+                      aria-label={`link to ${secondaryTitle}`}
+                    >
+                      {secondaryTitle}
+                    </Link>
                   </li>
                 )
               })}
@@ -41,7 +47,13 @@ const HeaderNav = ({ navLinks = [], socialLinks = [] }) => {
       <div className="header-nav__social">
         {socialLinks.map(({ link, icon }) => {
           return (
-            <a key={link} href={link} target="_blank" rel="noreferrer">
+            <a
+              aria-label={`link to ${link}`}
+              key={link}
+              href={link}
+              target="_blank"
+              rel="noreferrer"
+            >
               {icon}
             </a>
           )

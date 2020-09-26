@@ -107,22 +107,6 @@ collections:
               - { label: Address, name: address, widget: string }
               - { label: Description, name: description, widget: markdown }
               - { label: Photo, name: photo, widget: image }
-      - label: "Create New Section"
-        name: "new-sections"
-        file: "content/about/new-sections.md"
-        fields:
-          - label: New Section
-            name: section
-            widget: list
-            fields:
-              - { label: Title, name: title, widget: string }
-              - {
-                  label: Background Colour,
-                  name: bg-color,
-                  widget: select,
-                  options: [white, pink, blue, sand],
-                }
-              - { label: Content, name: content, widget: markdown }
   - label: "Classes"
     name: "classes"
     folder: "content/classes"

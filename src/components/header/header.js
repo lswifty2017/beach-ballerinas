@@ -29,13 +29,17 @@ const Header = ({ socialLinks, navLinks }) => {
   return (
     <React.Fragment>
       <header className="header">
-        <Link to="/" className="header__logo">
+        <Link to="/" className="header__logo" aria-label="Navigate Home">
           <img src={bbLogo} alt="Beach Ballerinas Logo" />
         </Link>
         {navbarState ? (
           <HeaderNavigation navLinks={navLinks} socialLinks={socialLinks} />
         ) : null}
-        <button className="header__mobile-toggle" onClick={() => toggleNav()}>
+        <button
+          className="header__mobile-toggle"
+          aria-label="toggle navigation"
+          onClick={() => toggleNav()}
+        >
           {width <= tabletWidth ? (
             navbarState ? (
               <CloseIcon />

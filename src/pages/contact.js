@@ -74,7 +74,7 @@ const ContactPage = ({ data }) => {
               <span>
                 <PhoneIcon />
               </span>
-              +61 426 357 948
+              +61 405 976 552
             </p>
             <p>
               <span>
@@ -86,6 +86,7 @@ const ContactPage = ({ data }) => {
           <h3>Follow Us</h3>
           <div className="contact__social">
             <a
+              aria-label="link to beach ballerinas instagram page"
               href="https://www.instagram.com/beach_ballerinas"
               target="_blank"
               rel="noreferrer"
@@ -93,6 +94,7 @@ const ContactPage = ({ data }) => {
               <InstagramIcon />
             </a>
             <a
+              aria-label="link to beach ballerinas facebook page"
               href="https://www.facebook.com/Beach-Ballerinas-113132270490904/"
               target="_blank"
               rel="noreferrer"

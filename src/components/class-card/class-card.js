@@ -15,7 +15,7 @@ const ClassCard = ({ fluid, alt, title, subtitle, path }) => (
     </div>
     <div className="class-card__title">{title}</div>
     <div className="class-card__subtitle">{subtitle}</div>
-    <Button bgColor="sand" path={path} text="Learn More" />
+    <Button bgColor="sand" path={path} text="Class Info" />
   </div>
 )
 
