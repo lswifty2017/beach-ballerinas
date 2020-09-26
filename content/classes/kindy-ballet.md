@@ -16,7 +16,7 @@ description: >-
   * The program encourages creativity by engaging students in planning exercises set to musical pieces and to express emotion through story telling. 
 
     Our classes are always kept fun and creative keeping your dancer in love with ballet.
-image: /assets/bondi-beach.jpg
+image: /assets/pre-primary-ballet-pic-min.jpg
 class-times:
   - start-time: 03:45 PM
     end-time: 04:30 PM
