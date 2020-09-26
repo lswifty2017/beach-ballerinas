@@ -1,6 +1,6 @@
 ---
 title: Banner Images
-about-banner-img: /assets/bondi-beach.jpg
+about-banner-img: /assets/teacherpoppy-hands-about-banner-min.jpg
 classes-banner-img: /assets/bondi-beach.jpg
 timetable-banner-img: /assets/bondi-beach.jpg
 information-banner-img: /assets/bondi-beach.jpg
