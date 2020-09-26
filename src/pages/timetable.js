@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { paramCase } from "change-case"
 import moment from "moment"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
