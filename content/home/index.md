@@ -1,7 +1,8 @@
 ---
 banner: /assets/coverpoppykissingfrankie-min.jpeg
 show-notification-bar: true
-notification-content: Sign up for a [FREE Trial Week!](https://www.beachballerinas.com.au/sign-up)
+notification-content: Sign up for a [FREE Trial
+  Week!](https://www.beachballerinas.com.au/sign-up) New Term starts 12th Oct
 introduction-title: Welcome to Beach Ballerinas
 introduction-description: We offer ballet and dance classes at the heart of
   Bondi Beach. Our quality program for 2.5 years old and up, allows for young
