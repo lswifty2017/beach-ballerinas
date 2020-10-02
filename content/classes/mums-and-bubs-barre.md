@@ -1,6 +1,6 @@
 ---
 order: "6"
-title: Mums and Bubs
+title: Ma Pa and Bubs
 subtitle: Bondi Beach
 description: >-
   Mums and Dads want to dance too! Perfect class if you have a little one not
@@ -20,4 +20,7 @@ class-times:
   - start-time: 10:00 AM
     end-time: 10:45 AM
     day: Sunday
+  - start-time: 11:20 AM
+    end-time: 11:50 AM
+    day: Monday
 ---
