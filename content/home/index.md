@@ -1,25 +1,24 @@
 ---
 banner: /assets/coverpoppykissingfrankie-min.jpeg
 show-notification-bar: true
-notification-content: Sign up for a [FREE Trial
-  Week!](https://beach-ballerinas-dev.netlify.app/sign-up)
+notification-content: Sign up for December.... Ask about our Christmas Special
 introduction-title: Welcome to Beach Ballerinas
 introduction-description: We offer ballet and dance classes at the heart of
-  Bondi Beach. Our quality program for 2.5 years old and up, allows for young
-  children to reach their potential and develop co-ordination and confidence. We
-  have qualified Royal Academy of Dance teachers to provide ballet and jazz
-  classes at the highest standard.   “We want to give children the opportunity
-  to experience the wonderful world of dance” our passion is to share the LOVE
-  of dance, in a nurturing and loving environment that makes each class FUN !!!
-  Why not be a better place than Bondi Beach? “Dance and the Sea, where we want
-  to be”…
+  Bondi Beach. Our quality program for children from 18 months and up, allows
+  for young children to reach their potential and develop co-ordination and
+  confidence. We have qualified Royal Academy of Dance teachers to provide
+  ballet and jazz classes at the highest standard.   “We want to give children
+  the opportunity to experience the wonderful world of dance” our passion is to
+  share the LOVE of dance, in a nurturing and loving environment that makes each
+  class FUN !!! Why not be a better place than Bondi Beach? “Dance and the Sea,
+  where we want to be”…
 location-img: /assets/bondi-beach.jpg
 location-title: Located at the Beautiful Bondi Beach
 location-description: Just a few minutes walk from Bondi Beach is our amazing
   dance studio. New beautiful studio with stunning smart lighting, mirrors and
   new floorboards all creating a magical touch from the moment you step in the
   studio.
-booking-title: Classes Starting Term 3!
+booking-title: Classes Starting Term 4!
 instagram-name: beach_ballerinas
 instagram-links:
   - embed-link: '<blockquote class="instagram-media"
