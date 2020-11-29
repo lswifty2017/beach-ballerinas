@@ -91,7 +91,7 @@ const SignUpPage = ({ data }) => {
       />
       <SEO title="Sign Up" />
       <section id="sign-up" className="bgSand">
-        <h2>Sign Up for a Free Trial Week</h2>
+        <h2>Sign Up</h2>
         <Form
           formFields={formFields}
           formName="sign-up"
