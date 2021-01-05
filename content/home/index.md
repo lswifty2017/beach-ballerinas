@@ -1,7 +1,7 @@
 ---
 banner: /assets/coverpoppykissingfrankie-min.jpeg
 show-notification-bar: true
-notification-content: Sign up for December.... Ask about our Christmas Special
+notification-content: "**Now taking enrolments for 2021**"
 introduction-title: Welcome to Beach Ballerinas
 introduction-description: We offer ballet and dance classes at the heart of
   Bondi Beach. Our quality program for children from 18 months and up, allows
