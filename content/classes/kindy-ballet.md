@@ -23,5 +23,5 @@ class-times:
     day: Thursday
   - start-time: 03:45 PM
     end-time: 04:30 PM
-    day: Friday
+    day: Wednesday
 ---
