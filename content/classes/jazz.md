@@ -12,9 +12,9 @@ description: >-
 image: /assets/boys-stretched-arms-min.jpg
 class-times:
   - day: Thursday
-    start-time: 04:45 PM
-    end-time: 05:30 PM
-  - day: Friday
-    start-time: 03:45 PM
-    end-time: 04:30 PM
+    start-time: 04:35 PM
+    end-time: 05:20 PM
+  - day: Wednesday
+    start-time: 04:35 PM
+    end-time: 05:20 PM
 ---
