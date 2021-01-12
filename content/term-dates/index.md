@@ -1,14 +1,14 @@
 ---
 term-one:
-  - start-date: 28 January
-    end-date: 9 April
+  - start-date: 1 February
+    end-date: 1 April
 term-two:
-  - start-date: 27 April
-    end-date: 3 July
+  - start-date: 19 April
+    end-date: 25 June
 term-three:
-  - start-date: 20 July
-    end-date: 25 September
+  - start-date: 12 July
+    end-date: 17 September
 term-four:
-  - start-date: 12 October
-    end-date: 18 December
+  - start-date: 5 October
+    end-date: 10 December
 ---
