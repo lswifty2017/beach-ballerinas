@@ -23,9 +23,12 @@ description: >-
 image: /assets/frankie-serios-solo-min.jpg
 class-times:
   - day: Monday
-    start-time: 10:25 AM
-    end-time: 11:10 AM
+    start-time: 09:30 AM
+    end-time: 10:15 AM
   - start-time: 09:30 AM
     end-time: 10:15 AM
     day: Wednesday
+  - start-time: 09:30 AM
+    end-time: 10:15 AM
+    day: Friday
 ---
