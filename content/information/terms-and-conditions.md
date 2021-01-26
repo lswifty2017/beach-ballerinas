@@ -133,5 +133,35 @@ content: >-
 
   Payments can be made using eftpos, credit card, bank transfer, cheque or cash.
 
+
+
   Where an invoice is 14 days overdue, the student will not be able to participate in classes. Their position in a class will be held for 2 weeks only.
+
+
+  ## Privacy Policy
+
+
+  Beach Ballerinas is committed to protecting the privacy of our clients information. The information we collect is used to facilitate services that we provide to you. We value your privacy and will take all necessary steps to protect it.
+
+
+  ###### Information Collected
+
+
+  We collect personal data through a registration process. We will not sell, transfer, assign or rent your information to any third party without your permission, unless required by law.
+
+  Your personal information may be used by Beach Ballerinas to forward you information by way of regular bulletins or to contact you by telephone or mail.
+
+  By visiting our website, you expressly consent to the collection and use by Beach Ballerinas of personal information according to this policy.
+
+
+  ###### Links to Other Websites
+
+
+  This site may from time to time contain links to other websites. Beach Ballerinas is not responsible for the privacy policies or the content of any of those websites.
+
+
+  ###### Contact Us
+
+
+  Should you have any questions about Beach Ballerinas, this Privacy Policy or our website, you can contact us
 ---
