@@ -3,13 +3,13 @@ title: Terms and Conditions
 content: >-
   #### Please read these Terms, our Privacy Policy and any other terms
   referenced in this document carefully. We hope you’re sitting comfortably and
-  listening to some great music.  
+  listening to some great music.
 
 
   ## Fees
 
 
-  * All fees are due within 7 days of the commencement of each Term.
+  * All fees are due within 14 days of the commencement of each Term.
 
   * Failure to pay within this period will incur a 20% late fee.
 
@@ -23,11 +23,9 @@ content: >-
 
   * If you are unable to pay fees within the allocated time frame please contact us to make arrangements.
 
-  * Fees can be paid via Direct Deposit, Cash or through Studio bookings
+  * Fees can be paid via Direct Deposit, Cash or through Class Manager
 
   * Account Details: Name: Tamar Arzoumalian BSB: 112-879  ACC# 416097213
-
-
 
 
   ## Other Conditions
@@ -35,7 +33,7 @@ content: >-
 
   * All students must be appropriately groomed for class and in the correct uniform. This is located on our Uniform List.
 
-  * Classes are closed to parents/family. We have an open week at the end of each Term where you can view your child’s class. Do not enter a studio unless you have spoken to a Beach Ballerina staff member as it causes distraction to the students.
+  * Classes are closed to parents/family unless enrolled in Ma Pa and Bubs where only one parent is to participate. We have an open week at the end of each Term where you can view your child’s class. Do not enter a studio unless you have spoken to a Beach Ballerina staff member as it causes distraction to the students.
 
   * Teachers are only available to supervise your children in the allocated class time inside the studio. We are not responsible for your child outside class times.
 
@@ -123,13 +121,11 @@ content: >-
   The Beach Ballerinas office must be notified in advance if a student is going to be absent from class. This can be done by emailing tamar@beachballerinas.com.au or calling 0405976552.
 
 
-  *FEE POLICY*  (not sure to add this)
+  *FEE POLICY* 
 
-  All fees are inclusive of GST.
+  Fees are advertised on the BB website.
 
-  Fees are advertised on the DPA website.
-
-  A tax invoice will be issued to each family in term 2,3 & 4 and must be paid within 7 days.
+  A tax invoice will be issued to each family in term 2,3 & 4 and must be paid within 14 days.
 
   Fees are invoiced by the term. The full term invoice must be paid, regardless of the number of classes the Student wishes to attend (or actually attends). There will be no refunds, credits, or transfers if the full term isn’t completed.
 
@@ -137,5 +133,5 @@ content: >-
 
   Payments can be made using eftpos, credit card, bank transfer, cheque or cash.
 
-  Where an invoice is 7 days overdue, the student will not be able to participate in classes. Their position in a class will be held for 2 weeks only.
+  Where an invoice is 14 days overdue, the student will not be able to participate in classes. Their position in a class will be held for 2 weeks only.
 ---
