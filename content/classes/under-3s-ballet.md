@@ -22,16 +22,13 @@ description: >-
   * Working towards our FUN open day for parents at the end of each Term
 image: /assets/frankie-serios-solo-min.jpg
 class-times:
-  - day: Monday
-    start-time: 09:30 AM
-    end-time: 10:15 AM
   - start-time: 09:30 AM
     end-time: 10:15 AM
     day: Wednesday
-  - start-time: 09:30 AM
-    end-time: 10:15 AM
+  - start-time: 10:30 AM
+    end-time: 11:15 AM
     day: Friday
-  - start-time: 08:50 AM
-    end-time: 09:35 AM
+  - start-time: 08:45 AM
+    end-time: 09:30 AM
     day: Sunday
 ---
