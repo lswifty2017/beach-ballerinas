@@ -28,7 +28,4 @@ class-times:
   - start-time: 10:30 AM
     end-time: 11:15 AM
     day: Friday
-  - start-time: 08:45 AM
-    end-time: 09:30 AM
-    day: Sunday
 ---
