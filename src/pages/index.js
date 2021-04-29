@@ -12,6 +12,7 @@ import Gallery from "../components/gallery/gallery"
 import bbLogo from "../assets/bb-logo-black.png"
 import radLogo from "../assets/rad-logo-black.jpg"
 import ozTotsLogo from "../assets/oz-tots-logo.png"
+import Youtube from "react-youtube"
 import "typeface-montserrat"
 
 export const query = graphql`
@@ -95,6 +96,14 @@ const IndexPage = ({ data }) => {
 
   const classes = data.classesData ? data.classesData.nodes : []
 
+  const videoOptions = {
+    height: "490",
+    width: "840",
+    playerVars: {
+      autoplay: 1,
+    },
+  }
+
   return (
     <Layout
       id="home"
@@ -114,6 +123,16 @@ const IndexPage = ({ data }) => {
             <img id="home-rad" src={radLogo} alt="RAD Ballet Certificate" />
             <img id="home-oz-tots" src={ozTotsLogo} alt="Oz Tots" />
           </div>
+        </div>
+      </section>
+      <section id="intro-video" className="bgSand">
+        <div className="section__wrapper">
+          <h2>Dance and the sea, where we want to be!</h2>
+          <Youtube
+            className="content"
+            videoId="SR3DlafkQDI"
+            opts={videoOptions}
+          />
         </div>
       </section>
       <ImageContent fluid={location_img.childImageSharp.fluid} bgColor="pink">

@@ -5,14 +5,13 @@ notification-content: "**[Now taking enrolments for
   2021](https://www.beachballerinas.com.au/sign-up/)**"
 introduction-title: Welcome to Beach Ballerinas
 introduction-description: We offer ballet and dance classes at the heart of
-  Bondi Beach. Our quality program for children from 18 months and up, allows
-  for young children to reach their potential and develop co-ordination and
+  Bondi Beach. Our quality program for children from 18 months and up and allows
+  for babies, toddlers and young children to reach their potential whilst developing co-ordination and
   confidence. We have qualified Royal Academy of Dance teachers to provide
-  ballet and jazz classes at the highest standard.   “We want to give children
-  the opportunity to experience the wonderful world of dance” our passion is to
-  share the LOVE of dance, in a nurturing and loving environment that makes each
-  class FUN !!! Why not be a better place than Bondi Beach? “Dance and the Sea,
-  where we want to be”…
+  ballet and jazz classes at the highest standard. We want to give children
+  the opportunity to experience the wonderful world of dance. Our passion is to
+  share the LOVE of dance, in a nurturing environment that makes each
+  class FUN!!!
 location-img: /assets/bondi-beach.jpg
 location-title: Located at the Beautiful Bondi Beach
 location-description: Just a few minutes walk from Bondi Beach is our amazing
@@ -352,7 +351,8 @@ testimonials:
       ballerina with your guidance x
     testimonial-name: Mel
     testimonial-occupation: Maroubra Mum
-  - testimonial-text: "My daughter was five when she started dancing with Tamar in
+  - testimonial-text:
+      "My daughter was five when she started dancing with Tamar in
       2012. She built my daughters confidence especially in the first few years,
       and importantly, stoked her passion for dancing.  Tamar’s dedication,
       enthusiasm, kind nature, passion and professionalism are to be commended.
