@@ -13,7 +13,7 @@ import bbLogo from "../assets/bb-logo-black.png"
 import radLogo from "../assets/rad-logo-black.jpg"
 import ozTotsLogo from "../assets/oz-tots-logo.png"
 import Youtube from "react-youtube"
-import useWindowDimensions from "../hooks/useWindowDimensions"
+import Media from "react-media"
 import "typeface-montserrat"
 
 export const query = graphql`
@@ -95,17 +95,7 @@ const IndexPage = ({ data }) => {
     instagram_links = [],
   } = data.allMarkdownRemark.edges[0].node.frontmatter
 
-  const { height, width } = useWindowDimensions()
-
   const classes = data.classesData ? data.classesData.nodes : []
-
-  const videoOptions = {
-    height: width < 600 ? height * 0.3 : 500,
-    width: width * 0.8,
-    playerVars: {
-      autoplay: 1,
-    },
-  }
 
   return (
     <Layout
@@ -131,11 +121,22 @@ const IndexPage = ({ data }) => {
       <section id="intro-video" className="bgSand">
         <div className="section__wrapper flex-center">
           <h2>Dance and the sea, where we want to be!</h2>
-          <Youtube
-            className="content"
-            videoId="SR3DlafkQDI"
-            opts={videoOptions}
-          />
+
+          <Media queries={{ small: { maxWidth: 769 } }}>
+            {matches => (
+              <Youtube
+                className="content"
+                videoId="SR3DlafkQDI"
+                opts={{
+                  height: matches.small ? 200 : 500,
+                  width: matches.small ? 300 : 800,
+                  playerVars: {
+                    autoplay: 1,
+                  },
+                }}
+              />
+            )}
+          </Media>
         </div>
       </section>
       <ImageContent fluid={location_img.childImageSharp.fluid} bgColor="pink">
