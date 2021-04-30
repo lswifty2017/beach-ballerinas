@@ -6,6 +6,7 @@ import Footer from "../footer/footer"
 import FacebookIcon from "../../assets/svgs/facebook.svg"
 import InstagramIcon from "../../assets/svgs/instagram.svg"
 import NotificationBar from "../notification-bar/notification-bar"
+import MessengerCustomerChat from "react-messenger-customer-chat"
 import "./layout.scss"
 
 const Layout = ({
@@ -103,6 +104,13 @@ const Layout = ({
       ) : null}
       <main id={id}>{children}</main>
       <Footer socialLinks={socialLinks} footerLinks={navLinks} />
+      <MessengerCustomerChat pageId="113132270490904" appId="113132270490904" />
+      <div id="fb-root"></div>
+      <div
+        class="fb-customerchat"
+        attribution="page_inbox"
+        page_id="113132270490904"
+      ></div>
     </>
   )
 }
