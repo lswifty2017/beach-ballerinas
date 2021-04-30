@@ -97,20 +97,6 @@ module.exports = {
         crossOrigin: `use-credentials`,
       },
     },
-    {
-      resolve: `gatsby-plugin-facebook-customer-chat`,
-      options: {
-        sdk: {
-          appId: "113132270490904",
-        },
-        chat: {
-          pageId: "113132270490904",
-          loggedInGreeting: "Hi! How can I help you?",
-          loggedOutGreeting: "Hi! How can I help you?",
-        },
-      },
-    },
-
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-cms`,

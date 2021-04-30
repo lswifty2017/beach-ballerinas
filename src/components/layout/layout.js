@@ -6,7 +6,6 @@ import Footer from "../footer/footer"
 import FacebookIcon from "../../assets/svgs/facebook.svg"
 import InstagramIcon from "../../assets/svgs/instagram.svg"
 import NotificationBar from "../notification-bar/notification-bar"
-import MessengerCustomerChat from "react-messenger-customer-chat"
 import "./layout.scss"
 
 const Layout = ({
@@ -96,6 +95,23 @@ const Layout = ({
     return (link.primaryTitle = noCase(link.primaryTitle))
   })
 
+  const test = `<script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v10.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>`
+
   return (
     <>
       <Header socialLinks={socialLinks} navLinks={navLinks} />
@@ -104,8 +120,8 @@ const Layout = ({
       ) : null}
       <main id={id}>{children}</main>
       <Footer socialLinks={socialLinks} footerLinks={navLinks} />
-      <MessengerCustomerChat pageId="113132270490904" appId="113132270490904" />
       <div id="fb-root"></div>
+      <div dangerouslySetInnerHTML={{ __html: test }} />
       <div
         class="fb-customerchat"
         attribution="page_inbox"
