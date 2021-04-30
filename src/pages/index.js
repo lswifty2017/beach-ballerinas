@@ -13,6 +13,7 @@ import bbLogo from "../assets/bb-logo-black.png"
 import radLogo from "../assets/rad-logo-black.jpg"
 import ozTotsLogo from "../assets/oz-tots-logo.png"
 import Youtube from "react-youtube"
+import useWindowDimensions from "../hooks/useWindowDimensions"
 import "typeface-montserrat"
 
 export const query = graphql`
@@ -94,11 +95,13 @@ const IndexPage = ({ data }) => {
     instagram_links = [],
   } = data.allMarkdownRemark.edges[0].node.frontmatter
 
+  const { height, width } = useWindowDimensions()
+
   const classes = data.classesData ? data.classesData.nodes : []
 
   const videoOptions = {
-    height: "490",
-    width: "840",
+    height: width < 600 ? height * 0.3 : 500,
+    width: width * 0.8,
     playerVars: {
       autoplay: 1,
     },
@@ -126,7 +129,7 @@ const IndexPage = ({ data }) => {
         </div>
       </section>
       <section id="intro-video" className="bgSand">
-        <div className="section__wrapper">
+        <div className="section__wrapper flex-center">
           <h2>Dance and the sea, where we want to be!</h2>
           <Youtube
             className="content"
