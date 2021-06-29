@@ -1,6 +1,6 @@
 ---
 order: "3"
-title: "Kindy Ballet "
+title: "Junior Ballet "
 subtitle: Bondi Beach
 description: >-
   Beach Ballerinas Pre-Primary classical ballet programme introduces the Royal
@@ -18,10 +18,7 @@ description: >-
     Our classes are always kept fun and creative keeping your dancer in love with ballet.
 image: /assets/pre-primary-ballet-pic-min.jpg
 class-times:
-  - start-time: 03:45 PM
-    end-time: 04:30 PM
-    day: Thursday
-  - start-time: 03:45 PM
-    end-time: 04:30 PM
+  - start-time: 03:30 PM
+    end-time: 04:15 PM
     day: Wednesday
 ---
