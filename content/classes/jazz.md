@@ -11,10 +11,7 @@ description: >-
   A very fun, higher energy and moving class for kindergarten kids. Students will also learn a progression from the 3 & 4 year olds program, and also start to technically dance. Strength and stretching exercises are formally introduced in this level which assists with childrens posture and dance technique.
 image: /assets/boys-stretched-arms-min.jpg
 class-times:
-  - day: Thursday
-    start-time: 04:35 PM
-    end-time: 05:20 PM
   - day: Wednesday
-    start-time: 04:35 PM
-    end-time: 05:20 PM
+    start-time: 04:15 PM
+    end-time: 05:00 PM
 ---
