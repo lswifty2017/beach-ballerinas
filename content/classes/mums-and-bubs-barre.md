@@ -14,13 +14,13 @@ description: >-
   You don’t need to have any previous ballet or dance skills – you just need to be ready to have a fabulous time with your dancer. Be ready to dance, move, sing, play and have plenty of fun – just like your little person!
 image: /assets/poppy-and-my-legg-min.jpg
 class-times:
-  - start-time: 11:20 AM
-    end-time: 11:50 AM
+  - start-time: 10:30 AM
+    end-time: 11:00 AM
     day: Monday
   - start-time: 10:30 AM
     end-time: 11:00 AM
     day: Wednesday
-  - start-time: 09:45 AM
+  - start-time: 09:15 AM
     end-time: 10:15 AM
     day: Friday
 ---
