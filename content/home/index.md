@@ -1,8 +1,7 @@
 ---
 banner: /assets/coverpoppykissingfrankie-min.jpeg
 show-notification-bar: true
-notification-content: "[Studio Re-Opening 18th OCT
-  **2021**](https://www.beachballerinas.com.au/sign-up/)"
+notification-content: "[Now Taking Bookings for 2022](https://www.beachballerinas.com.au/sign-up/)"
 introduction-title: Welcome to Beach Ballerinas
 introduction-description: We offer ballet and dance classes at the heart of
   Bondi Beach. Our quality program for children from 18 months and up and allows
