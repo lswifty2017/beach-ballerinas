@@ -1,5 +1,5 @@
 ---
-order: "6"
+order: "7"
 title: Adult Beginner Ballet
 subtitle: Bondi Beach
 description: >-
