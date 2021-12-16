@@ -1,6 +1,6 @@
 ---
-order: "3"
-title: Junior Ballet- Primary Ballet
+order: "5"
+title: Junior Ballet (Year 1 & up)
 subtitle: Bondi Beach
 description: >-
   Beach Ballerinas Primary classical ballet programme introduces the Royal
