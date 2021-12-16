@@ -1,6 +1,6 @@
 ---
 order: "4"
-title: Junior Jazz
+title: Junior Jazz (Year 1 kids & up)
 subtitle: Bondi Beach
 description: >-
   Beach Ballerinas jazz class dancers learn funky age appropriate routines with
@@ -8,10 +8,10 @@ description: >-
   ballet class and builds dancer presence, awareness and confidence. 
 
 
-  A very fun, higher energy and moving class for kindergarten kids. Students will also learn a progression from the 3 & 4 year olds program, and also start to technically dance. Strength and stretching exercises are formally introduced in this level which assists with childrens posture and dance technique.
+  A very fun, higher energy and moving class for year 1 and up kids. Students will also learn a progression from the kindy program, and also start to technically dance at a higher level. The progression will fly high with this age group as they are a little older and become more aware of their bodies. Strength and stretching exercises are formally introduced in this level which assists with childrens posture and dance technique.
 image: /assets/boys-stretched-arms-min.jpg
 class-times:
   - day: Wednesday
-    start-time: 04:15 PM
-    end-time: 05:00 PM
+    start-time: 05:15 PM
+    end-time: 06:00 PM
 ---
