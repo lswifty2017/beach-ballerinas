@@ -17,9 +17,12 @@ description: >-2
 image: /assets/2-girls-edited-39-pm-min.jpg
 class-times:
   - day: Monday
-    start-time: 11:05 AM
-    end-time: 11:50 AM
-  - start-time: 11:00 AM
-    end-time: 11:45 AM
+    start-time: 10:30 AM
+    end-time: 11:15 AM
+  - start-time: 10:45 AM
+    end-time: 11:30 AM
     day: Friday
+  - start-time: 10:30 AM
+    end-time: 11:15 AM
+    day: Wednesday
 ---
