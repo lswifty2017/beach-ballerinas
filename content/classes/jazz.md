@@ -1,5 +1,5 @@
 ---
-order: "4"
+order: "6"
 title: Junior Jazz (Year 1 kids & up)
 subtitle: Bondi Beach
 description: >-
