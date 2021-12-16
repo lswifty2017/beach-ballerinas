@@ -18,5 +18,5 @@ image: /assets/tamar-reachibg-up-min.jpg
 class-times:
   - day: Wednesday
     start-time: 12:15 PM
-    end-time: 01:00 PM
+    end-time: 01:15 PM
 ---
