@@ -18,7 +18,7 @@ description: >-
     Our classes are always kept fun and creative keeping your dancer in love with ballet.
 image: /assets/pre-primary-ballet-pic-min.jpg
 class-times:
-  - start-time: 04:30 PM
-    end-time: 05:15 PM
+  - start-time: 04:15 PM
+    end-time: 05:00 PM
     day: Wednesday
 ---
