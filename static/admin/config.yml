@@ -295,3 +295,22 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Terms and Conditions, name: content, widget: markdown }
+  - label: "Programs"
+    name: "programs"
+    folder: "content/programs"
+    editor:
+      preview: false
+    create: true
+    fields:
+      - {
+          label: "Order",
+          name: "order",
+          widget: "select",
+          options: ["1", "2", "3", "4", "5", "6", "7", "8"],
+          hint: "Order displayed on page (e.g. 1 is first)",
+        }
+      - { label: Program Name, name: title, widget: string }
+      - { label: Program Location, name: location, widget: string }
+      - { label: Program Description, name: description, widget: markdown }
+      - { label: Program Image, name: image, widget: image }
+      - { label: Program Payment Link, name: payment-link, widget: string }
