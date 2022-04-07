@@ -1,6 +1,8 @@
 .header-nav {
   top: $header-nav-height;
   width: 100%;
+  height: 100%;
+  overflow-y: "hidden";
   background-color: $primary-pink;
   z-index: 3;
   text-align: center;
@@ -106,7 +108,7 @@
             left: 0;
             width: 100%;
             height: 1px;
-            background-color: $secondary-font-color;
+            background-color: "$secondary-font-color";
             transition: width 0.25s;
           }
         }
@@ -120,9 +122,10 @@
       color: $primary-font-color;
       min-width: 200px;
       text-align: left;
+      border-radius: 8px;
 
       a {
-        padding: 12px;
+        padding: 14px;
       }
     }
 

@@ -8,6 +8,7 @@ const Button = ({
   textSize = "default",
   text,
   formSubmit = false,
+  target,
 }) => {
   return (
     <div
@@ -18,7 +19,7 @@ const Button = ({
           {text}
         </button>
       ) : (
-        <Link to={path} aria-label={`link to ${path}`}>
+        <Link to={path} target={target} aria-label={`link to ${path}`}>
           {text}
         </Link>
       )}

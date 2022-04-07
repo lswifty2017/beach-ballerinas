@@ -49,6 +49,17 @@ const Layout = ({
           }
         }
       }
+      programs: allMarkdownRemark(
+        filter: { fields: { slug: { regex: "/programs/" } } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              title
+            }
+          }
+        }
+      }
     }
   `)
 
@@ -58,6 +69,11 @@ const Layout = ({
     {
       primaryTitle: "timetable",
       primaryPath: "/timetable",
+      secondaryLinks: [],
+    },
+    {
+      primaryTitle: "programs",
+      primaryPath: "/programs",
       secondaryLinks: [],
     },
     {
