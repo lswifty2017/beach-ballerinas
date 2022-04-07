@@ -6,7 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "change-case": "^4.1.1",
-    "gatsby": "^4.11.2",
+    "gatsby": "^4.7.2",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-facebook-customer-chat": "^1.0.2",
     "gatsby-plugin-google-analytics": "^4.11.0",
