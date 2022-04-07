@@ -65,7 +65,7 @@ const Classes = ({ data }) => {
               >
                 <h3>{frontmatter.title}</h3>
                 <h4>{frontmatter.subtitle}</h4>
-                <ReactMarkdown source={frontmatter.description} />
+                <ReactMarkdown children={frontmatter.description} />
                 <div className="flex-container">
                   <Button path={`/timetable`} text="View Timetable" />
                   <Button path={`/sign-up`} text="Sign Up" bgColor="sand" />

@@ -131,7 +131,7 @@ const IndexPage = ({ data }) => {
                   height: matches.small ? 200 : 500,
                   width: matches.small ? 300 : 800,
                   playerVars: {
-                    autoplay: 1,
+                    autoplay: 0,
                   },
                 }}
               />

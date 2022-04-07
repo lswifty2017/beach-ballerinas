@@ -73,7 +73,10 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sass",
       options: {
-        data: `@import "${__dirname}/src/styles/variables";`,
+        additionalData: `@import "${__dirname}/src/styles/variables";`,
+        sassOptions: {
+          includePaths: [`${__dirname}/src/styles`],
+        },
       },
     },
     {

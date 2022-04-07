@@ -88,7 +88,7 @@ const AboutPage = ({ data }) => {
                 imgType="circle"
               >
                 <h3>{name}</h3>
-                <ReactMarkdown source={description} />
+                <ReactMarkdown children={description} />
               </ImageContent>
             )
           })}
@@ -119,7 +119,7 @@ const AboutPage = ({ data }) => {
                   <div className="content">
                     <h3>{title}</h3>
                     <h4>{address}</h4>
-                    <ReactMarkdown source={description} />
+                    <ReactMarkdown children={description} />
                   </div>
                 </ImageContent>
               )

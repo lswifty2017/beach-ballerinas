@@ -3,6 +3,7 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
 import Banner from "../components/banner/banner"
 import Form from "../components/form/form"
+import { graphql } from "gatsby"
 
 export const data = graphql`
   query SignUpPage {

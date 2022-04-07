@@ -16,7 +16,7 @@ const UniformCard = ({ title, description, imgFluid }) => {
       </div>
       <div className="uniform-card__wrapper">
         <h3>{title}</h3>
-        <ReactMarkdown source={description} />
+        <ReactMarkdown children={description} />
       </div>
     </div>
   )

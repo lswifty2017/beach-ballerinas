@@ -64,7 +64,7 @@ const InformationPage = ({ data }) => {
         <div className="section__wrapper">
           <h2>{uniform.frontmatter.title}</h2>
           <div className="section__wrapper section__wrapper--content text-align-center">
-            <ReactMarkdown source={uniform.frontmatter.description} />
+            <ReactMarkdown children={uniform.frontmatter.description} />
             <a
               aria-label="link to bloch page"
               class="bloch-logo"
@@ -97,7 +97,7 @@ const InformationPage = ({ data }) => {
       >
         <div className="section__wrapper section__wrapper--content">
           <h2>{termsAndConditions.frontmatter.title}</h2>
-          <ReactMarkdown source={termsAndConditions.frontmatter.content} />
+          <ReactMarkdown children={termsAndConditions.frontmatter.content} />
         </div>
       </section>
     </Layout>
