@@ -48,7 +48,10 @@ const Classes = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Classes" />
+      <SEO
+        title="Classes"
+        description="At Beach Ballerinas, classes are offered from ages 3 to 8 years of age to both boys and girls, as well as classes for adult ballet. Classes are aimed to develop new motor skills, introduce rythmn and musical understanding and create a warm, nurturing environment."
+      />
       <Banner
         fluid={banner.frontmatter.classes_banner_img.childImageSharp.fluid}
         title="Classes"

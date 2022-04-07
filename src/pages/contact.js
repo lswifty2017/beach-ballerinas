@@ -45,7 +45,10 @@ const ContactPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Contact" />
+      <SEO
+        title="Contact"
+        description="Fill out our contact form for any enquiries for ballet and jazz classes for your children. Beach Ballerinas is located on Campbell Parade, Bondi Beach in NSW."
+      />
       <Banner
         fluid={banner.frontmatter.contact_banner_img.childImageSharp.fluid}
         title="Contact"

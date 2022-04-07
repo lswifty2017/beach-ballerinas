@@ -143,7 +143,10 @@ const Timetable = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Timetable" />
+      <SEO
+        title="Timetable"
+        description="Beach Ballerina's timetable for ballet and jazz classes at Bondi Beach. This includes ballet and jazz for children, as well as adult beginner ballet classes."
+      />
       <Banner
         fluid={banner.frontmatter.timetable_banner_img.childImageSharp.fluid}
         title="Timetable"

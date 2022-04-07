@@ -6,7 +6,7 @@ import BBLogo from "../assets/bb-logo-black.png"
 const SignUpPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Success" />
+      <SEO title="Success" description="You have successfully signed up." />
       <section id="success">
         <div className="success">
           <img src={BBLogo} alt="beach ballerinas logo"></img>

@@ -55,7 +55,10 @@ const InformationPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Information" />
+      <SEO
+        title="Information"
+        description="Beach ballerinas has uniform guides for both girls and boys, partnering with the Bloch Loyalty Program to provide discounts to uniform."
+      />
       <Banner
         fluid={banner.frontmatter.information_banner_img.childImageSharp.fluid}
         title="Information"

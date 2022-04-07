@@ -90,7 +90,10 @@ const SignUpPage = ({ data }) => {
         fluid={banner.frontmatter.signup_banner_img.childImageSharp.fluid}
         title="Sign Up"
       />
-      <SEO title="Sign Up" />
+      <SEO
+        title="Sign Up"
+        description="Complete a sign up form to begin classes with Beach Ballerinas. A member of the Beach Ballerinas team will be in contact shortly after."
+      />
       <section id="sign-up" className="bgSand">
         <h2>Sign Up</h2>
         <Form

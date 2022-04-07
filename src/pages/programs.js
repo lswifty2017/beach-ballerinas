@@ -49,7 +49,10 @@ const Programs = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Programs" />
+      <SEO
+        title="Programs"
+        description="Programs that are offered outside of regular classes in Bondi Beach. This includes holiday workshop, primary school classes and events."
+      />
       <Banner
         fluid={banner.frontmatter.information_banner_img.childImageSharp.fluid}
         title="Programs"

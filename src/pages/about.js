@@ -72,7 +72,10 @@ const AboutPage = ({ data }) => {
 
   return (
     <Layout id="about">
-      <SEO title="About" />
+      <SEO
+        title="About"
+        description="Beach ballerinas is owned and managed by Tamar Arzoumalian - a qualified Royal Academy of Dance teacher with 10+ years of experience teaching ballet and jazz to young children. The school studio is located on Campbell Parade, Bondi Beach, featuring change rooms, mirrors and barre and pristine floorboards."
+      />
       <Banner
         fluid={banner.frontmatter.about_banner_img.childImageSharp.fluid}
         title="About"
