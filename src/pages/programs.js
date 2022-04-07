@@ -61,7 +61,7 @@ const Programs = ({ data }) => {
               <ImageContent
                 id={paramCase(frontmatter.title)}
                 fluid={frontmatter.image.childImageSharp.fluid}
-                imgType="square"
+                imgType="rectangle"
                 key={frontmatter.title}
               >
                 <h3>{frontmatter.title}</h3>

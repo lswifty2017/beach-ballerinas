@@ -29,6 +29,10 @@
       padding-bottom: 16px;
       max-width: $max-width-mobile;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -55,6 +59,11 @@
         width: 320px;
         height: 320px;
       }
+
+      &--rectangle {
+        width: 320;
+        height: 540px;
+      }
     }
 
     &__content {
@@ -80,6 +89,11 @@
         width: 400px;
         height: 400px;
       }
+
+      &--rectangle {
+        width: 400px;
+        height: 600px;
+      }
     }
 
     &__content {
@@ -87,6 +101,7 @@
         display: flex;
         flex-direction: column;
         max-width: 550px;
+        align-items: flex-start;
       }
     }
   }

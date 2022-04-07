@@ -14,6 +14,10 @@ const ImageContent = ({ fluid, imgType = "", bgColor, children, id }) => {
     imageClassName += " image-content__image--square"
   }
 
+  if (imgType === "rectangle") {
+    imageClassName += " image-content__image--rectangle"
+  }
+
   if (imgType) {
     containerClassName += " image-content--padded-bottom"
   }
