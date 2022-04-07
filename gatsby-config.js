@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Beach Ballerinas`,
-    description: `Beach ballerinas is a ballet school located in Bondi, Sydney offering ballet and jazz classes to children.`,
+    description: `Beach Ballerinas ballet school provides a warm, fun and joyful dancing environment to todlers, children and adults. Ballet and jazz is taught at our beautiful studio in the heart of Bondi Beach, Sydney.`,
     author: `Liam Swift`,
     siteUrl: `https://beachballerinas.com.au`,
     social: {
