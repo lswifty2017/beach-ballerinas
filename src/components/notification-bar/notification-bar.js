@@ -14,7 +14,7 @@ const NotificationBar = ({ content }) => {
 
   return (
     <div className={`notification-bar ${notificationBarState}`}>
-      <ReactMarkdown children={content} />
+      <ReactMarkdown className={"notification-bar__text"} children={content} />
       <button
         aria-label="close notification"
         className="notification-bar__close"

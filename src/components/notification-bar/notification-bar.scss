@@ -3,13 +3,15 @@
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  width: 100%;
-  height: 60px;
+  min-height: 30px;
+  padding: 12px 20px;
+  overflow-x: hidden;
   z-index: 2;
   background-color: $primary-blue;
   justify-content: center;
   align-items: center;
   color: $primary-font-color-inverse;
+  line-height: 24px;
 
   p {
     padding-bottom: 0;
@@ -17,25 +19,27 @@
 
   a {
     color: inherit;
+    text-decoration: none;
 
     &:hover {
-      color: $primary-font-color;
+      opacity: 0.6;
       transition: 0.3s;
     }
   }
 
   &__close {
+    position: absolute;
+    right: 20px;
+
     svg {
       height: 20px;
       width: 20px;
 
       &:hover {
-        fill: $primary-font-color;
+        opacity: 0.6;
         transition: 0.3s;
       }
     }
-
-    padding-left: 20px;
   }
 
   &.active {
