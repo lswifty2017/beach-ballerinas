@@ -9,8 +9,16 @@ module.exports = {
     },
   },
   plugins: [
+    "gatsby-plugin-robots-txt",
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-instagram-embed",
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        output: "/",
+        exclude: ["/admin", "/success"],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
