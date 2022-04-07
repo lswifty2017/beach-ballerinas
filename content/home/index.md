@@ -1,7 +1,10 @@
 ---
 banner: /assets/coverpoppykissingfrankie-min.jpeg
 show-notification-bar: true
-notification-content: "[Now Taking Bookings for 2022](https://www.beachballerinas.com.au/sign-up/)"
+notification-content: "[**NEW** dance classes at Galilee Primary School starting
+  May 2nd - **Book
+  Now**!](https://www.eventbrite.com.au/e/galilee-dance-sessions-tickets-310895\
+  465707)"
 introduction-title: Welcome to Beach Ballerinas
 introduction-description: We offer ballet and dance classes at the heart of
   Bondi Beach. Our quality program for children from 18 months and up and allows
