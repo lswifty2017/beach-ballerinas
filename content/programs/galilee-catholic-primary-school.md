@@ -20,7 +20,7 @@ description: >-
 
   * Learn a Funky routine- giving dancers a chance to express themselves
 
-  * 9 Sessions of FUN !!
+  * 8 Sessions of FUN !!
 
   * Active Kids Vouchers are accepted (Please email before booking with Voucher and Childs Name and DOB)
 image: /assets/galilee-dance-classes.png
