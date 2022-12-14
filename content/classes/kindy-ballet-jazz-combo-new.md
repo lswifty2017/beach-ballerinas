@@ -16,7 +16,7 @@ description: >-
   A very fun, higher energy and moving class for kindergarten kids. Strength and stretching exercises are formally introduced in this level which assists with childrens posture and dance technique.
 image: /assets/throwing-sand-jpg-min.jpg
 class-times:
-  - start-time: 03:30 PM
+  - start-time: 03:15 PM
     end-time: 04:15 PM
     day: Wednesday
 ---
