@@ -1,6 +1,6 @@
 ---
 order: "4"
-title: Kindy Ballet & Jazz Combo (NEW)
+title: Kindy Ballet & Jazz Combo
 subtitle: Bondi Beach
 description: >-
   Beach Ballerinas Combo is perfect class for Kindy kids- The best of both dance
