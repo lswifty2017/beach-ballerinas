@@ -1,6 +1,6 @@
 ---
 order: "6"
-title: Junior Jazz (Year 1 kids & up)
+title: Pre- Junior Jazz (Year 1 kids)
 subtitle: Bondi Beach
 description: >-
   Beach Ballerinas jazz class dancers learn funky age appropriate routines with
