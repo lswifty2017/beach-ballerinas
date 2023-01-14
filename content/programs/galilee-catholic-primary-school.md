@@ -21,7 +21,7 @@ description: >-
   * Active Kids Vouchers are accepted (Please email before booking with Voucher and Childs Name and DOB)
 
 
-  **Starting Term 3 2023! Enquire for more details**
+  **Starting Term 2 2023! Enquire for more details**
 image: /assets/galilee-dance-classes.png
 payment-link: ''
 ---

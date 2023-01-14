@@ -1,23 +1,20 @@
 ---
-order: "1"
-title: 3 Year Olds
+order: "2"
+title: BB Toddlers
 subtitle: Bondi Beach
 description: >-
-  Beach Ballerinas hold classes for 3 year olds that is a beautiful introduction
-  to the wonderful world of dance. We use the Oz tots Program that has been
+  Beach Ballerinas hold classes for 3-5 year olds that are a beautiful introduction
+  to the wonderful world of dance. We use the Oz Tots Program that has been
   established for over three decades and proven to be most affective for
   toddlers and dance! 
 
-
   * Introducing creative and educational group tasks for literacy and numeracy
 
-  * Enjoy passive stretching, learning body parts, introducing rhythm through clapping and beating to music and using musical instruments 
+  * Enjoy passive stretching, learning body parts, introducing rhythm through clapping, beating and playing musical instruments to music
 
-  * Develop gross motor skills i.e. skipping, galloping, jumping and using props
+  * Develop gross motor skills such as skipping, galloping, jumping with props
 
-  * Sing to fun songs especially written for this age group
-
-  * So much fun in a loving and nurturing environment 
+  * Sing to fun age appropriate songs
 
   * Working towards our FUN open day for parents at the end of each Term
 image: /assets/frankie-serios-solo-min.jpg
