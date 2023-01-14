@@ -113,9 +113,9 @@ const IndexPage = ({ data }) => {
           <img id="home-logo" src={bbLogo} alt="beach ballerinas logo" />
           {/* <h1>{introduction_title}</h1> */}
           <p>{introduction_description}</p>
-          <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <img id="home-rad" src={radLogo} alt="RAD Ballet Certificate"  style={{ paddingRight: '16px' }}/>
-            <img id="home-oz-tots" src={ozTotsLogo} alt="Oz Tots"  style={{ paddingRight: '16px' }}/>
+          <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '20px' }}>
+            <img id="home-rad" src={radLogo} alt="RAD Ballet Certificate"  style={{ paddingRight: '22px' }}/>
+            <img id="home-oz-tots" src={ozTotsLogo} alt="Oz Tots"  style={{ paddingRight: '22px' }}/>
             <img id="home-active-kids" src={activeKidsLogo} alt="Active Kids NSW" />
           </div>
         </div>
