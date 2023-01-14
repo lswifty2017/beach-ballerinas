@@ -12,6 +12,7 @@ import Gallery from "../components/gallery/gallery"
 import bbLogo from "../assets/bb-logo-black.png"
 import radLogo from "../assets/rad-logo-blue.png"
 import ozTotsLogo from "../assets/oz-tots-logo.png"
+import activeKidsLogo from "../assets/active-kids-voucher.png"
 import Youtube from "react-youtube"
 import Media from "react-media"
 import "typeface-montserrat"
@@ -113,8 +114,9 @@ const IndexPage = ({ data }) => {
           {/* <h1>{introduction_title}</h1> */}
           <p>{introduction_description}</p>
           <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <img id="home-rad" src={radLogo} alt="RAD Ballet Certificate" width={100} height={100} style={{ paddingRight: '16px' }}/>
-            <img id="home-oz-tots" src={ozTotsLogo} alt="Oz Tots" />
+            <img id="home-rad" src={radLogo} alt="RAD Ballet Certificate"  style={{ paddingRight: '16px' }}/>
+            <img id="home-oz-tots" src={ozTotsLogo} alt="Oz Tots"  style={{ paddingRight: '16px' }}/>
+            <img id="home-active-kids" src={activeKidsLogo} alt="Active Kids NSW" />
           </div>
         </div>
       </section>
