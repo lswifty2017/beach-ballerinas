@@ -112,8 +112,8 @@ const IndexPage = ({ data }) => {
           <img id="home-logo" src={bbLogo} alt="beach ballerinas logo" />
           {/* <h1>{introduction_title}</h1> */}
           <p>{introduction_description}</p>
-          <div className="flex-container flex-container--justify-content-center">
-            <img id="home-rad" src={radLogo} alt="RAD Ballet Certificate" />
+          <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <img id="home-rad" src={radLogo} alt="RAD Ballet Certificate" width={100} height={100} style={{ paddingRight: '16px' }}/>
             <img id="home-oz-tots" src={ozTotsLogo} alt="Oz Tots" />
           </div>
         </div>
