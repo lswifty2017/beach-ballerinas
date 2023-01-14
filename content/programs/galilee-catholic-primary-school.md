@@ -22,4 +22,5 @@ description: >-
 
   ** Starting Term 3 2023! Enquire for more details**
 image: /assets/galilee-dance-classes.png
+payment-link: ''
 ---
