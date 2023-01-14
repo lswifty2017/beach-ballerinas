@@ -70,13 +70,16 @@ const Programs = ({ data }) => {
                 <h3>{frontmatter.title}</h3>
                 <h4>{frontmatter.location}</h4>
                 <ReactMarkdown children={frontmatter.description} />
-                <div className="flex-container">
-                  <Button
-                    path={frontmatter.payment_link}
-                    text="Book now"
-                    target="_blank"
-                  />
-                </div>
+                {
+                  frontmatter?.payment_link && 
+                  <div className="flex-container">
+                    <Button
+                      path={frontmatter.payment_link}
+                      text="Book now"
+                      target="_blank"
+                    />
+                  </div>
+                }
               </ImageContent>
             )
           })}

@@ -3,10 +3,6 @@ order: "1"
 title: Galilee Catholic Primary School
 location: Galilee Catholic Primary School, 60B Blair Street, North Bondi, NSW 2026
 description: >-
-  Come and join our awesome dance classes **EVERY MONDAY at 1.30pm**! Starting
-  from 2nd of May through to 27th of June.
-
-
   No dance experience needed, open to all ages. Just bring lots of energy and happy faces.
 
 
@@ -23,6 +19,7 @@ description: >-
   * 8 Sessions of FUN !!
 
   * Active Kids Vouchers are accepted (Please email before booking with Voucher and Childs Name and DOB)
+
+  ** Starting Term 3 2023! Enquire for more details**
 image: /assets/galilee-dance-classes.png
-payment-link: https://www.eventbrite.com.au/e/galilee-dance-sessions-tickets-310895465707
 ---

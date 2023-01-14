@@ -313,4 +313,4 @@ collections:
       - { label: Program Location, name: location, widget: string }
       - { label: Program Description, name: description, widget: markdown }
       - { label: Program Image, name: image, widget: image }
-      - { label: Program Payment Link, name: payment-link, widget: string }
+      - { label: Program Payment Link, name: payment-link, widget: string, required: false }
