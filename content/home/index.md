@@ -1,7 +1,7 @@
 ---
 banner: /assets/coverpoppykissingfrankie-min.jpeg
 show-notification-bar: true
-notification-content: "[**NEW** Term 1 starting on the 3rd of Februrary 2023 - Book now for a **free trial**!](https://www.beachballerinas.com.au/sign-up)"
+notification-content: "[**NEW Term 1**  starting on the 3rd of Februrary 2023 - Book now for a **free trial!**](https://www.beachballerinas.com.au/sign-up)"
 introduction-title: Welcome to Beach Ballerinas
 introduction-description: We offer ballet and dance classes at the heart of
   Bondi Beach. Our quality program for children from 18 months and up and allows
