@@ -5,7 +5,10 @@ subtitle: Bondi Beach
 description: >-
   Beach Ballerinas Primary Classical Ballet Programme introduces the Royal
   Academy of Dance syllabus and continues the development of ballet technique as
-  new steps are introduced to challenge our young dancers. This class is available for Kindegarten and up and is also offered in combination with Jazz (30 mins Ballet and 30 mins Jazz).
+  new steps are introduced to challenge our young dancers. 
+
+
+  This class is available for Kindergarten and up and is also offered in combination with Jazz (30 mins Ballet and 30 mins Jazz).
 
 
   Aims of the syllabus:
