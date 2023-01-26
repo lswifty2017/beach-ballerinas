@@ -341,6 +341,7 @@ collections:
                   "Sunday",
                 ],
             }
+          - { label: "Is TBC", name: "is-tbc", widget: "boolean", default: false }
           - {
               label: Start Time,
               name: start-time,
