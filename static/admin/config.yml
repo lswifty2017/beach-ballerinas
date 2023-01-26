@@ -314,3 +314,49 @@ collections:
       - { label: Program Description, name: description, widget: markdown }
       - { label: Program Image, name: image, widget: image }
       - { label: Program Payment Link, name: payment-link, widget: string, required: false }
+  - label: "Timetable"
+    name: "timetable"
+    folder: "content/timetable"
+    editor:
+      preview: false
+    create: true
+    summary: "Enter times for each class"
+    fields:
+      - { label: Class Name, name: title, widget: string }
+      - label: Class Times
+        name: class-times
+        widget: list
+        fields:
+          - {
+              label: Day,
+              name: day,
+              widget: select,
+              options:
+                [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday",
+                ],
+            }
+          - {
+              label: Start Time,
+              name: start-time,
+              widget: datetime,
+              default: "",
+              format: "hh:mm A",
+              dateFormat: false,
+              timeFormat: "hh:mm A",
+            }
+          - {
+              label: End Time,
+              name: end-time,
+              widget: datetime,
+              default: "",
+              format: "hh:mm A",
+              dateFormat: false,
+              timeFormat: "hh:mm A",
+            }
