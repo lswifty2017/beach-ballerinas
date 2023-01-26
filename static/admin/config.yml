@@ -320,7 +320,6 @@ collections:
     editor:
       preview: false
     create: true
-    summary: "Enter times for each class"
     fields:
       - { label: Class Name, name: title, widget: string }
       - label: Class Times
