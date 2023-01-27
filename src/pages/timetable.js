@@ -78,11 +78,12 @@ const Timetable = ({ data }) => {
     const { class_times, title } = frontmatter
 
     if (class_times) {
-      class_times.forEach(({ day, start_time, end_time }) => {
+      class_times.forEach(({ day, start_time, end_time, is_tbc }) => {
         const classTimeData = {
           title: title,
           startTime: start_time,
           endTime: end_time,
+          isTbc: is_tbc
         }
 
         switch (day) {
@@ -162,10 +163,10 @@ const Timetable = ({ data }) => {
                   return (
                     <div key={day} className="timetable__day">
                       <h3>{day}</h3>
-                      {classes.map(({ title, startTime, endTime }) => {
+                      {classes.map(({ title, startTime, endTime, isTbc }) => {
                         return (
                           <div key={title} className="timetable__class-time">
-                            <h4 className="timetable__class-title">{title}</h4>
+                            <h4 className="timetable__class-title">{title}{isTbc ? ` (TBC)` : undefined}</h4>
                             <p>
                               {startTime} - {endTime}
                             </p>
