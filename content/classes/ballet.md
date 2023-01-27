@@ -17,8 +17,4 @@ description: >-
 
   * The program encourages creativity by engaging students in planning exercises set to musical pieces and to express emotion through storytelling.
 image: /assets/pre-primary-ballet-pic-min.jpg
-class-times:
-  - start-time: 04:15 PM
-    end-time: 05:00 PM
-    day: Wednesday
 ---

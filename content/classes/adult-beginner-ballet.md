@@ -15,8 +15,4 @@ description: >-
 
   There is no such thing as being 'too old' - with fitness and technique one can do miracles!
 image: /assets/tamar-reachibg-up-min.jpg
-class-times:
-  - day: Wednesday
-    start-time: 12:15 PM
-    end-time: 01:15 PM
 ---

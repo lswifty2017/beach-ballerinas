@@ -13,8 +13,4 @@ description: >-
 
   The progression will accelerate with this age group, as they are a little older and more aware of their bodies. Strength and stretching exercises are formally introduced in this level, which assists with posture and dance technique.
 image: /assets/boys-stretched-arms-min.jpg
-class-times:
-  - day: Wednesday
-    start-time: 05:00 PM
-    end-time: 05:45 PM
 ---
