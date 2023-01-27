@@ -19,12 +19,13 @@ export const data = graphql`
       }
     }
     classes: allMarkdownRemark(
-      filter: { fields: { slug: { regex: "/classes/" } } }
+      filter: { fields: { slug: { regex: "/timetable/" } } }
     ) {
       nodes {
         frontmatter {
           title
           class_times {
+            is_tbc
             day
             start_time
             end_time
