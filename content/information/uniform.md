@@ -25,9 +25,9 @@ uniform-card:
     description: >-
       * [Bloch Sleeveless
       Leotard](https://www.bloch.com.au/products/l0828g-bloch-overture-odetta-sleeveless-pleat-girls-leotard-2?variant=23302314983505)
-      Light Pink
+      Candy Pink
 
-      * [Bloch RAD](https://www.bloch.com.au/products/l0828g-bloch-overture-odetta-sleeveless-pleat-girls-leotard-2?_pos=188&_sid=bc3dfa2e7&_ss=r&variant=23302314983505) skirt Light Pink
+      * [Bloch RAD](https://www.bloch.com.au/products/a0735g-bloch-royale-exam-girls-skirt-8?pr_prod_strat=copurchase&pr_rec_id=1fe3ceaf4&pr_rec_pid=3033152585809&pr_ref_pid=3032907317329&pr_seq=uniform) skirt Candy Pink
 
       * Pink Ballet socks and Pink Ballet shoes
 
