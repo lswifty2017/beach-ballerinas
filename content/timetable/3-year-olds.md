@@ -13,7 +13,7 @@ class-times:
     end-time: 10:15 AM
     day: Wednesday
     is-tbc: false
-  - is-tbc: false
+  - is-tbc: true
     start-time: 02:30 PM
     end-time: 03:15 PM
     day: Saturday
