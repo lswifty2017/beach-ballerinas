@@ -3,7 +3,7 @@ term-one:
   - start-date: 3 Februrary
     end-date: 8 April
 term-two:
-  - start-date: 26 April
+  - start-date: 24 April
     end-date: 30 June
 term-three:
   - start-date: 18 July
