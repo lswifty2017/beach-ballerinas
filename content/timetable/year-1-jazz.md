@@ -1,8 +1,8 @@
 ---
-title: Year 1 Jazz
+title: Primary Jazz
 class-times:
-  - is-tbc: true
-    start-time: 05:00 PM
-    end-time: 05:45 PM
+  - is-tbc: false
+    start-time: 04:30 PM
+    end-time: 05:15 PM
     day: Wednesday
 ---
