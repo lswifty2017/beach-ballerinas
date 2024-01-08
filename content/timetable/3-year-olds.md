@@ -17,8 +17,4 @@ class-times:
     start-time: 08:30 AM
     end-time: 09:15 AM
     day: Saturday
-  - is-tbc: true
-    start-time: 11:30 AM
-    end-time: 12:15 PM
-    day: Saturday
 ---
