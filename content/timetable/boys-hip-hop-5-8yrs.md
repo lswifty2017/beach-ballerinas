@@ -1,8 +1,8 @@
 ---
-title: Boys Hip Hop 5-8yrs
+title: Hip Hop Kindy / Year 1
 class-times:
   - is-tbc: true
-    start-time: 03:45 PM
-    end-time: 04:30 PM
-    day: Tuesday
+    start-time: 04:30 PM
+    end-time: 05:15 PM
+    day: Thursday
 ---
