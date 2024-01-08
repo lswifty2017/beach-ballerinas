@@ -1,5 +1,5 @@
 ---
-title: Adults Reggaton
+title: Adults Reggaeton
 class-times:
   - is-tbc: true
     start-time: 06:30 PM
