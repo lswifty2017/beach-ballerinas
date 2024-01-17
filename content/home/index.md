@@ -1,7 +1,7 @@
 ---
 banner: /assets/coverpoppykissingfrankie-min.jpeg
 show-notification-bar: true
-notification-content: "[**NEW Term 1** starting on the 9th of January 2024 -
+notification-content: "[**NEW Term 1** starting on the 9th of February 2024 -
   Book now for a **FREE Trial!**](https://www.beachballerinas.com.au/sign-up)"
 introduction-title: Welcome to Beach Ballerinas
 introduction-description: We offer ballet and dance classes at the heart of
