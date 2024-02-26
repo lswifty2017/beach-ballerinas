@@ -14,7 +14,7 @@ uniform-card:
   - title: Girls Toddlers
     description: >-
       * [Bloch
-      Tutu](https://www.bloch.com.au/collections/girls-tutus/products/l57120g-bloch-desdemona-tutu-girls-leotard-3?variant=23305271181393):
+      Tutu](https://www.bloch.com.au/products/l57120g-bloch-desdemona-tutu-girls-leotard-light-pink?_pos=3&_sid=aead0d1fb&_ss=r):
       Baby Pink/Blue or White
 
       * Hair neatly tied up, off the face
