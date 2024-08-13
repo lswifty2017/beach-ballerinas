@@ -9,4 +9,8 @@ class-times:
     start-time: 11:00 AM
     end-time: 11:45 AM
     day: Saturday
+  - is-tbc: false
+    start-time: 09:45 AM
+    end-time: 10:30 AM
+    day: Monday
 ---
