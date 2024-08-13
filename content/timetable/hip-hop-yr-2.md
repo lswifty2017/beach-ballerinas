@@ -1,5 +1,5 @@
 ---
-title: Hip Hop Yr 2 +
+title: Hip Hop
 class-times:
   - is-tbc: false
     start-time: 04:30 PM
