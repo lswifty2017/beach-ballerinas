@@ -1,6 +1,6 @@
 ---
 banner: /assets/coverpoppykissingfrankie-min.jpeg
-show-notification-bar: true
+show-notification-bar: false
 notification-content: "[**NEW Term 1** starting on the 9th of February 2024 -
   Book now for a **FREE Trial!**](https://www.beachballerinas.com.au/sign-up)"
 introduction-title: Welcome to Beach Ballerinas
@@ -14,10 +14,9 @@ introduction-description: We offer ballet and dance classes at the heart of
   that makes each class FUN!!!
 location-img: /assets/bondi-beach.jpg
 location-title: Located at the Beautiful Bondi Beach
-location-description: Just a few minutes walk from Bondi Beach is our amazing
-  dance studio. New beautiful studio with stunning smart lighting, mirrors and
-  new floorboards all creating a magical touch from the moment you step in the
-  studio.
+location-description: Just a few minutes walk from Bondi Beach are our amazing
+  dance studios. We have beautiful studios with mirrors and quality floorboards
+  that create a magical touch from the moment you step in.
 booking-title: Classes Starting Term 1!
 instagram-name: beach_ballerinas
 instagram-links:
