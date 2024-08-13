@@ -2,11 +2,7 @@
 title: Primary Ballet
 class-times:
   - is-tbc: false
-    start-time: 04:30 PM
-    end-time: 05:15 PM
+    start-time: 05:00 PM
+    end-time: 05:45 PM
     day: Wednesday
-  - is-tbc: false
-    start-time: 10:45 AM
-    end-time: 11:45 AM
-    day: Saturday
 ---
