@@ -1,8 +1,8 @@
 ---
 title: Ma Pa & Bubs
 class-times:
-  - start-time: 09:00 AM
-    end-time: 09:30 AM
+  - start-time: 09:30 AM
+    end-time: 10:00 AM
     day: Wednesday
     is-tbc: false
   - start-time: 09:00 AM
