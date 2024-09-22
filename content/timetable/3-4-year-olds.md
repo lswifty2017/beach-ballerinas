@@ -2,8 +2,8 @@
 title: 3 & 4 Year Olds
 class-times:
   - is-tbc: false
-    start-time: 09:30 AM
-    end-time: 10:15 AM
+    start-time: 10:00 AM
+    end-time: 10:45 AM
     day: Wednesday
   - is-tbc: false
     start-time: 11:00 AM
