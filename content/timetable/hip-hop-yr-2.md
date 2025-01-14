@@ -1,8 +1,8 @@
 ---
-title: Hip Hop
+title: Hip Hop K & Yr 1
 class-times:
-  - is-tbc: false
+  - is-tbc: true
     start-time: 04:30 PM
-    end-time: 05:30 PM
-    day: Thursday
+    end-time: 05:15 PM
+    day: Tuesday
 ---
