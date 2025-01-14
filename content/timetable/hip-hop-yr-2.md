@@ -1,5 +1,5 @@
 ---
-title: "Hip Hop "
+title: Hip Hop
 class-times:
   - is-tbc: true
     start-time: 04:15 PM
