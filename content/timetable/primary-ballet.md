@@ -1,5 +1,5 @@
 ---
-title: Primary Ballet
+title: Primary Ballet (Yr 1)
 class-times:
   - is-tbc: false
     start-time: 03:30 PM
