@@ -6,14 +6,6 @@ class-times:
     day: Friday
     is-tbc: false
   - is-tbc: false
-    start-time: 10:30 AM
-    end-time: 11:15 AM
-    day: Tuesday
-  - is-tbc: false
-    start-time: 10:30 AM
-    end-time: 11:15 AM
-    day: Thursday
-  - is-tbc: false
     start-time: 11:15 AM
     end-time: 12:00 PM
     day: Saturday
