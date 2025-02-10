@@ -1,5 +1,5 @@
 ---
-title: Kindy Combo
+title: Kindy/ Yr 1 Combo
 class-times:
   - is-tbc: false
     start-time: 03:30 PM
