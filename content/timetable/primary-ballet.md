@@ -6,7 +6,7 @@ class-times:
     end-time: 04:15 PM
     day: Wednesday
   - is-tbc: true
-    start-time: 01:00 PM
-    end-time: 01:45 AM
+    start-time: 12:15 PM
+    end-time: 01:15 PM
     day: Saturday
 ---
