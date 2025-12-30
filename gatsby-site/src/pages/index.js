@@ -198,7 +198,8 @@ const IndexPage = ({ data }) => {
             {instagram_links.map(link => {
               return (
                 <div
-                  className="instagram-post"
+             
+                className="instagram-post"
                   key={link.embed_link}
                   dangerouslySetInnerHTML={{ __html: link.embed_link }}
                 />
