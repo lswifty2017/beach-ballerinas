@@ -59,11 +59,11 @@ main ol {
 }
 
 main ul {
-  padding-bottom: 8px;
+  padding-bottom: 4px;
 }
 
 main li {
-  padding-bottom: 12px;
+  padding-bottom: 6px;
 }
 
 /* Ordered list custom styling - matches Gatsby */
@@ -325,7 +325,6 @@ button:focus {
   main ul,
   main ol {
     list-style-position: outside;
-    margin-left: 32px;
   }
 
   /* Home page stays centered on desktop */

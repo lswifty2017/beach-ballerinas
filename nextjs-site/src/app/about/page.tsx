@@ -90,7 +90,7 @@ export default async function AboutPage() {
                 imgType="rectangle"
                 reverse={index % 2 === 1}
               >
-                <h3 className="font-montaga text-2xl text-primary-text mb-2">
+                <h3 className="font-montaga text-2xl text-primary-text mb-6">
                   {studio.title}
                 </h3>
                 <p className="text-sm text-primary-text/70 mb-4">
@@ -121,7 +121,7 @@ export default async function AboutPage() {
           </p>
 
           {values.valuesList && values.valuesList.length > 0 && (
-            <ul className="space-y-3 text-left max-w-lg mx-auto">
+            <ul className="space-y-3 text-left max-w-lg mx-auto flex flex-col item-center justify-center">
               {values.valuesList.map((value, index) => (
                 <li
                   key={index}

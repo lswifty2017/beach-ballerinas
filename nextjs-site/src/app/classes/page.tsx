@@ -57,7 +57,8 @@ export default async function ClassesPage() {
               <div
                 key={danceClass.title}
                 id={kebabCase(danceClass.title)}
-                className={index % 2 === 0 ? "" : "bg-primary-pink"}
+                // className={index % 2 === 0 ? "" : "bg-primary-pink"}
+                className={`${index % 2 === 0 ? "" : "bg-primary-pink"} mt-6`}
               >
                 <ImageContent
                   imageUrl={danceClass.imageUrl}

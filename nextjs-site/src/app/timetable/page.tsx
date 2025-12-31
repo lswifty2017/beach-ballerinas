@@ -64,7 +64,7 @@ export default async function TimetablePage() {
                       key={term.name}
                       className="bg-white rounded-lg p-6 text-center shadow-sm"
                     >
-                      <h3 className="font-montaga text-lg text-primary-text mb-2">
+                      <h3 className="font-montaga text-lg text-primary-text mb-6">
                         {term.name}
                       </h3>
                       <p className="text-sm text-primary-text">
