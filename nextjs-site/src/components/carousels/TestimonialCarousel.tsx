@@ -43,7 +43,7 @@ export function TestimonialCarousel({
   }
 
   return (
-    <section className="bg-primary-pink">
+    <section className="bg-primary-pink pt-12">
       <div className="max-w-content mx-auto px-4 pb-6">
         {/* Quote icon */}
         <div className="pb-4">

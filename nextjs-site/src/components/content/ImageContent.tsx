@@ -15,7 +15,7 @@ export function ImageContent({
   const imageStyles = {
     circle: "rounded-full w-[220px] h-[220px] tablet:w-[260px] tablet:h-[260px] desktop:w-[300px] desktop:h-[300px]",
     square: "w-[300px] h-[300px] tablet:w-[320px] tablet:h-[320px] desktop:w-[400px] desktop:h-[400px]",
-    rectangle: "w-[320px] h-[540px] tablet:w-[320px] tablet:h-[540px] desktop:w-[400px] desktop:h-[600px]",
+    rectangle: "w-[320px] h-[320px] tablet:w-1/2 tablet:h-[540px]",
     "": "w-full h-[375px] tablet:h-auto tablet:max-h-[700px]",
   };
 
@@ -23,7 +23,8 @@ export function ImageContent({
     <section
       id={id}
       className={cn(
-        "w-full",
+        "pt-0",
+        "w-full pt-12 tablet:pt-0",
         bgColor === "pink" && "bg-primary-pink"
       )}
     >
@@ -31,6 +32,7 @@ export function ImageContent({
         className={cn(
           // Mobile: block layout (matches Gatsby - not flex until tablet)
           // Tablet+: flex row with centered alignment
+          "w-full",
           "tablet:flex tablet:items-center",
           reverse && "tablet:flex-row-reverse",
           paddedBottom && "tablet:pb-12"

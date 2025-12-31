@@ -37,8 +37,7 @@ export function Button({
 
   const combinedStyles = cn(baseStyles, colorStyles[bgColor], className);
 
-  // Wrapper styles - matches Gatsby .button class: flex, centered, with padding
-  const wrapperStyles = "flex justify-center px-2 pb-4";
+  const wrapperStyles = "flex justify-center px-2";
 
   // If it's a form submit button
   if (type === "submit" || !href) {

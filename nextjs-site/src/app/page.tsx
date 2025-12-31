@@ -6,6 +6,8 @@ import { NotificationBar } from "@/components/ui/NotificationBar";
 import { ClassCard } from "@/components/cards/ClassCard";
 import { ImageContent } from "@/components/content/ImageContent";
 import { TestimonialCarousel } from "@/components/carousels/TestimonialCarousel";
+import { InstagramFeed } from "@/components/ui/InstagramFeed";
+import { YouTubeEmbed } from "@/components/ui/YouTubeEmbed";
 import { getHomepage, getDanceClasses, getBannerImages } from "@/lib/contentful/queries";
 import { kebabCase } from "@/lib/utils/kebabCase";
 import {
@@ -29,8 +31,8 @@ export default async function HomePage() {
   const notificationContent = typeof homepage?.notificationContent === 'string'
     ? homepage.notificationContent
     : staticHomepage.notificationContent;
-  const introductionTitle =
-    homepage?.introductionTitle || staticHomepage.introductionTitle;
+  const instagramHandle = staticHomepage.instagramHandle;
+  const instagramPosts = staticHomepage.instagramPosts;
   const introductionDescription =
     homepage?.introductionDescription || staticHomepage.introductionDescription;
   const locationImageUrl =
@@ -71,79 +73,21 @@ export default async function HomePage() {
 
       {/* Introduction Section */}
       <section className="py-16 text-center">
-        <div className="max-w-content mx-auto px-4">
-          <h2 className="font-montaga text-3xl tablet:text-4xl text-primary-text mb-6">
-            {introductionTitle}
-          </h2>
+        <div className="max-w-content mx-auto px-4 mb-8">
+          <Image
+            src="/images/bb-logo-black.png"
+            alt="Beach Ballerinas Logo"
+            width={360}
+            height={180}
+            className="mx-auto mb-8"
+            priority
+          />
           <p className="text-primary-text leading-relaxed max-w-2xl mx-auto">
             {introductionDescription}
           </p>
         </div>
-      </section>
-
-      {/* Location Section */}
-      <ImageContent
-        imageUrl={locationImageUrl}
-        imageAlt={locationImageAlt}
-        imgType="rectangle"
-        bgColor="pink"
-      >
-        <h2 className="font-montaga text-2xl tablet:text-3xl text-primary-text mb-4">
-          {locationTitle}
-        </h2>
-        <p className="text-primary-text leading-relaxed mb-6">
-          {locationDescription}
-        </p>
-        <Button href="/about#studios" text="Our Studios" bgColor="blue" />
-      </ImageContent>
-
-      {/* Classes Section */}
-      <section className="py-16">
-        <div className="max-w-desktop mx-auto px-4">
-          <h2 className="font-montaga text-3xl tablet:text-4xl text-primary-text text-center mb-12">
-            Our Classes
-          </h2>
-          <Gallery>
-            {displayClasses.map((danceClass) => (
-              <ClassCard
-                key={danceClass.title}
-                imageUrl={danceClass.imageUrl}
-                imageAlt={danceClass.imageAlt}
-                title={danceClass.title}
-                subtitle={danceClass.subtitle}
-                href={`/classes#${kebabCase(danceClass.title)}`}
-              />
-            ))}
-          </Gallery>
-          <div className="text-center mt-12">
-            <Button href="/classes" text="View All Classes" bgColor="sand" />
-          </div>
-        </div>
-      </section>
-
-      {/* Booking Section */}
-      <section className="py-16 bg-primary-blue text-white text-center">
-        <div className="max-w-content mx-auto px-4">
-          <h2 className="font-montaga text-3xl tablet:text-4xl mb-6">
-            {bookingTitle}
-          </h2>
-          <p className="mb-8 max-w-xl mx-auto opacity-90">
-            Come and experience the joy of dance at Beach Ballerinas. Book your
-            free trial class today!
-          </p>
-          <Button href="/sign-up" text="Book Free Trial" bgColor="sand" />
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      {testimonials && testimonials.length > 0 && (
-        <TestimonialCarousel testimonials={testimonials} />
-      )}
-
-      {/* Brand Logos */}
-      <section className="py-12 bg-white">
-        <div className="max-w-desktop mx-auto px-4">
-          <div className="flex flex-wrap items-center justify-center gap-8 tablet:gap-16">
+          <div className="max-w-desktop mx-auto px-4">
+            <div className="flex flex-wrap items-center justify-center gap-8 tablet:gap-16">
             <Image
               src="/images/rad-logo-blue.png"
               alt="Royal Academy of Dance"
@@ -175,6 +119,83 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* YouTube Video Section */}
+      <section className="py-16 bg-primary-sand">
+        <div className="max-w-desktop mx-auto px-4 text-center">
+          <h2 className="font-montaga text-2xl tablet:text-3xl text-primary-text mb-12">
+            Dance and the sea, where we want to be!
+          </h2>
+          <YouTubeEmbed videoId="SR3DlafkQDI" title="Beach Ballerinas - Dance and the sea" />
+        </div>
+      </section>
+
+      {/* Location Section */}
+      <ImageContent
+        imageUrl={locationImageUrl}
+        imageAlt={locationImageAlt}
+        imgType="rectangle"
+        bgColor="pink"
+      >
+        <h2 className="font-montaga text-2xl tablet:text-3xl text-primary-text mb-4">
+          {locationTitle}
+        </h2>
+        <p className="text-primary-text leading-relaxed mb-6">
+          {locationDescription}
+        </p>
+        <Button href="/about#studios" text="Our Studios" bgColor="blue" />
+      </ImageContent>
+
+      {/* Booking Section */}
+      <section className="py-16 bg-primary-blue text-white text-center">
+        <div className="max-w-content mx-auto px-4">
+          <h2 className="font-montaga text-3xl tablet:text-4xl mb-6">
+            {bookingTitle}
+          </h2>
+          <p className="mb-8 max-w-xl mx-auto opacity-90">
+            Come and experience the joy of dance at Beach Ballerinas. Book your
+            free trial class today!
+          </p>
+          <Button href="/sign-up" text="Book Free Trial" bgColor="sand" />
+        </div>
+      </section>
+
+      {/* Classes Section */}
+      <section className="py-16">
+        <div className="max-w-desktop mx-auto px-4">
+          <h2 className="font-montaga text-3xl tablet:text-4xl text-primary-text text-center mb-12">
+            Our Classes
+          </h2>
+          <Gallery>
+            {displayClasses.map((danceClass) => (
+              <ClassCard
+                key={danceClass.title}
+                imageUrl={danceClass.imageUrl}
+                imageAlt={danceClass.imageAlt}
+                title={danceClass.title}
+                subtitle={danceClass.subtitle}
+                href={`/classes#${kebabCase(danceClass.title)}`}
+              />
+            ))}
+          </Gallery>
+          <div className="text-center mt-12">
+            <Button href="/classes" text="View All Classes" bgColor="sand" />
+          </div>
+        </div>
+      </section>
+
+      {/* Timetable Section */}
+      <section className="py-12 bg-primary-blue text-center">
+        <Button href="/timetable" text="View Timetable" bgColor="sand" />
+      </section>
+
+      {/* Testimonials */}
+      {testimonials && testimonials.length > 0 && (
+        <TestimonialCarousel testimonials={testimonials} />
+      )}
+
+      {/* Instagram Feed */}
+      <InstagramFeed handle={instagramHandle} posts={instagramPosts} />
     </>
   );
 }

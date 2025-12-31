@@ -48,10 +48,10 @@ export function Header({ navLinks, socialLinks = [] }: HeaderProps) {
           "bg-primary-pink",
           "h-[140px] w-full",
           "flex items-center justify-between",
-          "px-3"
+          "pr-3"
         )}
       >
-        {/* Logo - matches Gatsby: 200px wrapper width, 12px margin, 150px image */}
+        {/* Logo */}
         <Link
           href="/"
           className="flex justify-center items-center w-[200px]"

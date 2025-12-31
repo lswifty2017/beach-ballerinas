@@ -17,6 +17,12 @@ export const homepage = {
   notificationContent:
     '<a href="/sign-up"><strong>NEW Term 1</strong> starting on the 9th of February 2024 - Book now for a <strong>FREE Trial!</strong></a>',
   introductionTitle: "Welcome to Beach Ballerinas",
+  instagramHandle: "beach_ballerinas",
+  instagramPosts: [
+    "https://www.instagram.com/p/CCigpyHDSu3/",
+    "https://www.instagram.com/p/CC3VN5djqox/",
+    "https://www.instagram.com/p/CDLpdqUD5jR/",
+  ],
   introductionDescription:
     "We offer ballet and dance classes at the heart of Bondi Beach. Our quality program for children from 18 months and up and allows for babies, toddlers and young children to reach their potential whilst developing co-ordination and confidence. We have qualified Royal Academy of Dance teachers to provide ballet and jazz classes at the highest standard. We want to give children the opportunity to experience the wonderful world of dance. Our passion is to share the LOVE of dance, in a nurturing environment that makes each class FUN!!!",
   locationImage: "/cms-assets/bondi-beach.jpg",
