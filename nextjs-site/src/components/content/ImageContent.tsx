@@ -10,32 +10,38 @@ export function ImageContent({
   id,
   children,
   reverse = false,
+  paddedBottom = false,
 }: ImageContentProps) {
   const imageStyles = {
     circle: "rounded-full w-[220px] h-[220px] tablet:w-[260px] tablet:h-[260px] desktop:w-[300px] desktop:h-[300px]",
-    square: "w-[300px] h-[300px] tablet:w-[320px] tablet:h-[320px]",
-    rectangle: "w-full h-[200px] tablet:h-[300px] tablet:w-[320px]",
-    "": "w-full h-[250px] tablet:h-[350px]",
+    square: "w-[300px] h-[300px] tablet:w-[320px] tablet:h-[320px] desktop:w-[400px] desktop:h-[400px]",
+    rectangle: "w-[320px] h-[540px] tablet:w-[320px] tablet:h-[540px] desktop:w-[400px] desktop:h-[600px]",
+    "": "w-full h-[375px] tablet:h-auto tablet:max-h-[700px]",
   };
 
   return (
     <section
       id={id}
       className={cn(
-        "w-full py-4",
+        "w-full",
         bgColor === "pink" && "bg-primary-pink"
       )}
     >
       <div
         className={cn(
-          "max-w-desktop mx-auto px-4",
-          "flex flex-col items-center gap-8",
-          "tablet:flex-row tablet:justify-center tablet:items-center tablet:gap-12",
-          reverse && "tablet:flex-row-reverse"
+          // Mobile: block layout (matches Gatsby - not flex until tablet)
+          // Tablet+: flex row with centered alignment
+          "tablet:flex tablet:items-center",
+          reverse && "tablet:flex-row-reverse",
+          paddedBottom && "tablet:pb-12"
         )}
       >
         {/* Image */}
-        <div className={cn("relative flex-shrink-0", imageStyles[imgType])}>
+        <div className={cn(
+          "relative mx-auto",
+          "tablet:mx-0 tablet:w-1/2",
+          imageStyles[imgType]
+        )}>
           <Image
             src={imageUrl}
             alt={imageAlt}
@@ -44,13 +50,21 @@ export function ImageContent({
               "object-cover",
               imgType === "circle" && "rounded-full"
             )}
-            sizes="(max-width: 767px) 100vw, 400px"
+            sizes="(max-width: 767px) 100vw, 50vw"
           />
         </div>
 
         {/* Content */}
-        <div className="flex-1 max-w-content text-center tablet:text-left">
-          {children}
+        <div className="tablet:w-1/2 tablet:flex">
+          <div className={cn(
+            "py-4 px-5",
+            "max-w-[330px] mx-auto",
+            "flex flex-col justify-center items-center",
+            "text-center",
+            "desktop:max-w-[550px] desktop:items-start desktop:text-left"
+          )}>
+            {children}
+          </div>
         </div>
       </div>
     </section>

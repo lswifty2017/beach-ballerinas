@@ -43,15 +43,15 @@ export function TestimonialCarousel({
   }
 
   return (
-    <section className="py-16 bg-primary-pink">
-      <div className="max-w-content mx-auto px-4">
+    <section className="bg-primary-pink">
+      <div className="max-w-content mx-auto px-4 pb-6">
         {/* Quote icon */}
-        <div className="flex justify-center mb-8">
+        <div className="pb-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="w-10 h-10 text-primary-blue opacity-50"
+            className="w-5 h-5 text-primary-text"
           >
             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
           </svg>
@@ -63,40 +63,48 @@ export function TestimonialCarousel({
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="flex-[0_0_100%] min-w-0 px-4"
+                className="flex-[0_0_100%] min-w-0"
               >
-                <div className="text-center">
-                  {/* Testimonial text */}
-                  <p className="font-montaga text-lg tablet:text-xl text-primary-text italic mb-6 max-w-2xl mx-auto">
-                    &ldquo;{testimonial.text}&rdquo;
-                  </p>
+                {/* Testimonial text */}
+                <p className="px-4 pb-4 text-[20px] leading-7 text-primary-text text-center">
+                  &ldquo;{testimonial.text}&rdquo;
+                </p>
 
-                  {/* Author info */}
-                  <div className="space-y-1">
-                    <p className="font-montserrat font-bold text-sm text-primary-text">
-                      {testimonial.name}
-                    </p>
-                    <p className="font-montserrat text-sm text-primary-text/70">
-                      {testimonial.occupation}
-                    </p>
-                  </div>
+                {/* Closing quote */}
+                <div className="flex justify-end pb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-5 h-5 text-primary-text rotate-180"
+                  >
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                  </svg>
                 </div>
+
+                {/* Author info - using flex justify-end to match Gatsby */}
+                <p className="flex justify-end text-[20px] leading-7 font-medium text-primary-text pr-5 pb-1.5">
+                  {testimonial.name}
+                </p>
+                <p className="flex justify-end text-primary-text pr-5 pb-3">
+                  {testimonial.occupation}
+                </p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Dots navigation */}
-        <div className="flex justify-center gap-2 mt-8">
+        <div className="flex justify-center gap-2">
           {testimonials.map((_, index) => (
             <button
               key={index}
               onClick={() => scrollTo(index)}
               className={cn(
-                "w-3 h-3 rounded-full transition-colors",
+                "w-[10px] h-[10px] rounded-full transition-colors",
                 selectedIndex === index
-                  ? "bg-primary-blue"
-                  : "bg-primary-blue/30 hover:bg-primary-blue/50"
+                  ? "bg-white"
+                  : "bg-primary-text"
               )}
               aria-label={`Go to testimonial ${index + 1}`}
             />

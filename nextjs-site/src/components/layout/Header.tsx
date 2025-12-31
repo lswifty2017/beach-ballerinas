@@ -41,28 +41,28 @@ export function Header({ navLinks, socialLinks = [] }: HeaderProps) {
   };
 
   return (
-    <header
-      className={cn(
-        "sticky top-0 z-40",
-        "bg-primary-pink",
-        "h-[120px]"
-      )}
-    >
-      <div
+    <>
+      <header
         className={cn(
-          "max-w-desktop mx-auto px-4",
-          "h-full",
-          "flex items-center justify-between"
+          `sticky top-0 z-100000`,
+          "bg-primary-pink",
+          "h-[140px] w-full",
+          "flex items-center justify-between",
+          "px-3"
         )}
       >
-        {/* Logo */}
-        <Link href="/" className="flex-shrink-0" onClick={closeMobileMenu}>
+        {/* Logo - matches Gatsby: 200px wrapper width, 12px margin, 150px image */}
+        <Link
+          href="/"
+          className="flex justify-center items-center w-[200px]"
+          onClick={closeMobileMenu}
+        >
           <Image
             src="/images/bb-logo-black.png"
             alt="Beach Ballerinas"
-            width={150}
+            width={140}
             height={60}
-            className="h-[50px] desktop:h-[70px] w-auto"
+            className="w-[150px] h-auto block"
             priority
           />
         </Link>
@@ -76,12 +76,12 @@ export function Header({ navLinks, socialLinks = [] }: HeaderProps) {
           />
         )}
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button - matches Gatsby: padding-right 12px */}
         {!isDesktop && (
           <button
             onClick={toggleMobileMenu}
             className={cn(
-              "p-3",
+              "pr-3",
               "text-primary-text hover:text-black",
               "transition-colors"
             )}
@@ -122,15 +122,15 @@ export function Header({ navLinks, socialLinks = [] }: HeaderProps) {
             )}
           </button>
         )}
-      </div>
+      </header>
 
-      {/* Mobile Navigation */}
+      {/* Mobile Navigation - outside header to avoid flex issues */}
       {!isDesktop && mobileMenuOpen && (
         <div
           className={cn(
             "fixed inset-0 top-[120px]",
             "bg-primary-pink",
-            "z-50",
+            "z-[3]",
             "overflow-y-auto"
           )}
         >
@@ -142,6 +142,6 @@ export function Header({ navLinks, socialLinks = [] }: HeaderProps) {
           />
         </div>
       )}
-    </header>
+    </>
   );
 }

@@ -25,8 +25,10 @@ export default async function HomePage() {
   const bannerImageUrl =
     homepage?.bannerImageUrl || bannerImages?.homeBanner || staticBannerImages.home;
   const showNotification = homepage?.showNotificationBar ?? staticHomepage.showNotificationBar;
-  const notificationContent =
-    homepage?.notificationContent || staticHomepage.notificationContent;
+  // notificationContent from Contentful is Document type, but we need string for static content
+  const notificationContent = typeof homepage?.notificationContent === 'string'
+    ? homepage.notificationContent
+    : staticHomepage.notificationContent;
   const introductionTitle =
     homepage?.introductionTitle || staticHomepage.introductionTitle;
   const introductionDescription =

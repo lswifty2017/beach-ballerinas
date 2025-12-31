@@ -78,7 +78,7 @@ export default async function ProgramsPage() {
                   ) : (
                     <RichTextRenderer content={program.description} />
                   )}
-                  {program.paymentLink && (
+                  {'paymentLink' in program && program.paymentLink && (
                     <div className="mt-6">
                       <Button
                         href={program.paymentLink}

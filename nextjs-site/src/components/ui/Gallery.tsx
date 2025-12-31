@@ -5,9 +5,16 @@ export function Gallery({ children, className }: GalleryProps) {
   return (
     <div
       className={cn(
-        "flex flex-col items-center gap-8",
-        "tablet:flex-row tablet:flex-wrap tablet:justify-center",
-        "w-full max-w-desktop mx-auto px-4",
+        // Mobile: block layout (not flex) - matches Gatsby
+        "w-full max-w-desktop mx-auto",
+        // Tablet+: flex with wrap
+        "tablet:flex tablet:flex-wrap",
+        // Desktop: add justify-center
+        "desktop:justify-center",
+        // Child widths per breakpoint
+        "[&>*]:w-full",
+        "tablet:[&>*]:w-[40%] tablet:[&>*]:px-6",
+        "desktop:[&>*]:w-[28%] desktop:[&>*]:px-2",
         className
       )}
     >

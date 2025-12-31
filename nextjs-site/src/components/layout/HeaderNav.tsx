@@ -51,7 +51,7 @@ export function HeaderNav({
 
   if (isMobile) {
     return (
-      <nav className="flex flex-col py-6">
+      <nav className="flex flex-col py-6 z-100000">
         {navLinks.map((link) => (
           <div key={link.primaryTitle} className="border-b border-light-grey/30">
             <div className="flex items-center justify-between">
@@ -161,7 +161,7 @@ export function HeaderNav({
 
   // Desktop navigation
   return (
-    <nav className="flex items-center gap-8">
+    <nav className="flex items-center gap-8 z-100">
       {navLinks.map((link) => (
         <div
           key={link.primaryTitle}
@@ -173,7 +173,7 @@ export function HeaderNav({
             href={link.primaryPath}
             onClick={handleLinkClick}
             className={cn(
-              "font-montserrat text-sm font-medium",
+              "font-montserrat text-sm font-normal",
               "py-5 px-1",
               "relative",
               "transition-colors",
@@ -184,7 +184,8 @@ export function HeaderNav({
               "after:absolute after:bottom-0 after:left-0 after:right-0",
               "after:h-[2px] after:bg-primary-blue",
               "after:transform after:scale-x-0 after:transition-transform",
-              isActive(link.primaryPath) && "after:scale-x-100"
+              isActive(link.primaryPath) && "after:scale-x-100",
+              "hover:opacity-80"
             )}
           >
             {link.primaryTitle}
@@ -200,7 +201,7 @@ export function HeaderNav({
                   "bg-primary-pink rounded-[8px]",
                   "min-w-[200px]",
                   "py-[14px]",
-                  "z-50"
+                  "z-50",
                 )}
               >
                 {link.secondaryLinks.map((subLink) => (
@@ -212,6 +213,7 @@ export function HeaderNav({
                       "block py-[14px] px-[14px]",
                       "font-montserrat text-sm",
                       "transition-colors",
+                      "hover:opacity-80",
                       isActive(subLink.secondaryPath)
                         ? "text-primary-blue"
                         : "text-primary-text hover:text-primary-blue"

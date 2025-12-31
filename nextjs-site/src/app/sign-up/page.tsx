@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Banner } from "@/components/ui/Banner";
 import { SignUpForm } from "@/components/forms/SignUpForm";
 import { getBannerImages } from "@/lib/contentful/queries";
+import { bannerImages as staticBannerImages } from "@/data/content";
 
 export const metadata: Metadata = {
   title: "Sign Up",
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 
 export default async function SignUpPage() {
   const bannerImages = await getBannerImages();
-  const bannerImageUrl = bannerImages?.signupBanner || "/placeholder.jpg";
+  const bannerImageUrl = bannerImages?.signupBanner || staticBannerImages.signup;
 
   return (
     <>

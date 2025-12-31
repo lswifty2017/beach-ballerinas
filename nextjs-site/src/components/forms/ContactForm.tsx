@@ -50,29 +50,29 @@ export function ContactForm() {
   };
 
   const inputStyles = cn(
-    "w-full",
+    "w-[60%] tablet:w-full",
     "bg-transparent",
-    "border-b border-primary-text/30",
-    "py-3 px-0",
-    "text-primary-text placeholder:text-primary-text/50",
-    "focus:outline-none focus:border-primary-blue",
+    "border-b border-current",
+    "p-1",
+    "text-[14px] text-center tablet:text-left",
+    "text-inherit placeholder:text-current/50",
+    "focus:outline-none focus:border-white",
     "transition-colors"
   );
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form onSubmit={handleSubmit} className="p-5 tablet:w-[60%] tablet:mx-auto tablet:flex tablet:flex-wrap">
       {/* Honeypot field for spam protection */}
       <input type="hidden" name="bot-field" />
 
-      <div>
-        <label htmlFor="name" className="sr-only">
-          Name
+      <div className="flex flex-col items-center pb-7 w-full tablet:items-start tablet:p-3">
+        <label htmlFor="name" className="pb-3 font-medium">
+          Name <span className="text-red-500">*</span>
         </label>
         <input
           type="text"
           id="name"
           name="name"
-          placeholder="Name *"
           required
           value={formData.name}
           onChange={handleChange}
@@ -80,15 +80,14 @@ export function ContactForm() {
         />
       </div>
 
-      <div>
-        <label htmlFor="email" className="sr-only">
-          Email
+      <div className="flex flex-col items-center pb-7 w-full tablet:items-start tablet:p-3">
+        <label htmlFor="email" className="pb-3 font-medium">
+          Email <span className="text-red-500">*</span>
         </label>
         <input
           type="email"
           id="email"
           name="email"
-          placeholder="Email *"
           required
           value={formData.email}
           onChange={handleChange}
@@ -96,15 +95,14 @@ export function ContactForm() {
         />
       </div>
 
-      <div>
-        <label htmlFor="phoneNumber" className="sr-only">
-          Phone Number
+      <div className="flex flex-col items-center pb-7 w-full tablet:items-start tablet:p-3">
+        <label htmlFor="phoneNumber" className="pb-3 font-medium">
+          Phone Number <span className="text-red-500">*</span>
         </label>
         <input
           type="tel"
           id="phoneNumber"
           name="phoneNumber"
-          placeholder="Phone Number *"
           required
           value={formData.phoneNumber}
           onChange={handleChange}
@@ -112,29 +110,28 @@ export function ContactForm() {
         />
       </div>
 
-      <div>
-        <label htmlFor="message" className="sr-only">
-          Message
+      <div className="flex flex-col items-center pb-7 w-full tablet:items-start tablet:p-3">
+        <label htmlFor="message" className="pb-3 font-medium">
+          Message <span className="text-red-500">*</span>
         </label>
         <textarea
           id="message"
           name="message"
-          placeholder="Message *"
           required
           rows={4}
           value={formData.message}
           onChange={handleChange}
-          className={cn(inputStyles, "resize-none")}
+          className={cn(inputStyles, "resize-none h-auto")}
         />
       </div>
 
       {error && (
-        <p className="text-red-500 text-sm" role="alert">
+        <p className="text-red-500 text-sm w-full" role="alert">
           {error}
         </p>
       )}
 
-      <div className="pt-4">
+      <div className="pt-4 w-full flex justify-center tablet:justify-start tablet:p-3">
         <Button
           type="submit"
           text={isSubmitting ? "Sending..." : "Send Message"}

@@ -23,10 +23,10 @@ export function Banner({
       {/* Gradient overlay */}
       {gradient && (
         <div
-          className="absolute inset-0 z-10"
+          className="absolute inset-0 z-2"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(255, 233, 243, 0.7) 0%, transparent 50%)",
+              "linear-gradient(to bottom, rgba(255, 233, 243, 1) 0%, transparent 100%)",
           }}
         />
       )}
@@ -34,7 +34,7 @@ export function Banner({
       {/* White bottom overlay for non-gradient banners */}
       {!gradient && (
         <div
-          className="absolute inset-0 z-10"
+          className="absolute inset-0 z-2"
           style={{
             background:
               "linear-gradient(to top, rgba(255, 255, 255, 0.85) 0%, transparent 40%)",
@@ -46,9 +46,9 @@ export function Banner({
       {title && (
         <h1
           className={cn(
-            "absolute z-20",
+            "absolute z-2",
             "left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2",
-            "font-montaga text-[48px] tablet:text-[80px]",
+            "text-5xl md:text-7xl",
             "text-center text-primary-text",
             "px-4 max-w-full"
           )}

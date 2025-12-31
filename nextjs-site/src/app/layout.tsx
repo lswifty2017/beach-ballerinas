@@ -42,7 +42,6 @@ export const metadata: Metadata = {
 
 // Navigation links - these would ideally come from Contentful
 const navLinks: NavLinkItem[] = [
-  { primaryTitle: "Home", primaryPath: "/" },
   {
     primaryTitle: "About",
     primaryPath: "/about",

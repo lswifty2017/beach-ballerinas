@@ -14,47 +14,49 @@ export function ClassCard({
   return (
     <article
       className={cn(
+        // Matches Gatsby class-card.scss: flex column, centered, pb-36, pt-12, width 100%
         "flex flex-col items-center",
         "pt-3 pb-9",
-        "w-full max-w-[300px]",
-        "text-center"
+        "w-full"
       )}
     >
-      {/* Circular image */}
-      <Link href={href} className="relative block mb-6">
-        <div
-          className={cn(
-            "relative w-[180px] h-[180px] tablet:w-[240px] tablet:h-[240px]",
-            "rounded-full overflow-hidden",
-            "border border-primary-blue"
-          )}
-        >
-          <Image
-            src={imageUrl}
-            alt={imageAlt}
-            fill
-            className="object-cover"
-            sizes="(max-width: 767px) 180px, 240px"
-          />
-        </div>
-      </Link>
+      {/* Circular image - matches Gatsby: 180x180 mobile, 240x240 tablet, 1px blue border, mb-24 */}
+      <div
+        className={cn(
+          "relative",
+          "w-[180px] h-[180px] tablet:w-[240px] tablet:h-[240px]",
+          "rounded-[90px] tablet:rounded-full",
+          "border border-primary-blue",
+          "mb-6",
+          "overflow-hidden"
+        )}
+      >
+        <Image
+          src={imageUrl}
+          alt={imageAlt}
+          fill
+          className="object-cover bg-center rounded-full block"
+          sizes="(max-width: 767px) 180px, 240px"
+        />
+      </div>
 
-      {/* Title with underline decoration */}
-      <div className="relative mb-4">
-        <h3 className="font-montaga text-[24px] font-medium text-primary-text">
+      {/* Title with underline decoration - matches Gatsby: font-weight 500, 24px, pb-20, 48px underline */}
+      <div className="relative pb-5">
+        <span className="font-medium text-[24px] text-primary-text block">
           {title}
-        </h3>
-        <div
+        </span>
+        {/* 48px underline positioned at bottom */}
+        <span
           className={cn(
             "absolute left-1/2 -translate-x-1/2",
-            "bottom-[-12px]",
+            "bottom-3",
             "w-12 h-[1px]",
             "bg-primary-text"
           )}
         />
       </div>
 
-      {/* Subtitle */}
+      {/* Subtitle - matches Gatsby: 18px font, pb-32 */}
       <p className="text-[18px] text-primary-text pb-8">{subtitle}</p>
 
       {/* CTA Button */}

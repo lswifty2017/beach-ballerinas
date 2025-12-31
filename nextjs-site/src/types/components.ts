@@ -35,6 +35,7 @@ export interface ImageContentProps {
   id?: string;
   children: ReactNode;
   reverse?: boolean;
+  paddedBottom?: boolean;
 }
 
 export interface NotificationBarProps {

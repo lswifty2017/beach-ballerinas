@@ -14,12 +14,15 @@ export const metadata: Metadata = {
 };
 
 export default async function ContactPage() {
-  const [studios, bannerImages] = await Promise.all([
+  const [studiosData, bannerImages] = await Promise.all([
     getStudios(),
     getBannerImages(),
   ]);
 
-  const bannerImageUrl = bannerImages?.contactBanner || "/placeholder.jpg";
+  const bannerImageUrl = bannerImages?.contactBanner || staticBannerImages.contact;
+
+  // Use Contentful data or fallback to static
+  const studios = studiosData.length > 0 ? studiosData : staticStudios;
 
   return (
     <>
