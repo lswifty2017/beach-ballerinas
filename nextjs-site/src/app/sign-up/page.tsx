@@ -7,7 +7,7 @@ import { bannerImages as staticBannerImages } from "@/data/content";
 export const metadata: Metadata = {
   title: "Sign Up",
   description:
-    "Book your free trial class at Beach Ballerinas. Start your dance journey today!",
+    "Complete a sign up form to begin classes with Beach Ballerinas. A member of the Beach Ballerinas team will be in contact shortly after.",
 };
 
 export default async function SignUpPage() {
@@ -19,27 +19,18 @@ export default async function SignUpPage() {
       {/* Hero Banner */}
       <Banner
         imageUrl={bannerImageUrl}
-        imageAlt="Sign Up for a Free Trial"
-        title="Book a Free Trial"
+        imageAlt="Sign Up"
+        title="Sign Up"
         gradient={true}
         priority={true}
       />
 
       {/* Sign Up Form Section */}
-      <section className="py-16 bg-primary-blue">
-        <div className="max-w-2xl mx-auto px-4">
-          <div className="text-center text-white mb-8">
-            <h2 className="font-montaga text-2xl tablet:text-3xl mb-4">
-              Start Your Dance Journey
-            </h2>
-            <p className="opacity-90">
-              Fill out the form below to book your free trial class. We&apos;ll be
-              in touch shortly to confirm your booking.
-            </p>
-          </div>
-
-          <SignUpForm />
-        </div>
+      <section id="sign-up" className="py-16 bg-primary-sand">
+        <h2 className="font-montaga text-2xl tablet:text-3xl text-center text-primary-text mb-8">
+          Sign Up
+        </h2>
+        <SignUpForm />
       </section>
     </>
   );

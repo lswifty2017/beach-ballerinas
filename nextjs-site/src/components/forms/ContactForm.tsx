@@ -56,7 +56,7 @@ export function ContactForm() {
     "p-1",
     "text-[14px] text-center tablet:text-left",
     "text-inherit placeholder:text-current/50",
-    "focus:outline-none focus:border-white",
+    "focus:outline-none focus:border-gray-400",
     "transition-colors"
   );
 
@@ -131,11 +131,11 @@ export function ContactForm() {
         </p>
       )}
 
-      <div className="pt-4 w-full flex justify-center tablet:justify-start tablet:p-3">
+      <div className="pt-4 w-full flex justify-center tablet:p-3">
         <Button
           type="submit"
-          text={isSubmitting ? "Sending..." : "Send Message"}
-          bgColor="blue"
+          text={isSubmitting ? "Submitting..." : "Submit"}
+          bgColor="sand"
           disabled={isSubmitting}
         />
       </div>

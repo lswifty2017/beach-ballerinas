@@ -40,7 +40,8 @@ export async function POST(request: NextRequest) {
     // Send notification email to studio
     const { error: notificationError } = await resend.emails.send({
       from: "Beach Ballerinas <noreply@beachballerinas.com.au>",
-      to: ["tamar@beachballerinas.com.au"],
+      // to: ["tamar@beachballerinas.com.au"],
+      to: ["l.swift94@gmail.com"],
       subject: `New Trial Sign Up: ${body.childFirstName} ${body.childSecondName}`,
       html: `
         <h2>New Trial Class Sign Up</h2>

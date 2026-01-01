@@ -19,7 +19,9 @@ export async function POST(request: NextRequest) {
     // Send email via Resend
     const { error } = await resend.emails.send({
       from: "Beach Ballerinas <noreply@beachballerinas.com.au>",
-      to: ["tamar@beachballerinas.com.au"],
+      // from: "onboarding@resend.dev",
+      // to: ["tamar@beachballerinas.com.au"],
+      to: ["l.swift94@gmail.com"],
       subject: `Contact Form: ${name}`,
       html: `
         <h2>New Contact Form Submission</h2>

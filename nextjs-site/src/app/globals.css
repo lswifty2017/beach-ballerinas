@@ -148,24 +148,15 @@ p:last-child {
   padding-bottom: 20px;
 }
 
-/* Button reset - matches Gatsby */
 button {
   cursor: pointer;
-  border: none;
-  outline: none;
-  background-color: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
 }
 
 /* Form element resets - matches Gatsby */
 input,
 textarea,
 select {
-  border: none;
   background-image: none;
-  background-color: transparent;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;

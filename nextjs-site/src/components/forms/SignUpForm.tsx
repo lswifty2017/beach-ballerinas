@@ -2,21 +2,23 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 import { cn } from "@/lib/utils/cn";
 import { Button } from "@/components/ui/Button";
 import type { SignUpFormData } from "@/types/components";
+
+type FieldErrors = Partial<Record<keyof SignUpFormData, string>>;
 
 export function SignUpForm() {
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [fieldErrors, setFieldErrors] = useState<FieldErrors>({});
 
   const [formData, setFormData] = useState<SignUpFormData>({
     childFirstName: "",
     childSecondName: "",
     dateOfBirth: "",
-    gender: "Female",
+    gender: "",
     contactNumber: "",
     preschoolDaycare: "",
     parentGuardianName: "",
@@ -26,6 +28,42 @@ export function SignUpForm() {
     howDidYouHear: "",
     termsAccepted: false,
   });
+
+  const requiredFields: { field: keyof SignUpFormData; label: string }[] = [
+    { field: "childFirstName", label: "Child First Name" },
+    { field: "childSecondName", label: "Child Second Name" },
+    { field: "dateOfBirth", label: "Date of Birth" },
+    { field: "gender", label: "Gender" },
+    { field: "contactNumber", label: "Contact Number" },
+    { field: "preschoolDaycare", label: "Preschool/Daycare" },
+    { field: "parentGuardianName", label: "Parent/Guardian Name" },
+    { field: "email", label: "Email" },
+    { field: "howDidYouHear", label: "How did you hear about us" },
+    { field: "termsAccepted", label: "Terms and Conditions" },
+  ];
+
+  const validateForm = (): boolean => {
+    const errors: FieldErrors = {};
+
+    requiredFields.forEach(({ field, label }) => {
+      const value = formData[field];
+      if (field === "termsAccepted") {
+        if (!value) {
+          errors[field] = "Please accept the terms and conditions";
+        }
+      } else if (!value || (typeof value === "string" && value.trim() === "")) {
+        errors[field] = `${label} is required`;
+      }
+    });
+
+    // Validate email format
+    if (formData.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      errors.email = "Please enter a valid email address";
+    }
+
+    setFieldErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -37,18 +75,26 @@ export function SignUpForm() {
       ...prev,
       [name]: type === "checkbox" ? checked : value,
     }));
+
+    // Clear field error when user starts typing
+    if (fieldErrors[name as keyof SignUpFormData]) {
+      setFieldErrors((prev) => {
+        const newErrors = { ...prev };
+        delete newErrors[name as keyof SignUpFormData];
+        return newErrors;
+      });
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
     setError(null);
 
-    if (!formData.termsAccepted) {
-      setError("Please accept the terms and conditions");
-      setIsSubmitting(false);
+    if (!validateForm()) {
       return;
     }
+
+    setIsSubmitting(true);
 
     try {
       const response = await fetch("/api/sign-up", {
@@ -73,145 +119,169 @@ export function SignUpForm() {
     "w-[60%] tablet:w-full",
     "bg-transparent",
     "border-b border-current",
-    "p-1",
+    "p-1 h-5",
     "text-[14px] text-center tablet:text-left",
-    "text-inherit placeholder:text-current/50",
+    "text-inherit",
     "focus:outline-none focus:border-primary-pink",
     "transition-colors"
   );
 
+  const inputErrorStyles = "border-red-600";
+
   const selectStyles = cn(
     inputStyles,
-    "appearance-none cursor-pointer",
-    "[&>option]:bg-primary-blue [&>option]:text-white"
+    "h-auto",
+    "appearance-none cursor-pointer"
   );
 
   const fieldStyles = "flex flex-col items-center pb-7 w-full tablet:items-start tablet:p-3";
   const halfFieldStyles = cn(fieldStyles, "tablet:w-[calc(50%-24px)]");
   const labelStyles = "pb-3 font-medium";
+  const errorStyles = "text-red-600 text-xs mt-1";
 
   return (
-    <form onSubmit={handleSubmit} className="p-5 tablet:w-[60%] tablet:mx-auto tablet:flex tablet:flex-wrap">
+    <form
+      onSubmit={handleSubmit}
+      className="text-primary-text p-5 tablet:w-[60%] tablet:mx-auto tablet:flex tablet:flex-wrap"
+      noValidate
+    >
       {/* Honeypot field for spam protection */}
       <input type="hidden" name="bot-field" />
 
       {/* Child's First Name */}
       <div className={halfFieldStyles}>
         <label htmlFor="childFirstName" className={labelStyles}>
-          Child&apos;s First Name <span className="text-red-300">*</span>
+          Child First Name <span className="text-red-600">*</span>
         </label>
         <input
           type="text"
           id="childFirstName"
           name="childFirstName"
-          required
           value={formData.childFirstName}
           onChange={handleChange}
-          className={inputStyles}
+          className={cn(inputStyles, fieldErrors.childFirstName && inputErrorStyles)}
         />
+        {fieldErrors.childFirstName && (
+          <p className={errorStyles}>{fieldErrors.childFirstName}</p>
+        )}
       </div>
 
       {/* Child's Second Name */}
       <div className={halfFieldStyles}>
         <label htmlFor="childSecondName" className={labelStyles}>
-          Child&apos;s Second Name <span className="text-red-300">*</span>
+          Child Second Name <span className="text-red-600">*</span>
         </label>
         <input
           type="text"
           id="childSecondName"
           name="childSecondName"
-          required
           value={formData.childSecondName}
           onChange={handleChange}
-          className={inputStyles}
+          className={cn(inputStyles, fieldErrors.childSecondName && inputErrorStyles)}
         />
+        {fieldErrors.childSecondName && (
+          <p className={errorStyles}>{fieldErrors.childSecondName}</p>
+        )}
       </div>
 
       {/* Date of Birth */}
       <div className={halfFieldStyles}>
         <label htmlFor="dateOfBirth" className={labelStyles}>
-          Date of Birth <span className="text-red-300">*</span>
+          Date of Birth <span className="text-red-600">*</span>
         </label>
         <input
           type="date"
           id="dateOfBirth"
           name="dateOfBirth"
-          required
           value={formData.dateOfBirth}
           onChange={handleChange}
-          className={cn(inputStyles, "[&::-webkit-calendar-picker-indicator]:invert")}
+          className={cn(inputStyles, fieldErrors.dateOfBirth && inputErrorStyles)}
         />
+        {fieldErrors.dateOfBirth && (
+          <p className={errorStyles}>{fieldErrors.dateOfBirth}</p>
+        )}
       </div>
 
       {/* Gender */}
       <div className={halfFieldStyles}>
         <label htmlFor="gender" className={labelStyles}>
-          Gender <span className="text-red-300">*</span>
+          Gender <span className="text-red-600">*</span>
         </label>
         <select
           id="gender"
           name="gender"
-          required
           value={formData.gender}
           onChange={handleChange}
-          className={selectStyles}
+          className={cn(selectStyles, fieldErrors.gender && inputErrorStyles)}
         >
-          <option value="Female">Female</option>
+          <option value="" disabled hidden>
+            Select..
+          </option>
           <option value="Male">Male</option>
+          <option value="Female">Female</option>
           <option value="Other">Other</option>
         </select>
+        {fieldErrors.gender && (
+          <p className={errorStyles}>{fieldErrors.gender}</p>
+        )}
       </div>
 
       {/* Contact Number */}
-      <div className={fieldStyles}>
+      <div className={halfFieldStyles}>
         <label htmlFor="contactNumber" className={labelStyles}>
-          Contact Number <span className="text-red-300">*</span>
+          Contact Number <span className="text-red-600">*</span>
         </label>
         <input
           type="tel"
           id="contactNumber"
           name="contactNumber"
-          required
           value={formData.contactNumber}
           onChange={handleChange}
-          className={inputStyles}
+          className={cn(inputStyles, fieldErrors.contactNumber && inputErrorStyles)}
         />
+        {fieldErrors.contactNumber && (
+          <p className={errorStyles}>{fieldErrors.contactNumber}</p>
+        )}
       </div>
 
       {/* Preschool/Daycare */}
-      <div className={fieldStyles}>
+      <div className={halfFieldStyles}>
         <label htmlFor="preschoolDaycare" className={labelStyles}>
-          Preschool/Daycare (if applicable) <span className="text-red-300">*</span>
+          Preschool/Daycare <span className="text-red-600">*</span>
         </label>
         <input
           type="text"
           id="preschoolDaycare"
           name="preschoolDaycare"
-          required
           value={formData.preschoolDaycare}
           onChange={handleChange}
-          className={inputStyles}
+          className={cn(inputStyles, fieldErrors.preschoolDaycare && inputErrorStyles)}
         />
+        {fieldErrors.preschoolDaycare && (
+          <p className={errorStyles}>{fieldErrors.preschoolDaycare}</p>
+        )}
       </div>
 
       {/* Parent/Guardian Name */}
-      <div className={fieldStyles}>
+      <div className={halfFieldStyles}>
         <label htmlFor="parentGuardianName" className={labelStyles}>
-          Parent/Guardian Name <span className="text-red-300">*</span>
+          Parent/Guardian Name <span className="text-red-600">*</span>
         </label>
         <input
           type="text"
           id="parentGuardianName"
           name="parentGuardianName"
-          required
           value={formData.parentGuardianName}
           onChange={handleChange}
-          className={inputStyles}
+          className={cn(inputStyles, fieldErrors.parentGuardianName && inputErrorStyles)}
         />
+        {fieldErrors.parentGuardianName && (
+          <p className={errorStyles}>{fieldErrors.parentGuardianName}</p>
+        )}
       </div>
 
       {/* Suburb */}
-      <div className={fieldStyles}>
+      <div className={halfFieldStyles}>
         <label htmlFor="suburbOfResidence" className={labelStyles}>
           Suburb of Residence
         </label>
@@ -228,23 +298,25 @@ export function SignUpForm() {
       {/* Email */}
       <div className={fieldStyles}>
         <label htmlFor="email" className={labelStyles}>
-          Email <span className="text-red-300">*</span>
+          Email <span className="text-red-600">*</span>
         </label>
         <input
           type="email"
           id="email"
           name="email"
-          required
           value={formData.email}
           onChange={handleChange}
-          className={inputStyles}
+          className={cn(inputStyles, fieldErrors.email && inputErrorStyles)}
         />
+        {fieldErrors.email && (
+          <p className={errorStyles}>{fieldErrors.email}</p>
+        )}
       </div>
 
       {/* Preferred Time/Day */}
       <div className={fieldStyles}>
         <label htmlFor="preferredTimeDay" className={labelStyles}>
-          Preferred Time/Day for Trial
+          Preferred time and day of classes
         </label>
         <input
           type="text"
@@ -259,54 +331,64 @@ export function SignUpForm() {
       {/* How did you hear about us */}
       <div className={fieldStyles}>
         <label htmlFor="howDidYouHear" className={labelStyles}>
-          How did you hear about Beach Ballerinas? <span className="text-red-300">*</span>
+          How did you hear about us? <span className="text-red-600">*</span>
         </label>
         <input
           type="text"
           id="howDidYouHear"
           name="howDidYouHear"
-          required
           value={formData.howDidYouHear}
           onChange={handleChange}
-          className={inputStyles}
+          className={cn(inputStyles, fieldErrors.howDidYouHear && inputErrorStyles)}
         />
+        {fieldErrors.howDidYouHear && (
+          <p className={errorStyles}>{fieldErrors.howDidYouHear}</p>
+        )}
       </div>
 
       {/* Terms and Conditions */}
-      <div className="flex items-start gap-3 pt-4 w-full tablet:p-3">
-        <input
-          type="checkbox"
-          id="termsAccepted"
-          name="termsAccepted"
-          checked={formData.termsAccepted}
-          onChange={handleChange}
-          className={cn(
-            "mt-1 w-4 h-4",
-            "appearance-none rounded-sm border border-current",
-            "checked:bg-primary-pink checked:border-primary-pink",
-            "cursor-pointer",
-            "relative",
-            "after:content-['✓'] after:absolute after:inset-0",
-            "after:flex after:items-center after:justify-center",
-            "after:text-primary-blue after:font-bold after:opacity-0 after:text-xs",
-            "checked:after:opacity-100"
-          )}
-        />
-        <label htmlFor="termsAccepted" className="text-sm">
-          I have read and agree to the Beach Ballerinas{" "}
-          <Link
-            href="/information#terms-and-conditions"
-            className="underline hover:text-primary-pink"
-            target="_blank"
-          >
-            Terms and Conditions
-          </Link>{" "}
-          <span className="text-red-300">*</span>
-        </label>
+      <div className="w-full tablet:p-3">
+        <h4 className="font-montaga text-lg mb-3">Terms and Conditions</h4>
+        <ol className="list-decimal list-inside space-y-2 mb-4 text-sm">
+          <li>
+            I understand there will be NO CHARGE for the FREE TRIAL classes.
+          </li>
+          <li>
+            I understand that I will not be able to take any photographs in the
+            free trial classes.
+          </li>
+          <li>
+            I understand there will be physical contact between students and
+            teachers/teaching assistances during classes.
+          </li>
+        </ol>
+
+        <div className="flex items-start gap-2">
+          <input
+            type="checkbox"
+            id="termsAccepted"
+            name="termsAccepted"
+            checked={formData.termsAccepted}
+            onChange={handleChange}
+            className={cn(
+              "mt-1 w-4 h-4 min-w-4 cursor-pointer appearance-none border-2 rounded-sm bg-transparent relative",
+              "checked:after:content-['✓'] checked:after:absolute checked:after:inset-0 checked:after:flex checked:after:items-center checked:after:justify-center checked:after:text-primary-text checked:after:text-xs checked:after:font-bold",
+              fieldErrors.termsAccepted ? "border-red-600" : "border-primary-text"
+            )}
+          />
+          <label htmlFor="termsAccepted" className="text-sm">
+            By checking this box I agree to the terms and conditions for the
+            trial classes.
+            <span className="text-red-600">*</span>
+          </label>
+        </div>
+        {fieldErrors.termsAccepted && (
+          <p className={cn(errorStyles, "mt-2")}>{fieldErrors.termsAccepted}</p>
+        )}
       </div>
 
       {error && (
-        <p className="text-red-300 text-sm w-full tablet:p-3" role="alert">
+        <p className="text-red-600 text-sm w-full tablet:p-3" role="alert">
           {error}
         </p>
       )}
@@ -314,8 +396,8 @@ export function SignUpForm() {
       <div className="pt-4 w-full flex justify-center tablet:justify-start tablet:p-3">
         <Button
           type="submit"
-          text={isSubmitting ? "Submitting..." : "Book Free Trial"}
-          bgColor="sand"
+          text={isSubmitting ? "Submitting..." : "Submit"}
+          bgColor="blue"
           disabled={isSubmitting}
         />
       </div>

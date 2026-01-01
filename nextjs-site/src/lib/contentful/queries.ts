@@ -75,7 +75,7 @@ export async function getDanceClasses(preview = false): Promise<DanceClass[]> {
   try {
     const entries = await client.getEntries({
       content_type: "danceClass",
-      order: ["fields.order"] as unknown as string[],
+      order: ["fields.order" as const],
     });
 
     return entries.items.map((item) => {
@@ -256,7 +256,7 @@ export async function getPrograms(preview = false): Promise<Program[]> {
   try {
     const entries = await client.getEntries({
       content_type: "program",
-      order: ["fields.order"] as unknown as string[],
+      order: ["fields.order" as const],
     });
 
     return entries.items.map((item) => {
