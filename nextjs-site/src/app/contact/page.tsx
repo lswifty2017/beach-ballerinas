@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default async function ContactPage() {
-  const [studiosData, bannerImages] = await Promise.all([
+  const [_studiosData, bannerImages] = await Promise.all([
     getStudios(),
     getBannerImages(),
   ]);

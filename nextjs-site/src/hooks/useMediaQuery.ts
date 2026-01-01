@@ -6,20 +6,24 @@ import { useState, useEffect } from "react";
  * Hook to check if a media query matches
  */
 export function useMediaQuery(query: string): boolean {
-  const [matches, setMatches] = useState(false);
+  const [matches, setMatches] = useState(() => {
+    // Return false during SSR (window doesn't exist)
+    if (typeof window === "undefined") return false;
+    return window.matchMedia(query).matches;
+  });
 
   useEffect(() => {
     const media = window.matchMedia(query);
 
-    if (media.matches !== matches) {
-      setMatches(media.matches);
-    }
-
+    // Subscribe to changes - setState only called via listener callback
     const listener = () => setMatches(media.matches);
     media.addEventListener("change", listener);
 
+    // Sync initial state in case query changed
+    listener();
+
     return () => media.removeEventListener("change", listener);
-  }, [matches, query]);
+  }, [query]);
 
   return matches;
 }

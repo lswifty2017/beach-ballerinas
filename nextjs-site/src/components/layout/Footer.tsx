@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { cn } from "@/lib/utils/cn";
 import type { FooterProps } from "@/types/components";
 
 export function Footer({ navLinks, socialLinks = [] }: FooterProps) {

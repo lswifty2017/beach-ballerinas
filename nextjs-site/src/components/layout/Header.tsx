@@ -12,16 +12,9 @@ export function Header({ navLinks, socialLinks = [] }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const isDesktop = useIsDesktop();
 
-  // Close mobile menu when switching to desktop
+  // Handle body scroll lock - only when mobile menu is open AND not on desktop
   useEffect(() => {
-    if (isDesktop && mobileMenuOpen) {
-      setMobileMenuOpen(false);
-    }
-  }, [isDesktop, mobileMenuOpen]);
-
-  // Handle body scroll lock
-  useEffect(() => {
-    if (mobileMenuOpen) {
+    if (mobileMenuOpen && !isDesktop) {
       document.body.classList.add("noscroll");
     } else {
       document.body.classList.remove("noscroll");
@@ -30,7 +23,7 @@ export function Header({ navLinks, socialLinks = [] }: HeaderProps) {
     return () => {
       document.body.classList.remove("noscroll");
     };
-  }, [mobileMenuOpen]);
+  }, [mobileMenuOpen, isDesktop]);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
